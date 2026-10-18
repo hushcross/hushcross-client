@@ -1,0 +1,144 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-6);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--sp-4);
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-6);
+  padding: var(--sp-6);
+  border-radius: var(--radius-card);
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--line);
+  min-width: 0;
+}
+
+.galleryTitle {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: var(--fs-28);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.sectionTitle {
+  font-size: var(--fs-12);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.sectionBody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.display {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: var(--fs-56);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.h2 {
+  font-size: var(--fs-20);
+  font-weight: 600;
+}
+
+.small {
+  font-size: var(--fs-14);
+  color: var(--muted);
+}
+
+.swatches {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: var(--sp-2);
+}
+
+.swatch {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: var(--fs-12);
+}
+
+.chip {
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  flex: none;
+}
+
+.wordmark {
+  font-weight: 600;
+  font-size: var(--fs-20);
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 1200px) {
+  .columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    padding: var(--sp-4);
+  }
+  .display {
+    font-size: var(--fs-40);
+  }
+}
+
+.iconGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+  gap: var(--sp-2);
+}
+
+.iconCell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: var(--sp-3) var(--sp-1);
+  border-radius: 14px;
+  border: 1px solid var(--hairline);
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.iconCell svg {
+  color: var(--text);
+}

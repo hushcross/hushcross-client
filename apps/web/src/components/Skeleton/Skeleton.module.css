@@ -1,0 +1,44 @@
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+/* Sheen moves with transform only (no background-position repaint each frame). */
+.bar {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--surface-2);
+}
+
+.bar::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 0%, color-mix(in srgb, var(--surface) 55%, transparent) 50%, transparent 100%);
+  transform: translateX(-100%);
+  animation: sheen 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  will-change: transform;
+}
+
+.bar:nth-child(2)::after {
+  animation-delay: 0.12s;
+}
+
+.bar:nth-child(3)::after {
+  animation-delay: 0.24s;
+}
+
+@keyframes sheen {
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bar::after {
+    animation: none;
+  }
+}

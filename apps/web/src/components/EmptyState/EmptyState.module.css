@@ -1,0 +1,36 @@
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--sp-2);
+  padding: var(--sp-8) var(--sp-4);
+}
+
+.icon {
+  margin-bottom: var(--sp-2);
+}
+
+.art {
+  margin-bottom: var(--sp-1);
+}
+
+.illo {
+  margin-bottom: var(--sp-2);
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: var(--fs-20);
+  line-height: 1.2;
+}
+
+.body {
+  max-width: 38ch;
+  font-size: var(--fs-14);
+  color: var(--muted);
+}
+
+.action {
+  margin-top: var(--sp-3);
+}

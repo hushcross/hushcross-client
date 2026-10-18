@@ -1,0 +1,760 @@
+{
+  "schemaVersion": 1,
+  "name": "snarkjs",
+  "version": "0.7.5",
+  "repository": "https://github.com/iden3/snarkjs",
+  "commit": "0e0126f427f5c2c8ec753bc0d60dfacc6afece16",
+  "npmIntegrity": "sha512-h+3c4rXZKLhLuHk4LHydZCk/h5GcNvk5GjVKRRkHmfb6Ntf8gHOA9zea3g656iclRuhqQ3iKDWFgiD9ypLrKiA==",
+  "licenseMetadata": "GPL-3.0",
+  "licenseFiles": [
+    "COPYING"
+  ],
+  "sourceHeadersWithVersion3OrLater": 67,
+  "files": [
+    {
+      "path": ".eslintrc.cjs",
+      "bytes": 626,
+      "gitBlob": "2a39d0d10c295a11d8a7a7bd3b08513c1dcc3339",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/.eslintrc.cjs",
+      "method": "fixed_upstream_download",
+      "sha256": "ce23f6ec4ea5bae20314bd82ace3e749f66444cb04b2b3f3834e06ee8c687c46"
+    },
+    {
+      "path": "COPYING",
+      "bytes": 35130,
+      "gitBlob": "9dc9bca8666f26b6242ddfb3f4cf46db6248a2a4",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/COPYING",
+      "method": "verified_local_npm_copy",
+      "sha256": "d95c74a62d14f13ebfbc8c1783c315e2ed2389e80048b264bdeddb8114dee945"
+    },
+    {
+      "path": "README.md",
+      "bytes": 27634,
+      "gitBlob": "f290203c080d04a2644eeaf018c64f90db978a4c",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/README.md",
+      "method": "verified_local_npm_copy",
+      "sha256": "7a922845d2c597bcf699dc25b5399023c8f5daece469fb6e25774e4c0e438bb2"
+    },
+    {
+      "path": "cli.js",
+      "bytes": 40521,
+      "gitBlob": "4482f3e47bbdfd062b28c1a3d1f6135ac01871de",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/cli.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "ce5d4938e03a798a416d062f0b689b8d0220d36ab1feea34618211b241082a53"
+    },
+    {
+      "path": "config/rollup.browser.esm.config.js",
+      "bytes": 1452,
+      "gitBlob": "a79f3d85b88e0fa0b5b4a2ca2481afa8f8e713b0",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/config/rollup.browser.esm.config.js",
+      "method": "fixed_upstream_download",
+      "sha256": "21d0e81093e164430ba00af15112ef795837ee1e0c7535095054bc498de50eca"
+    },
+    {
+      "path": "config/rollup.cjs.config.js",
+      "bytes": 336,
+      "gitBlob": "f15b5389efd1dfb2e452435ebd72b30e176f524d",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/config/rollup.cjs.config.js",
+      "method": "fixed_upstream_download",
+      "sha256": "ee6d452893e1c1b72d633fc5b791fd658b8914a9424e30a74a30fe2ee6e76359"
+    },
+    {
+      "path": "config/rollup.cli.config.js",
+      "bytes": 376,
+      "gitBlob": "d6d284ca9724c629a121a601b502eed8d89afe70",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/config/rollup.cli.config.js",
+      "method": "fixed_upstream_download",
+      "sha256": "3b6f6efd23b2fb7d2421b21aa7433fa7b00f8718bf9ca43e8930b40143c2a7e5"
+    },
+    {
+      "path": "config/rollup.iife.config.js",
+      "bytes": 1603,
+      "gitBlob": "21522bb13780bcd48733d4d63903cf4c3f62a5f3",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/config/rollup.iife.config.js",
+      "method": "fixed_upstream_download",
+      "sha256": "a00738d0b331049d3914089243fbb612025121e46352b4fa0dd3ebffcd47b190"
+    },
+    {
+      "path": "config/rollup.iife_min.config.js",
+      "bytes": 303,
+      "gitBlob": "0fa4cb4fc248fc880339fcb4e50f9cba213dfd88",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/config/rollup.iife_min.config.js",
+      "method": "fixed_upstream_download",
+      "sha256": "4610030f1a9442124a472f47018c20334c7fcaf7affe3bb8637b8af5e4bade44"
+    },
+    {
+      "path": "main.js",
+      "bytes": 342,
+      "gitBlob": "76a748e1649572b79968bf4e29d8639f9840751e",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/main.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "f1e0cb097ab972c2b1bfaa074ec06efad53b693a5b27cb6e628f61dfbfcf2047"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 103668,
+      "gitBlob": "49b3901cb895ec3c0cdcb9ef36c8636337ee21ca",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/package-lock.json",
+      "method": "fixed_upstream_download",
+      "sha256": "4572ee28c66266c5a6fc4841948eb2f589b68a8779953c572004490015f4d4ad"
+    },
+    {
+      "path": "package.json",
+      "bytes": 2176,
+      "gitBlob": "5d39cfd66ad28e07336e869e068f5a3e27786435",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/package.json",
+      "method": "verified_local_npm_copy",
+      "sha256": "5574a6c1e1c4770da0bad3bcd44cc6af8d4a84871802553acb328385294fb084"
+    },
+    {
+      "path": "scripts/lagrange_fftext.js",
+      "bytes": 2080,
+      "gitBlob": "2e2186570c4d0ac96a18615eb1ae811c5b7f540a",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/scripts/lagrange_fftext.js",
+      "method": "fixed_upstream_download",
+      "sha256": "ddc9f0dc356a52aa1bc284e91060d05888db4edc03119740785df7e405ae3401"
+    },
+    {
+      "path": "scripts/prover2_fftext.js",
+      "bytes": 1333,
+      "gitBlob": "89add6c923384d1ffde12279bd8b3457e5ff7609",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/scripts/prover2_fftext.js",
+      "method": "fixed_upstream_download",
+      "sha256": "35fa8ee3fbd76adcc4192af76caee6ea06d59789259b52d057b265552eccc263"
+    },
+    {
+      "path": "scripts/prover_fftext.js",
+      "bytes": 1160,
+      "gitBlob": "eaae0d17253e506b58260faa85bdb271cfc02126",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/scripts/prover_fftext.js",
+      "method": "fixed_upstream_download",
+      "sha256": "1e1dbbe949b42a713842b9dba158dc4c2cec3c0ed73e36515028fd29319d6e1f"
+    },
+    {
+      "path": "scripts/verify_fftext.js",
+      "bytes": 1254,
+      "gitBlob": "11966001e58594dc9762be07fb1bca02ca54ed7d",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/scripts/verify_fftext.js",
+      "method": "fixed_upstream_download",
+      "sha256": "525fbc765802d37175f18cbccc3a6fcbd679c3bc174772118fa4c66a45a4b45d"
+    },
+    {
+      "path": "src/Keccak256Transcript.js",
+      "bytes": 2193,
+      "gitBlob": "ab3d22786e844a675e151517a07aa27d45187687",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/Keccak256Transcript.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "8ac3148e4356d69e1b4c63402c399c19d5a9f00e041dcd8ba16db1d27a7dacb4"
+    },
+    {
+      "path": "src/bigarray.js",
+      "bytes": 2913,
+      "gitBlob": "790b90d8a5359aa4f7ba878b207e27f12a078eea",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/bigarray.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "73d63352e8172b5294753f50c8826a156365048abf02b3ab8325badcbe6bf950"
+    },
+    {
+      "path": "src/clprocessor.js",
+      "bytes": 8614,
+      "gitBlob": "f15614151a29dee872ee865f0609b4e0a43bdd95",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/clprocessor.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "6fac7a9deaef146a6a4660e9c3bb2f476646c0f44877dc7ca58e282d4c3502c4"
+    },
+    {
+      "path": "src/curves.js",
+      "bytes": 1994,
+      "gitBlob": "20cbed76eb13979b74d04642e65466f8cb47924c",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/curves.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "eca7e0344d5b7a9f9db81128058faa5cb2020de9bb40ed01523d1e7a083f15bb"
+    },
+    {
+      "path": "src/fflonk.js",
+      "bytes": 1117,
+      "gitBlob": "46c0d7235c6429b138bc73681c309110fe95a3db",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/fflonk.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "283ed71d96f92afde8c1a951b73465b083821c0909af9d7f0cb7f2797ac15a76"
+    },
+    {
+      "path": "src/fflonk_constants.js",
+      "bytes": 1505,
+      "gitBlob": "7f3cbcd7df81b02c1b451db4e9208f45d50f19eb",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/fflonk_constants.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "5b0152d257abe03d713754718f795c0babb5337d37aa78d30a8b60b09cac80f9"
+    },
+    {
+      "path": "src/fflonk_export_calldata.js",
+      "bytes": 2336,
+      "gitBlob": "0585e8db918c4f299af985b4b361ef33e93c69a7",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/fflonk_export_calldata.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "1e76c4c38e43d19bf2885e18134181f6aaeaa762d20e1367eaecd4cec1baf7de"
+    },
+    {
+      "path": "src/fflonk_export_solidity_verifier.js",
+      "bytes": 1907,
+      "gitBlob": "19f6e7130e8f8127fbd2b1a4dbde7aa5a4fdccec",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/fflonk_export_solidity_verifier.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "a016fd483598f5392a69866787e6df7344d18f1f2fd844e3ed60e127c39fb2d1"
+    },
+    {
+      "path": "src/fflonk_full_prove.js",
+      "bytes": 1248,
+      "gitBlob": "a40295693818da273a529a4ec23e8e5f774e39c6",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/fflonk_full_prove.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "ddf39a751c9ed7255e118207cbc8562a4e137bcd98678f1bfd279a9c572c5b47"
+    },
+    {
+      "path": "src/fflonk_prove.js",
+      "bytes": 56459,
+      "gitBlob": "3fb820dba7f10c4d4a9c044f332f85aab979af0c",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/fflonk_prove.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "ac251735a6482250bc8d38ec863f396a3efa5446896c12c6b7465229ac03c675"
+    },
+    {
+      "path": "src/fflonk_setup.js",
+      "bytes": 21401,
+      "gitBlob": "76e34499d1cf0a6947ca573be8a365d6acd88b77",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/fflonk_setup.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "5916d4c4e000b87fd70451a2bbebe8951ed57c7a54c0b22bd70b6bcb74d72dfc"
+    },
+    {
+      "path": "src/fflonk_verify.js",
+      "bytes": 21469,
+      "gitBlob": "03201664851d8518a33bb6ccb7e6591478d50203",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/fflonk_verify.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "20db1759441434d7af34243e77ecd4b86258ee579f4cc2da076060ef90741b17"
+    },
+    {
+      "path": "src/groth16.js",
+      "bytes": 975,
+      "gitBlob": "fa3c66f6be68b402fba92fcb4dbeaf36ea64ca4a",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/groth16.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "ba611c98dd0af11da12b246a30e296306c776e77724582591157f82edcc4f8d0"
+    },
+    {
+      "path": "src/groth16_exportsoliditycalldata.js",
+      "bytes": 1558,
+      "gitBlob": "754670aa85df073beb00aa28e2fdf820a182b3ba",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/groth16_exportsoliditycalldata.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "798115fe915bf80de5e03d76c7ac6f52f83b0837cc4f354e6a31b9ecac5d1610"
+    },
+    {
+      "path": "src/groth16_fullprove.js",
+      "bytes": 1246,
+      "gitBlob": "b83106d5929a906aac4b6a78c76669214ed41f54",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/groth16_fullprove.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "2e846ec6671dbb8109dd91ee31dd3a7a35208cc454f46b0cc30ab346d2fbaff1"
+    },
+    {
+      "path": "src/groth16_prove.js",
+      "bytes": 13477,
+      "gitBlob": "750f0d963bcf91543a5676a12f2de683c115d499",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/groth16_prove.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "36b58c6b524596c009cad1afda4342c4e779965c875ff3b5ad5a0c687cce01f6"
+    },
+    {
+      "path": "src/groth16_verify.js",
+      "bytes": 3442,
+      "gitBlob": "d2101a4598210077ff9b25327defba007e41596c",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/groth16_verify.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "28b1f2480e208afabd5b690fc758d9dd032e13ed292e541c78e686d3ed6a7a97"
+    },
+    {
+      "path": "src/keypair.js",
+      "bytes": 2777,
+      "gitBlob": "1ed22ecb652c2a3e633e044bffab608a979404b4",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/keypair.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "6467dce0ae37f1263851d23f7cacb23c6ebfcbb391f9804ac6b7a49f5a9c3cc6"
+    },
+    {
+      "path": "src/loadsyms.js",
+      "bytes": 1797,
+      "gitBlob": "5829d92a13f8e130204654e80012bad41589221d",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/loadsyms.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "b384f4210ca9d037ccdb92273058823f4cb670569bcb67853bf699cee8db0472"
+    },
+    {
+      "path": "src/misc.js",
+      "bytes": 6406,
+      "gitBlob": "b1cce045b0c1f37b0764a7dd6398fb84ae37a6de",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/misc.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "1c16aa61be6207d0dbac9222d9f763d0729ac0b333048bfb5f98113559cb573d"
+    },
+    {
+      "path": "src/mpc_applykey.js",
+      "bytes": 2940,
+      "gitBlob": "f2f23145849518b8a727343d836c68595115b6d5",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/mpc_applykey.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "5a268c5394bb5ed5d86de214e32927655c48e6d9b1d2abc3b9f5528d386841be"
+    },
+    {
+      "path": "src/mul_z.js",
+      "bytes": 3920,
+      "gitBlob": "41f790769bc5f4c7cda9d29a2945223d3b051b1a",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/mul_z.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "b89b91ea5a4977a47b14f09450458cd91fdf0a404488c50e705366ab1395e8bf"
+    },
+    {
+      "path": "src/plonk.js",
+      "bytes": 1036,
+      "gitBlob": "d2062b2fafa2f46f58e46008c838139d481e09b8",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/plonk.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "bb31f2c9260cbeef818b1493b5d67069c3f32c03cab7f9d43210d2b7e9951b94"
+    },
+    {
+      "path": "src/plonk_constants.js",
+      "bytes": 556,
+      "gitBlob": "e0da40c0af6892929b9b36acfc25e453fcbbd2b9",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/plonk_constants.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "904d0336f49b61106e3728121e4349d509d621efc7d3a87beacc175ffa068079"
+    },
+    {
+      "path": "src/plonk_equation.js",
+      "bytes": 1355,
+      "gitBlob": "c833df71ab38422683192d25073173705a8362f6",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/plonk_equation.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "5d443eb1205bcb104ae53a5fa54e51937b1f58609ec4fccb83719fc5ac13187b"
+    },
+    {
+      "path": "src/plonk_exportsoliditycalldata.js",
+      "bytes": 2163,
+      "gitBlob": "d1bcce3739e7dd89f75a9579df75859eae1a2a24",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/plonk_exportsoliditycalldata.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "1d34bf858b9cc412c8d3f251a9e6356607458d08979f33d474f99f32a1f8139c"
+    },
+    {
+      "path": "src/plonk_fullprove.js",
+      "bytes": 1238,
+      "gitBlob": "e4e3ff77ef5af77366fade48dfd7c1585b09b925",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/plonk_fullprove.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "88e109863e7d56102d0dbf696fa909057ee28ece2dac2b7504b2c7fab93fafae"
+    },
+    {
+      "path": "src/plonk_prove.js",
+      "bytes": 38071,
+      "gitBlob": "0837af74a3e5ddd7af0628b6ce225c9f239238a7",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/plonk_prove.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "edc172f06be2cdafb419556ddfb36a736e3ecb85eb467eb13b4b823fcec21a50"
+    },
+    {
+      "path": "src/plonk_setup.js",
+      "bytes": 17722,
+      "gitBlob": "bcbb3342320223ec402f4ed75066c733dc9216c2",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/plonk_setup.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "38de7a276ee6aef3675ecca988801b8edaef85802dd9e00663cb179ef0a3fc09"
+    },
+    {
+      "path": "src/plonk_verify.js",
+      "bytes": 12059,
+      "gitBlob": "31692b76c607dbee07d85abe37a7e9fb265d0978",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/plonk_verify.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "25241ef9f4f196e3cb588fa83c58e212dfb2f9d88d6b0abf1f39f895392cf696"
+    },
+    {
+      "path": "src/polynomial/cpolynomial.js",
+      "bytes": 3074,
+      "gitBlob": "79698efc19effb6602e60b2bd5c66bb626fecfb4",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/polynomial/cpolynomial.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "a144a076b8bbd7854fc21963f7777f21bbc9df3b27581144a42d4000fa1ce106"
+    },
+    {
+      "path": "src/polynomial/evaluations.js",
+      "bytes": 1938,
+      "gitBlob": "5362ca4c3411bec2a2990ff5b6b3c00fdcb7cd8b",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/polynomial/evaluations.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "3ed245a914e763b510d7405b62185ffc56deda3136750ee60460ac2a94f1dd23"
+    },
+    {
+      "path": "src/polynomial/polynomial.js",
+      "bytes": 34772,
+      "gitBlob": "fb4b9cb487d99dc38c70ebc4dc89da038919067d",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/polynomial/polynomial.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "e9b7ab013533dad8fb4204bbfda36be425bccb3e0630e2ae066a0bfe6abfd4fc"
+    },
+    {
+      "path": "src/powersoftau.js",
+      "bytes": 1464,
+      "gitBlob": "1d17079aef1d06780de4196a3b84158abd943e75",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/powersoftau.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "125862fd50e8cb55812d9c811b7c73ca0797c5dfe048082ef49d138423da2a18"
+    },
+    {
+      "path": "src/powersoftau_beacon.js",
+      "bytes": 7515,
+      "gitBlob": "55f1314a2c17c135aa8f8ada57f96bfbae39d357",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/powersoftau_beacon.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "f20b19abf4f6f3adba7b1b6ae9d8f91093c058b7a5b933d098d5c70319cc69ad"
+    },
+    {
+      "path": "src/powersoftau_challenge_contribute.js",
+      "bytes": 4827,
+      "gitBlob": "54d711fcfb209544dde94ce5ffd25ecfddf2a2a7",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/powersoftau_challenge_contribute.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "e12d2450e520a5bed0ec19442b5ee828eda1259fe1a6e7b3d0741bd1d68275a8"
+    },
+    {
+      "path": "src/powersoftau_contribute.js",
+      "bytes": 7083,
+      "gitBlob": "d7923412db05fd1dca52327b4a3f86af4b7fa2a0",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/powersoftau_contribute.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "ceb79b27cbea222da9546f5fe92a832adbd2f56bc31c372fda4bf0e72a0b2dc4"
+    },
+    {
+      "path": "src/powersoftau_convert.js",
+      "bytes": 5685,
+      "gitBlob": "cf300a150966f34ca0f59c56a28d73821a8842b2",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/powersoftau_convert.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "2c87918fe3b4d51736b7685f9b0215989ca2f42c144708b4080df365706e6880"
+    },
+    {
+      "path": "src/powersoftau_export_challenge.js",
+      "bytes": 3209,
+      "gitBlob": "7d358930fb8dc6aad8fe2915338424e4011e81e8",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/powersoftau_export_challenge.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "6376823b25918e86e39a51509037a401feea113492c7403b014b20c0d46bb68d"
+    },
+    {
+      "path": "src/powersoftau_export_json.js",
+      "bytes": 3249,
+      "gitBlob": "7f30814430c65e79fa511bfeb87d191431030f59",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/powersoftau_export_json.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "6d5bd468cb16d848fa0dd03436c1db84dd80d630b09a62aa4506474e79980c80"
+    },
+    {
+      "path": "src/powersoftau_import.js",
+      "bytes": 8605,
+      "gitBlob": "188d2a058b056470cf965234234dad252ac03ff4",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/powersoftau_import.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "99558bd5e1aa29872987444b1fad97e7f0479661033acf10ac4701afa54a20c2"
+    },
+    {
+      "path": "src/powersoftau_new.js",
+      "bytes": 4096,
+      "gitBlob": "dbed600a7907f76da45bcd0cca8244f366f1202a",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/powersoftau_new.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "4d6d1b5eb3b33a625962df95afa5332ae8f6fe5633fd025a2454735d7d8ae31a"
+    },
+    {
+      "path": "src/powersoftau_preparephase2.js",
+      "bytes": 5172,
+      "gitBlob": "a4b7bed935807d12a53a8dad92ec0ff1c794b416",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/powersoftau_preparephase2.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "4e16d6499c51277da9047f73c6b864dcd47a55be5a09424d97bd1d5196b8ceaf"
+    },
+    {
+      "path": "src/powersoftau_truncate.js",
+      "bytes": 2615,
+      "gitBlob": "f67e53130f716afd3e850c9ef6aac59f60e06177",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/powersoftau_truncate.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "c440a88d6316e409399ae21736080f61d5bf7c54034c177d53fef30614c4dafa"
+    },
+    {
+      "path": "src/powersoftau_utils.js",
+      "bytes": 11347,
+      "gitBlob": "b793db71957645a24d44eab8d0b0ecd9b44c3ed5",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/powersoftau_utils.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "5b2ddcb7e1b21987e806841c9b09f82a7c227d89234ba4878acf8e241e6b2e64"
+    },
+    {
+      "path": "src/powersoftau_verify.js",
+      "bytes": 19764,
+      "gitBlob": "ee33d746defb35ef03295f53a7b6be52c4440ea9",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/powersoftau_verify.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "c03e60b1de9fd656120028e5f6085830791acdfcd635f0f449979afdd8475d09"
+    },
+    {
+      "path": "src/proof.js",
+      "bytes": 2915,
+      "gitBlob": "ba7d96d18e0981028e992e1e0149c731e62d9681",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/proof.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "f36a952ca4a72ead2ed995951825e8baaa00d5ea67776a23d3e2a23cc3b4ea9f"
+    },
+    {
+      "path": "src/r1cs.js",
+      "bytes": 879,
+      "gitBlob": "f28499ce6d7e029035149c5156189a0c70421ce3",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/r1cs.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "0cb884f57eb2b5c9b52756f54c809280e6df1b2bad811fa49493826c228a09f4"
+    },
+    {
+      "path": "src/r1cs_constraint_processor.js",
+      "bytes": 7095,
+      "gitBlob": "297239971efd587b061526bfb29eedbeca69e384",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/r1cs_constraint_processor.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "3936354f6ee0e8f6f4410b774c30920873c38e4b78d61984d7b6e9136ba8179d"
+    },
+    {
+      "path": "src/r1cs_export_json.js",
+      "bytes": 1071,
+      "gitBlob": "1dc681442bb6f251fde9865e277fd381f4904008",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/r1cs_export_json.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "e2d05ec6b462d0a14ee5380145fa2b636c9f3d6a3204d8acf1ba4f4be6d3b56e"
+    },
+    {
+      "path": "src/r1cs_info.js",
+      "bytes": 1816,
+      "gitBlob": "f144fb2f72e000d496a19318c76902824c4639e4",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/r1cs_info.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "5c986d2812159742549e2760d445c501efc97f3aee0388e2d758e7e0b82f4181"
+    },
+    {
+      "path": "src/r1cs_print.js",
+      "bytes": 1636,
+      "gitBlob": "395e5e1c9abc60556e67cb171046a55cde7d8611",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/r1cs_print.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "031edb2842be19e058ee504112613ca0e741ff205e6ec3a9d4dccbaf5d094782"
+    },
+    {
+      "path": "src/solidity.js",
+      "bytes": 909,
+      "gitBlob": "753eff7f4ee6234974c804f682b154e102b0e2a3",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/solidity.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "cd1ef4e4fe81ffdacf78b93e8c1e9e49aa06ccd6256d3e5fcc3ecd27b251a7bc"
+    },
+    {
+      "path": "src/taskmanager.js",
+      "bytes": 6077,
+      "gitBlob": "6b65efecb33ce66a9887f20a82ec17d92896d4e6",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/taskmanager.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "aca9ebbc995868327c61a3b7c31431d03825e34bcc0ef8ec5ebc4d7fa42ca530"
+    },
+    {
+      "path": "src/wtns.js",
+      "bytes": 937,
+      "gitBlob": "2e8147d83d0ae0e86adb7874a5db4c213ce01544",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/wtns.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "e808ed4d2793458f0caa03648e5166314807983ee41a2020a380f0008f7686ff"
+    },
+    {
+      "path": "src/wtns_calculate.js",
+      "bytes": 1805,
+      "gitBlob": "0248e8f38c928ec1e19691a4d03b9c6ccebbb411",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/wtns_calculate.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "93750fa68c8f5509cb3b1c0c17ec1dc16d34a1f52be2fd1d349a68941d12475a"
+    },
+    {
+      "path": "src/wtns_check.js",
+      "bytes": 5228,
+      "gitBlob": "23c584c313a1faa4ee4cb86e7e592b011583b402",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/wtns_check.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "e150b29d1628a47e598ab7e85a46561f501c602d9599ad60b4923b5d6af4b456"
+    },
+    {
+      "path": "src/wtns_debug.js",
+      "bytes": 2789,
+      "gitBlob": "991bbf3086b7dcf37f3e675ac8cf10a7ffe9fc35",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/wtns_debug.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "a6f4def512138fd7f2cbda48aeae06c9bb6528432c4b6b587cc1c18e066b2525"
+    },
+    {
+      "path": "src/wtns_export_json.js",
+      "bytes": 877,
+      "gitBlob": "0a47050f71fc419f3e28ec5724205b52ebac30fc",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/wtns_export_json.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "f00ac6cf60cbcb43653b888f2534d317a8888ee7095f7f0ac26fd0208b366df1"
+    },
+    {
+      "path": "src/wtns_utils.js",
+      "bytes": 2743,
+      "gitBlob": "afd843efe775cafcc880556e046f79235afeaff6",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/wtns_utils.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "2bd37d3452fb6d710e9d5de8573606b1f0f9ddeae125b98661d0c82d5bc5a882"
+    },
+    {
+      "path": "src/zkey.js",
+      "bytes": 1458,
+      "gitBlob": "8dca5daddc6f1d36c476bf098b11e8fbebe07751",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/zkey.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "f002686004a868965553c1956758c45963136367c7727f0e09cd2188a528743a"
+    },
+    {
+      "path": "src/zkey_beacon.js",
+      "bytes": 5032,
+      "gitBlob": "0b0e27b3edc21f22f536ce7ba90f80b3018535a7",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/zkey_beacon.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "55696f0682bd8cbdc0c762ea8d013080483207c13cf2fbde7b59998c8666d58b"
+    },
+    {
+      "path": "src/zkey_bellman_contribute.js",
+      "bytes": 6523,
+      "gitBlob": "1047507869e8f6ceac7658c66117b3f7789a4a46",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/zkey_bellman_contribute.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "cfb4860836d7f153bfd9a994ae48c388d4abb08c9d98421fd8b80aadb2961726"
+    },
+    {
+      "path": "src/zkey_constants.js",
+      "bytes": 151,
+      "gitBlob": "4143b3c8473f2528e4702be6f9a0c8271bf07493",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/zkey_constants.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "ec988fcd1779fffb1cacd59baa0fb945dd655cb63725d2078fd21c30fd5a7509"
+    },
+    {
+      "path": "src/zkey_contribute.js",
+      "bytes": 4303,
+      "gitBlob": "939b6c77274459cfd99aebb2295b0b8d91c8cfe0",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/zkey_contribute.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "5cbf46ccc3b0d6d2015e1ea8f78ad0f8aa06b169ded7fda0d11210ae218b06c1"
+    },
+    {
+      "path": "src/zkey_export_bellman.js",
+      "bytes": 4640,
+      "gitBlob": "2556b36eb5810df9b7046cfcbbf1701815754574",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/zkey_export_bellman.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "53794010fe1a3bb3bc8f8a6fbcb74c3f5b0a594006b9031e0746602e71e5bcb4"
+    },
+    {
+      "path": "src/zkey_export_json.js",
+      "bytes": 296,
+      "gitBlob": "a540fa4b9f73c06da045860e17c2b1e56f8e9280",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/zkey_export_json.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "90bb19ff2ff3909f6e48fe9037bc72f9bdf273e9ea2e41616cd120cdaeeda355"
+    },
+    {
+      "path": "src/zkey_export_solidityverifier.js",
+      "bytes": 679,
+      "gitBlob": "45f62779ca380ffd9e83eedbc53caa52a06c4b70",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/zkey_export_solidityverifier.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "522dd0404141017e7afa54034620e3ecc7485b4b78d24a751b0f46b184000aaa"
+    },
+    {
+      "path": "src/zkey_export_verificationkey.js",
+      "bytes": 4312,
+      "gitBlob": "bc868c108f86a1331b5e65803f9186bcfd40c04e",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/zkey_export_verificationkey.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "ecc67cd9aa2e98afcb8a9cb94bfb8db71b2e5dce2b9f310f6f081ad9bd8a3628"
+    },
+    {
+      "path": "src/zkey_import_bellman.js",
+      "bytes": 8437,
+      "gitBlob": "dd4e88f3f011fb8efdc9ce133c82c5d9356bd892",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/zkey_import_bellman.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "bc9801822c00f1092e109e131072c067766f1636d3867ff53e5a348884793f4a"
+    },
+    {
+      "path": "src/zkey_new.js",
+      "bytes": 20987,
+      "gitBlob": "cac497b041040f778c75c629eca38760685eaf6f",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/zkey_new.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "9afffa3a2df3d6f50f0732cdffc4f384f5c10250f04ea2d81778ecbf98d4bbd2"
+    },
+    {
+      "path": "src/zkey_utils.js",
+      "bytes": 17085,
+      "gitBlob": "9aba07fbfb4b4536d1299349cb0990bcda59ada5",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/zkey_utils.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "4b256df8612d810951d8a43dd4c01fb1eada6eb4a28fc7b8a1e6b93f29c23016"
+    },
+    {
+      "path": "src/zkey_verify_frominit.js",
+      "bytes": 14773,
+      "gitBlob": "61f99b5012206a55ea89482df5edf65ac8b00802",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/zkey_verify_frominit.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "8b21a3528a9faf34749d24e3747b6db6192bfa382be3587f9c4b4b6ce363a8db"
+    },
+    {
+      "path": "src/zkey_verify_fromr1cs.js",
+      "bytes": 1186,
+      "gitBlob": "27028306a2c75b6668ff0a396b5357c726a97ccc",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/src/zkey_verify_fromr1cs.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "a1f4eec931507fb86f4f3ba5f241ba26a0eda825460a8fa8cab7bd0c947ddcc0"
+    },
+    {
+      "path": "templates/verifier_fflonk.sol.ejs",
+      "bytes": 43669,
+      "gitBlob": "50d467ee306d5d76bc571734dbf5a131943855a7",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/templates/verifier_fflonk.sol.ejs",
+      "method": "verified_local_npm_copy",
+      "sha256": "d815944f546f918d14fd77ffcf6965d85889d28906fd69f388a69de74eb95258"
+    },
+    {
+      "path": "templates/verifier_groth16.sol.ejs",
+      "bytes": 6165,
+      "gitBlob": "fda549e3b78345e2f524f7d18c28d836c9745a0d",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/templates/verifier_groth16.sol.ejs",
+      "method": "verified_local_npm_copy",
+      "sha256": "1b137b3707d0200b8fe2d3fc6bf0d8dbb9eccac25e38f0aa17d20d8600607518"
+    },
+    {
+      "path": "templates/verifier_plonk.sol.ejs",
+      "bytes": 26870,
+      "gitBlob": "bd77245c43687ed46c6ea90dd512302354d6ef85",
+      "url": "https://raw.githubusercontent.com/iden3/snarkjs/0e0126f427f5c2c8ec753bc0d60dfacc6afece16/templates/verifier_plonk.sol.ejs",
+      "method": "verified_local_npm_copy",
+      "sha256": "7c9862d6894e4ca60f38d5918cf55bda3e5d0753460a6e0bcb69d6825ad1796f"
+    }
+  ],
+  "scriptsExecuted": false
+}

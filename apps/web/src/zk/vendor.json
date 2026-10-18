@@ -1,0 +1,10 @@
+{
+  "snarkjs": {
+    "version": "0.7.5",
+    "license": "GPL-3.0",
+    "source": "third-party/runtime/snarkjs-0.7.5.min.js",
+    "file": "zk/snarkjs-0.7.5.min.js",
+    "sha256": "3bf5b5123047ed9187baa7d4c11285019f09fbed88a28693984ed9dd0508466a"
+  },
+  "circuits": "zk/circuits/"
+}

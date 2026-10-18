@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "name": "fastfile",
+  "version": "0.0.20",
+  "repository": "https://github.com/iden3/fastfile",
+  "commit": "e38c73d10a3737dd26509683d988c097c91bfc3e",
+  "npmIntegrity": "sha512-r5ZDbgImvVWCP0lA/cGNgQcZqR+aYdFx3u+CtJqUE510pBUVGMn4ulL/iRTI4tACTYsNJ736uzFxEBXesPAktA==",
+  "licenseMetadata": "GPL-3.0",
+  "licenseFiles": [
+    "COPYING"
+  ],
+  "sourceHeadersWithVersion3OrLater": 0,
+  "files": [
+    {
+      "path": ".eslintrc.cjs",
+      "bytes": 544,
+      "gitBlob": "f91f18012898bb34650806f11d8bd3b6949a9674",
+      "url": "https://raw.githubusercontent.com/iden3/fastfile/e38c73d10a3737dd26509683d988c097c91bfc3e/.eslintrc.cjs",
+      "method": "verified_local_npm_copy",
+      "sha256": "0cca271089306217474d44600a4e7e82c480b2c5b90ec9f5987156b9b4f566fa"
+    },
+    {
+      "path": "COPYING",
+      "bytes": 35130,
+      "gitBlob": "9dc9bca8666f26b6242ddfb3f4cf46db6248a2a4",
+      "url": "https://raw.githubusercontent.com/iden3/fastfile/e38c73d10a3737dd26509683d988c097c91bfc3e/COPYING",
+      "method": "verified_local_npm_copy",
+      "sha256": "d95c74a62d14f13ebfbc8c1783c315e2ed2389e80048b264bdeddb8114dee945"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1023,
+      "gitBlob": "4efaf3d56ba6891c3d94e23d6f446db680cde0e8",
+      "url": "https://raw.githubusercontent.com/iden3/fastfile/e38c73d10a3737dd26509683d988c097c91bfc3e/README.md",
+      "method": "verified_local_npm_copy",
+      "sha256": "a894e62631719662b57675b32fddcfa6748f17894ed5b71387e9675a716622c7"
+    },
+    {
+      "path": "index.cjs",
+      "bytes": 70,
+      "gitBlob": "28ffeefa04662421c97705b321659815790e216b",
+      "url": "https://raw.githubusercontent.com/iden3/fastfile/e38c73d10a3737dd26509683d988c097c91bfc3e/index.cjs",
+      "method": "verified_local_npm_copy",
+      "sha256": "28790f74789a27a573312f3899d0b002e0a7e03321c03c2fc49fbf06a8bb8528"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 120193,
+      "gitBlob": "e5531b32bfef05ae8d71dfa08d21406b7c6cbaa7",
+      "url": "https://raw.githubusercontent.com/iden3/fastfile/e38c73d10a3737dd26509683d988c097c91bfc3e/package-lock.json",
+      "method": "fixed_upstream_download",
+      "sha256": "92e37b55c9a0bf40798437ce818bd9b8b9594e960d0f5044d999eb36dcfb3295"
+    },
+    {
+      "path": "package.json",
+      "bytes": 898,
+      "gitBlob": "9bb30150fd94f2983dbc3c44c1fef54fcd08dfde",
+      "url": "https://raw.githubusercontent.com/iden3/fastfile/e38c73d10a3737dd26509683d988c097c91bfc3e/package.json",
+      "method": "verified_local_npm_copy",
+      "sha256": "0fe78b9027ddec810b331fed28c1596b9c609d806b6a256a3bb0c13fcdab076e"
+    },
+    {
+      "path": "rollup.cjs.config.js",
+      "bytes": 392,
+      "gitBlob": "01fa1c0eba9161c85d2ca70a416c27bfdc27d221",
+      "url": "https://raw.githubusercontent.com/iden3/fastfile/e38c73d10a3737dd26509683d988c097c91bfc3e/rollup.cjs.config.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "75f4d0e6c1eeda1a88509af98e77a403f64892e459b35af11704a8cb0bb1aea5"
+    },
+    {
+      "path": "src/bigmemfile.js",
+      "bytes": 6287,
+      "gitBlob": "8513db0ba7aa521da60463f8b9a91419c1d9d0a7",
+      "url": "https://raw.githubusercontent.com/iden3/fastfile/e38c73d10a3737dd26509683d988c097c91bfc3e/src/bigmemfile.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "e1354281466075919761dde636ac56af9fce245b961b98257b817c0e6df2eb31"
+    },
+    {
+      "path": "src/fastfile.js",
+      "bytes": 3837,
+      "gitBlob": "25db11e36c0c255d40d9e0bd879d4b6c23ae7256",
+      "url": "https://raw.githubusercontent.com/iden3/fastfile/e38c73d10a3737dd26509683d988c097c91bfc3e/src/fastfile.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "17d7dca749f1edfa72d52708dac3508bc89e55ce91988670ad4291633377d9cf"
+    },
+    {
+      "path": "src/memfile.js",
+      "bytes": 4712,
+      "gitBlob": "fa74a7d672d5901ffb999413cef4d7e766f60a6a",
+      "url": "https://raw.githubusercontent.com/iden3/fastfile/e38c73d10a3737dd26509683d988c097c91bfc3e/src/memfile.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "05e7f0418a1169186a9d8f2dd14d74f6f1a06e5c833664b07dbb90bfda6e82ab"
+    },
+    {
+      "path": "src/osfile.js",
+      "bytes": 15367,
+      "gitBlob": "62bf9d479a8dbff5e8ac57541d9013384edf3695",
+      "url": "https://raw.githubusercontent.com/iden3/fastfile/e38c73d10a3737dd26509683d988c097c91bfc3e/src/osfile.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "c39064d3dbbefec4a92ababc7932ad3858748082f8e834da648745a386a99b2e"
+    }
+  ],
+  "scriptsExecuted": false
+}

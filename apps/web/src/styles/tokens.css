@@ -1,0 +1,176 @@
+/*
+ * Design tokens (DESIGN_SYSTEM §2–4). Paper is the default; Ink applies via
+ * [data-theme='dark'] on any element, so /dev/ui can show both side by side.
+ * The *-text tokens are darker/lighter variants of ok/warn/danger used only
+ * for small text, so status copy meets WCAG AA on every surface. --muted-2
+ * replaces --muted on --surface-2 (frozen Paper muted is 4.47:1 there).
+ */
+:root,
+[data-theme='light'] {
+  color-scheme: light;
+  --bg: #f4f2ee;
+  --surface: #fffdfa;
+  --surface-2: #ece9e3;
+  --line: #dad6ce;
+  --text: #15161a;
+  --muted: #6b6a66;
+  --accent: #4b47d6;
+  --accent-ink: #ffffff;
+  --ok: #1f9d76;
+  --warn: #c9772b;
+  --danger: #c8433d;
+  --muted-2: #5f5e5a;
+  --ok-text: #157257;
+  --warn-text: #8f5216;
+  --danger-text: #a8352f;
+  --accent-soft: rgba(75, 71, 214, 0.1);
+  --ok-soft: rgba(31, 157, 118, 0.12);
+  --warn-soft: rgba(201, 119, 43, 0.14);
+  --danger-soft: rgba(200, 67, 61, 0.1);
+  --shadow: inset 0 1px 0 var(--highlight), 0 1px 2px rgba(46, 36, 20, 0.04), 0 10px 28px -14px rgba(46, 36, 20, 0.12);
+  --card-border: rgba(21, 22, 26, 0.06);
+  --scrim: rgba(21, 22, 26, 0.36);
+  /* v2 art direction (DESIGN_SYSTEM §9): layered paper, hairlines, the vault plate. */
+  --surface-raised: #ffffff;
+  --surface-sunken: #ebe7df;
+  --hairline: rgba(21, 22, 26, 0.08);
+  --hairline-strong: rgba(21, 22, 26, 0.14);
+  --highlight: rgba(255, 255, 255, 0.95);
+  --shadow-1: 0 1px 1px rgba(46, 36, 20, 0.04), 0 1px 3px rgba(46, 36, 20, 0.05);
+  --shadow-2: 0 1px 2px rgba(46, 36, 20, 0.04), 0 6px 14px -6px rgba(46, 36, 20, 0.08), 0 18px 40px -18px rgba(46, 36, 20, 0.12);
+  --shadow-3: 0 2px 4px rgba(46, 36, 20, 0.05), 0 18px 36px -12px rgba(46, 36, 20, 0.16), 0 44px 80px -28px rgba(46, 36, 20, 0.22);
+  --plate-bg: #191830;
+  --plate-bg-2: #2a2752;
+  --plate-text: #f4f2ee;
+  --plate-muted: rgba(244, 242, 238, 0.66);
+  --plate-line: rgba(255, 255, 255, 0.1);
+  --plate-accent: #b9b6ff;
+  --plate-shadow: 0 1px 2px rgba(25, 24, 48, 0.2), 0 18px 40px -16px rgba(25, 24, 48, 0.45), 0 40px 80px -40px rgba(25, 24, 48, 0.4);
+  --grain-opacity: 0.045;
+  --grain-tint: 0;
+  --packet-bg: #6e2347;
+  --packet-bg-2: #a23a68;
+  --packet-text: #fff6f9;
+  --packet-muted: rgba(255, 246, 249, 0.72);
+  --packet-line: rgba(255, 220, 232, 0.22);
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0d0e11;
+  --surface: #16181d;
+  --surface-2: #1e2127;
+  --line: #2a2e36;
+  --text: #ecedef;
+  --muted: #8e939c;
+  --accent: #8e8bff;
+  --accent-ink: #0d0e11;
+  --ok: #3ccb9f;
+  --warn: #e3a15a;
+  --danger: #f06a63;
+  --muted-2: #8e939c;
+  --ok-text: #3ccb9f;
+  --warn-text: #e3a15a;
+  --danger-text: #f06a63;
+  --accent-soft: rgba(142, 139, 255, 0.14);
+  --ok-soft: rgba(60, 203, 159, 0.14);
+  --warn-soft: rgba(227, 161, 90, 0.14);
+  --danger-soft: rgba(240, 106, 99, 0.14);
+  --shadow: inset 0 1px 0 var(--highlight), 0 1px 2px rgba(0, 0, 0, 0.45), 0 12px 32px -14px rgba(0, 0, 0, 0.65);
+  --card-border: rgba(255, 255, 255, 0.07);
+  --scrim: rgba(0, 0, 0, 0.6);
+  --surface-raised: #1b1e24;
+  --surface-sunken: #101115;
+  --hairline: rgba(255, 255, 255, 0.07);
+  --hairline-strong: rgba(255, 255, 255, 0.12);
+  --highlight: rgba(255, 255, 255, 0.055);
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-2: 0 1px 2px rgba(0, 0, 0, 0.45), 0 12px 28px -12px rgba(0, 0, 0, 0.6);
+  --shadow-3: 0 2px 6px rgba(0, 0, 0, 0.5), 0 28px 60px -20px rgba(0, 0, 0, 0.75);
+  --plate-bg: #1d1c36;
+  --plate-bg-2: #121222;
+  --plate-text: #f1f0f6;
+  --plate-muted: rgba(241, 240, 246, 0.62);
+  --plate-line: rgba(185, 182, 255, 0.12);
+  --plate-accent: #b9b6ff;
+  --plate-shadow: inset 0 0 0 1px rgba(185, 182, 255, 0.16), 0 2px 6px rgba(0, 0, 0, 0.5), 0 30px 60px -24px rgba(0, 0, 0, 0.8);
+  --grain-opacity: 0.06;
+  --grain-tint: 1;
+  --packet-bg: #4a1730;
+  --packet-bg-2: #7d2d53;
+  --packet-text: #fff3f7;
+  --packet-muted: rgba(255, 243, 247, 0.68);
+  --packet-line: rgba(255, 210, 226, 0.18);
+}
+
+/* Before the theme script runs (or without JS), follow the system. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+    --bg: #0d0e11;
+    --surface: #16181d;
+    --surface-2: #1e2127;
+    --line: #2a2e36;
+    --text: #ecedef;
+    --muted: #8e939c;
+    --accent: #8e8bff;
+    --accent-ink: #0d0e11;
+    --shadow: inset 0 1px 0 rgba(255, 255, 255, 0.055), 0 1px 2px rgba(0, 0, 0, 0.45);
+    --card-border: rgba(255, 255, 255, 0.07);
+    --hairline: rgba(255, 255, 255, 0.07);
+    --plate-bg: #1d1c36;
+    --plate-bg-2: #121222;
+    --grain-tint: 1;
+  }
+}
+
+:root {
+  --mod-vault: #4b47d6;
+  --mod-send: #1f9d76;
+  --mod-launch: #c9772b;
+  --mod-book: #2b6cb0;
+  --mod-give: #b4467a;
+
+  --font-sans: 'Inter', 'PingFang SC', 'Noto Sans SC', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-serif: 'Instrument Serif', 'Songti SC', 'Noto Serif SC', Georgia, serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  --fs-12: 0.75rem;
+  --fs-14: 0.875rem;
+  --fs-16: 1rem;
+  --fs-20: 1.25rem;
+  --fs-28: 1.75rem;
+  --fs-40: 2.5rem;
+  --fs-56: 3.5rem;
+  --fs-11: 0.6875rem;
+  --fs-13: 0.8125rem;
+  --fs-72: 4.5rem;
+  --fs-96: 6rem;
+
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-12: 48px;
+  --sp-10: 40px;
+  --sp-16: 64px;
+  /* Rhythm: page sections 40, blocks inside a section 16 (desktop). */
+  --space-section: var(--sp-10);
+  --space-block: var(--sp-4);
+
+  --radius-card: 24px;
+  --radius-input: 14px;
+  --radius-pill: 999px;
+  --radius-plate: 28px;
+  --radius-tile: 22px;
+
+  --content-max: 1080px;
+  --rail-width: 220px;
+  --tabbar-height: 64px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-exit: cubic-bezier(0.4, 0, 1, 1);
+  --ease-back: cubic-bezier(0.34, 1.4, 0.64, 1);
+  --tracking-eyebrow: 0.14em;
+}

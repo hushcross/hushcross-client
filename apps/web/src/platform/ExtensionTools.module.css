@@ -1,0 +1,6 @@
+.tools { display: flex; justify-content: flex-end; padding: 10px 24px 0; position: relative; z-index: 5; }
+.form { display: grid; gap: 20px; }
+.body { color: var(--text); line-height: 1.65; margin: 0; }
+.hint { color: var(--muted); font-size: 13px; line-height: 1.65; margin: 0; }
+.actions { display: flex; justify-content: flex-end; gap: 12px; }
+@media (max-width: 600px) { .tools { padding: 8px 16px 0; } }

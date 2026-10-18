@@ -1,0 +1,27 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  color: var(--text);
+}
+
+.mark {
+  display: inline-block;
+  color: var(--accent);
+  background-color: currentColor;
+  flex: none;
+  mask-mode: alpha;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+
+.word {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: var(--fs-16);
+  letter-spacing: -0.01em;
+}

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "name": "HushCross crossed arcs",
+  "brandRevision": "v3-crossed-arcs",
+  "canonicalSource": "../web/src/assets/brand/hushcross-mark.png",
+  "sourceSha256": "e6bc955a95a511101ffa9161854018e25769b92dd50bdd5128ce0a3269f631a3",
+  "sourceDimensions": [
+    1254,
+    1254
+  ],
+  "sourceBytes": 254712,
+  "sourceCopiedWithoutPixelOrByteChanges": true,
+  "geometry": {
+    "nominalCanvasDp": 108,
+    "bitmapSizeDp": 76,
+    "insetDp": 16,
+    "insetPercent": "14.814815%",
+    "safeCircleDiameterDp": 66,
+    "visibleAlphaThreshold": 8,
+    "visibleSourceBounds": {
+      "left": 242,
+      "top": 300,
+      "right": 1011,
+      "bottom": 1003
+    }
+  },
+  "maxVisibleBoundingCornerRadius": 32.614902,
+  "background": "#F4F2EE",
+  "foregroundTint": "#4B47D6",
+  "monochromeTint": "#000000",
+  "alphaBoundary": "Only alpha>=8 visible-stroke bounds are guaranteed inside the 66dp circle. Original faint nonzero-alpha noise is preserved and may be clipped by launcher masks; no zero-all-pixel-loss claim.",
+  "generatedFiles": [
+    {
+      "path": "app/src/main/res/drawable-nodpi/hushcross_mark.png",
+      "sha256": "e6bc955a95a511101ffa9161854018e25769b92dd50bdd5128ce0a3269f631a3"
+    },
+    {
+      "path": "app/src/main/res/drawable/ic_launcher_foreground.xml",
+      "sha256": "c5c80f7c2a01092624f7ca1d9d9d2e749327196de64c0424a88ce2ac198434ee"
+    },
+    {
+      "path": "app/src/main/res/drawable/ic_launcher_monochrome.xml",
+      "sha256": "9a7a9cf384ccf2a0988f927502fc0123e60f0a8258674fc7fc80a937dd45be5c"
+    },
+    {
+      "path": "app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "sha256": "f0bcda0211e00211feecc6148571a4ead8e35266fed5ef4ad6afa6b72d0f82fe"
+    },
+    {
+      "path": "app/src/main/res/mipmap-anydpi-v33/ic_launcher.xml",
+      "sha256": "ac1e79d38c064492fa1e5f362eaf0b57402129afeec195e289a38d498258fea6"
+    }
+  ]
+}

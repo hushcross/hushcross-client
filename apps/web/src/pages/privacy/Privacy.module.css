@@ -1,0 +1,5 @@
+.page { line-height: 1.65; overflow-wrap: anywhere; }
+.page a { color: var(--accent); text-underline-offset: 3px; }
+.page a + a { margin-left: var(--sp-3); }
+.publicPage { max-width: 960px; margin: 0 auto; padding: var(--sp-6) var(--sp-4) var(--sp-10); }
+.back { display: inline-block; margin-bottom: var(--sp-6); color: var(--muted); text-underline-offset: 3px; }

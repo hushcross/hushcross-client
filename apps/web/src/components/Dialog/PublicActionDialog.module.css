@@ -1,0 +1,35 @@
+.reveals {
+  border-radius: var(--radius-input);
+  background: var(--danger-soft);
+  padding: var(--sp-3) var(--sp-4);
+}
+
+.revealsTitle {
+  font-weight: 600;
+  color: var(--danger-text);
+  margin-bottom: var(--sp-1);
+}
+
+.reveals ul {
+  margin: 0;
+  padding-left: var(--sp-4);
+}
+
+.reveals li + li {
+  margin-top: var(--sp-1);
+}
+
+.ack {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-3);
+  cursor: pointer;
+}
+
+.ack input {
+  width: 18px;
+  height: 18px;
+  margin: 2px 0 0;
+  accent-color: var(--danger);
+  flex: none;
+}

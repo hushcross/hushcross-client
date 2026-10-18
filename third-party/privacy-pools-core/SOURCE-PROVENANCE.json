@@ -1,0 +1,87 @@
+{
+  "repository": "https://github.com/0xbow-io/privacy-pools-core",
+  "version": "v1.3.0",
+  "commit": "c312dcd58f6ad085204be61923c49f8065e4e9ae",
+  "license": "Apache-2.0",
+  "allSelectedFilesMatchFixedGitBlob": true,
+  "sourceExecuted": false,
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 11339,
+      "sha256": "2f5662cc01004eb907e83f41d1832252f96deac7969d11ea0b9a5b8dffed5993",
+      "gitBlob": "bde31966218d44d2e5e68cd7101858d29c417c16",
+      "url": "https://raw.githubusercontent.com/0xbow-io/privacy-pools-core/c312dcd58f6ad085204be61923c49f8065e4e9ae/LICENSE"
+    },
+    {
+      "path": "packages/circuits/README.md",
+      "bytes": 2246,
+      "sha256": "fba72c6db09b91f7e736f15373412554da3d35988b1063fd60d42a5ebdaba6f7",
+      "gitBlob": "4fea0d4965cd5e68c3b5514fe0c2ec1c8a49d8bc",
+      "url": "https://raw.githubusercontent.com/0xbow-io/privacy-pools-core/c312dcd58f6ad085204be61923c49f8065e4e9ae/packages/circuits/README.md"
+    },
+    {
+      "path": "packages/circuits/circomkit.json",
+      "bytes": 109,
+      "sha256": "2e599aaf9950b778f1b1989eac7bec0e399f8a0da01d878ef5124dc990b0ec64",
+      "gitBlob": "0084a34e811ba9f589eb64587898f15643b57faa",
+      "url": "https://raw.githubusercontent.com/0xbow-io/privacy-pools-core/c312dcd58f6ad085204be61923c49f8065e4e9ae/packages/circuits/circomkit.json"
+    },
+    {
+      "path": "packages/circuits/circuits/commitment.circom",
+      "bytes": 1367,
+      "sha256": "9c5ccc11cd162a9e584e882e62c852da60fa2ef90e52476d9ac0d4a7cdff1eb8",
+      "gitBlob": "4ce578154298633e112248a0193a417b0a505788",
+      "url": "https://raw.githubusercontent.com/0xbow-io/privacy-pools-core/c312dcd58f6ad085204be61923c49f8065e4e9ae/packages/circuits/circuits/commitment.circom"
+    },
+    {
+      "path": "packages/circuits/circuits/merkleTree.circom",
+      "bytes": 3263,
+      "sha256": "5754b7b09afa124e4821dff70a7caf533635366d9dcbb56d04128603494d0882",
+      "gitBlob": "f1bf4c341a85d3e6d1082cd9b6c9e050b95ec7a2",
+      "url": "https://raw.githubusercontent.com/0xbow-io/privacy-pools-core/c312dcd58f6ad085204be61923c49f8065e4e9ae/packages/circuits/circuits/merkleTree.circom"
+    },
+    {
+      "path": "packages/circuits/circuits/withdraw.circom",
+      "bytes": 4656,
+      "sha256": "03e00168149bd00cd71d43d86f475e4ff919fef524dca0dd5689d7bc99dc4731",
+      "gitBlob": "5b596cb85c08dc9b7f04a7d43dc4abe611236f16",
+      "url": "https://raw.githubusercontent.com/0xbow-io/privacy-pools-core/c312dcd58f6ad085204be61923c49f8065e4e9ae/packages/circuits/circuits/withdraw.circom"
+    },
+    {
+      "path": "packages/circuits/circuits.json",
+      "bytes": 204,
+      "sha256": "2d9c69618aaa5d12ece277cafe61c9d14ca40f3e6954ad29c913a49750c806f2",
+      "gitBlob": "863b1af455fdec4f6a6bab088ad18d28c990adec",
+      "url": "https://raw.githubusercontent.com/0xbow-io/privacy-pools-core/c312dcd58f6ad085204be61923c49f8065e4e9ae/packages/circuits/circuits.json"
+    },
+    {
+      "path": "packages/circuits/package.json",
+      "bytes": 2377,
+      "sha256": "9ef43141362b80c80f3fcb0f215b03073c59f6ee5a95108d82d9a8af2e31e71c",
+      "gitBlob": "39ed2a26866106db26ad2fed9b3cb5bbd0b082ed",
+      "url": "https://raw.githubusercontent.com/0xbow-io/privacy-pools-core/c312dcd58f6ad085204be61923c49f8065e4e9ae/packages/circuits/package.json"
+    },
+    {
+      "path": "packages/circuits/src/index.ts",
+      "bytes": 1078,
+      "sha256": "1b83bb91e8d0e32a5b30ae451d534702f9dd0a579b1013dc059352e4a43e3033",
+      "gitBlob": "7b2ae1bdeffd30d33640cc81773030e6145e3f8b",
+      "url": "https://raw.githubusercontent.com/0xbow-io/privacy-pools-core/c312dcd58f6ad085204be61923c49f8065e4e9ae/packages/circuits/src/index.ts"
+    },
+    {
+      "path": "packages/circuits/tsconfig.json",
+      "bytes": 207,
+      "sha256": "27c25d9124f8f6e92eb377cb2116404126c0f0db9ca1b47378b19f69f33f8570",
+      "gitBlob": "fd6e758aa15a59f7e637341976765b9df198d121",
+      "url": "https://raw.githubusercontent.com/0xbow-io/privacy-pools-core/c312dcd58f6ad085204be61923c49f8065e4e9ae/packages/circuits/tsconfig.json"
+    },
+    {
+      "path": "yarn.lock",
+      "bytes": 370597,
+      "sha256": "25b0bda70e0e693d0aa0f5d617bd4481b273bc7a03ddb80dd2c2bda9f9edb308",
+      "gitBlob": "1babd81b4b729b2ed64eac978e89d98e4f3f0cbb",
+      "url": "https://raw.githubusercontent.com/0xbow-io/privacy-pools-core/c312dcd58f6ad085204be61923c49f8065e4e9ae/yarn.lock"
+    }
+  ]
+}

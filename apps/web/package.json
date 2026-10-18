@@ -1,0 +1,35 @@
+{
+  "name": "@hushcross/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --port 8831 --strictPort",
+    "typecheck": "tsc -b --pretty false",
+    "vendor:zk": "node scripts/vendor-zk.mjs",
+    "predev": "node scripts/vendor-zk.mjs --if-present",
+    "prebuild": "node scripts/vendor-zk.mjs --if-present"
+  },
+  "dependencies": {
+    "@hushcross/core": "0.1.0",
+    "@walletconnect/universal-provider": "2.21.8",
+    "framer-motion": "11.18.2",
+    "qrcode": "1.5.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router": "7.18.4",
+    "viem": "2.57.7"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "@types/qrcode": "1.5.6",
+    "@types/react": "18.3.31",
+    "@types/react-dom": "18.3.7",
+    "@vitejs/plugin-react": "4.7.0",
+    "typescript": "5.9.3",
+    "vite": "6.4.4"
+  }
+}

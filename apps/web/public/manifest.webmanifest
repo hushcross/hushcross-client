@@ -1,0 +1,59 @@
+{
+  "name": "HushCross",
+  "short_name": "HushCross",
+  "description": "HushCross: an encrypted local vault and privacy-focused financial tools on BNB Chain.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f4f2ee",
+  "theme_color": "#f4f2ee",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "id": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": [
+    "finance",
+    "utilities"
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/onboarding-desktop.png",
+      "sizes": "1440x1000",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Set up a HushCross encrypted vault"
+    },
+    {
+      "src": "/screenshots/onboarding-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "HushCross vault setup on a phone"
+    }
+  ]
+}

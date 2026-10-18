@@ -1,0 +1,63 @@
+.noteRow {
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: var(--sp-4) 0;
+}
+
+.noteAmount {
+  display: flex;
+  flex-direction: column;
+  width: 96px;
+  flex: none;
+}
+
+.noteFigure {
+  font-family: var(--font-serif);
+  font-size: var(--fs-28);
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+.noteMain {
+  gap: var(--sp-2);
+  min-width: 200px;
+}
+
+.noteMeta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.noteActions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--sp-1);
+}
+
+.phrase {
+  font-family: var(--font-mono);
+  font-size: var(--fs-14);
+}
+
+.wordCount {
+  font-size: var(--fs-12);
+  color: var(--muted);
+  text-align: right;
+}
+
+@media (max-width: 640px) {
+  .noteMain {
+    min-width: 0;
+    flex-basis: calc(100% - 112px);
+  }
+  .noteActions {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 112px;
+  }
+}

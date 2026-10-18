@@ -1,0 +1,14 @@
+{
+  "web": {
+    "VITE_DATA_SOURCE": "chain",
+    "VITE_CHAIN_ID": "56",
+    "VITE_RPC_URL": "https://rpc.hushcross.fun/public",
+    "VITE_RELAY_URL": "https://relay.hushcross.fun",
+    "VITE_SCREEN_URL": "https://screen.hushcross.fun",
+    "VITE_INDEXER_URL": "https://indexer.hushcross.fun",
+    "VITE_META_URL": "https://meta.hushcross.fun",
+    "VITE_DEPLOYMENTS_URL": "/deployments/56.json",
+    "VITE_ASSET_BASE": "/"
+  },
+  "walletConnect": "Supply your own approved public project identifier through the documented shell variables; no identifier value is included."
+}

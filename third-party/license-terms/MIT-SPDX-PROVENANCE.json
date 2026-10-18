@@ -1,0 +1,9 @@
+{
+  "name": "MIT standard license text template",
+  "repository": "https://github.com/spdx/license-list-data",
+  "tag": "v3.26.0",
+  "commit": "8a04f0303d95c4f932210b118588c662665bd383",
+  "url": "https://raw.githubusercontent.com/spdx/license-list-data/8a04f0303d95c4f932210b118588c662665bd383/text/MIT.txt",
+  "sha256": "6d7c9e9d7d12c8d3753bdb24417b84819ba4d6c2f025c37948113d86dc81eef9",
+  "role": "Supplement only; placeholder copyright text is not an assertion of any package author or year. Upstream metadata/README grant declarations and all found notices remain authoritative."
+}

@@ -1,0 +1,15 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.13.0'
+    }
+}
+// Never let a convenience task create or use Android's default debug identity.
+gradle.taskGraph.whenReady { graph ->
+    if (graph.allTasks.any { it.name.toLowerCase(Locale.ROOT).contains('debug') && !it.name.toLowerCase(Locale.ROOT).contains('release') }) {
+        throw new GradleException('Only unsigned release builds are supported in this project.')
+    }
+}

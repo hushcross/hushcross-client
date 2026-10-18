@@ -1,0 +1,49 @@
+/* Theme colours for the generated line illustrations (assets/illo). Background is transparent. */
+.illo {
+  --illo-ink: var(--text);
+  --illo-muted: color-mix(in srgb, var(--muted) 70%, var(--surface));
+  --illo-accent: var(--accent);
+  --illo-ok: var(--ok);
+  --illo-warm: var(--warn);
+  --illo-rose: var(--mod-give);
+  display: block;
+  transition: opacity var(--dur-2, 200ms) ease-out;
+  width: 120px;
+  height: 120px;
+  flex: none;
+}
+
+.illo svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* The art is filled outlines; a thin screen-space stroke in the same colour thickens the lines
+   without rescaling them. */
+.illo svg use,
+.illo svg path {
+  stroke-width: var(--illo-weight, 1px);
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.sm {
+  --illo-weight: 0.75px;
+  width: 88px;
+  height: 88px;
+}
+
+:global([data-theme='dark']) .illo {
+  --illo-rose: #e889b3;
+}
+
+@media (prefers-color-scheme: dark) {
+  :global(:root:not([data-theme])) .illo {
+    --illo-rose: #e889b3;
+  }
+}
+
+.pending {
+  opacity: 0;
+}

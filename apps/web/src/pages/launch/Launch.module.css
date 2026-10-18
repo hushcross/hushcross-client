@@ -1,0 +1,46 @@
+.cardHead {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+.cardName {
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cardFoot {
+  padding-top: var(--sp-3);
+  border-top: 1px solid var(--line);
+  margin-top: auto;
+}
+
+.outcome {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--sp-4);
+}
+
+.bidRow {
+  flex-wrap: wrap;
+}
+
+.wizardNav {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--sp-2);
+}
+
+.reviewGroup + .reviewGroup {
+  margin-top: var(--sp-4);
+  padding-top: var(--sp-4);
+  border-top: 1px solid var(--line);
+}
+
+.reviewTitle {
+  font-size: var(--fs-14);
+  font-weight: 600;
+  margin-bottom: var(--sp-2);
+}

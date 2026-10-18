@@ -1,0 +1,130 @@
+.logoRow {
+  display: flex;
+  gap: var(--sp-4);
+  align-items: flex-start;
+}
+
+@media (max-width: 480px) {
+  .logoRow {
+    flex-direction: column;
+  }
+}
+
+.preview {
+  position: relative;
+  flex: none;
+}
+
+/* What the 64 px list tile shows: the centre square of the 256 px crop. */
+.cropGuide {
+  position: absolute;
+  inset: 8px;
+  border: 1.5px dashed color-mix(in srgb, var(--surface) 75%, transparent);
+  border-radius: 24%;
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--text) 30%, transparent);
+  pointer-events: none;
+}
+
+.logoControls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  min-width: 0;
+}
+
+.logoLabel {
+  font-size: var(--fs-14);
+  font-weight: 600;
+}
+
+.fileInput {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.logoButtons,
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}
+
+.actions {
+  justify-content: flex-end;
+}
+
+.hint {
+  font-size: var(--fs-12);
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.error {
+  font-size: var(--fs-12);
+  color: var(--danger-text);
+}
+
+.status {
+  min-height: 1.2em;
+  font-size: var(--fs-14);
+  color: var(--muted);
+}
+
+.view {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.description {
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+  line-height: 1.55;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-1) var(--sp-3);
+  border-radius: 999px;
+  border: 1px solid var(--border, color-mix(in srgb, var(--text) 14%, transparent));
+  color: var(--text);
+  text-decoration: none;
+  font-size: var(--fs-14);
+  max-width: 100%;
+}
+
+.link:hover {
+  background: var(--surface-2);
+}
+
+.linkLabel {
+  color: var(--muted);
+}
+
+.linkText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.untrusted {
+  display: flex;
+  gap: var(--sp-2);
+  align-items: center;
+  font-size: var(--fs-12);
+  color: var(--muted);
+}

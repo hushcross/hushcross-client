@@ -1,0 +1,34 @@
+/* Timeline variant: a hairline threads the row icons together. */
+.timeline {
+  position: relative;
+}
+
+.item {
+  position: relative;
+  border-top: 0 !important;
+}
+
+.item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 22px;
+  top: calc(50% + 24px);
+  bottom: calc(-50% + 24px);
+  width: 1px;
+  background: linear-gradient(180deg, var(--hairline-strong), var(--hairline));
+}
+
+.node,
+.plain {
+  position: relative;
+  z-index: 1;
+  display: inline-grid;
+  flex: none;
+  border-radius: 50%;
+}
+
+/* Pending items wear a thin warm ring around their coin. */
+.node[data-status='pending'],
+.plain[data-status='pending'] {
+  box-shadow: 0 0 0 2px var(--surface), 0 0 0 3.5px var(--warn);
+}

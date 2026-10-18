@@ -1,0 +1,52 @@
+{
+  "originalFixedReleaseApacheNotices": [
+    {
+      "name": "filelist",
+      "version": "1.0.6",
+      "repository": "https://github.com/mde/filelist",
+      "commit": "7032f94d04ad905b4f32b92d2278785859e1d55f",
+      "tag": "v1.0.6",
+      "tagManifestVersionMatches": true,
+      "licenseMetadata": "Apache-2.0",
+      "files": [
+        {
+          "path": "third-party/npm-licenses/filelist/1.0.6/LICENSE",
+          "url": "https://raw.githubusercontent.com/mde/filelist/7032f94d04ad905b4f32b92d2278785859e1d55f/LICENSE",
+          "bytes": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "gitBlob": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+        }
+      ],
+      "status": "PINNED_ORIGINAL_TEXT"
+    },
+    {
+      "name": "jake",
+      "version": "10.9.4",
+      "repository": "https://github.com/jakejs/jake",
+      "commit": "28a9960b506d3259dd2f708ea9bc82f615be91b5",
+      "tag": "v10.9.4",
+      "tagManifestVersionMatches": true,
+      "licenseMetadata": "Apache-2.0",
+      "files": [
+        {
+          "path": "third-party/npm-licenses/jake/10.9.4/LICENSE",
+          "url": "https://raw.githubusercontent.com/jakejs/jake/28a9960b506d3259dd2f708ea9bc82f615be91b5/LICENSE",
+          "bytes": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "gitBlob": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+        }
+      ],
+      "status": "PINNED_ORIGINAL_TEXT"
+    }
+  ],
+  "mitDeclarations": [
+    "third-party/npm-licenses/poseidon-lite/0.3.0/LICENSE-DECLARATION.json",
+    "third-party/npm-licenses/tr46/0.0.3/LICENSE-DECLARATION.json",
+    "third-party/npm-licenses/uint8arrays/3.1.1/LICENSE-DECLARATION.json",
+    "third-party/npm-licenses/@napi-rs/lzma-linux-x64-gnu/1.5.1/LICENSE-DECLARATION.json"
+  ],
+  "standardMitTerms": "third-party/license-terms/MIT-SPDX-TEMPLATE.txt",
+  "circomlib": "third-party/circomlib/2.0.5/SOURCE-PROVENANCE.json",
+  "noCopyrightHolderOrYearInvented": true,
+  "noFirstPartyLicenseAppliedToUpstream": true
+}

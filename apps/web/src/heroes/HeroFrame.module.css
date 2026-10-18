@@ -1,0 +1,362 @@
+/* Derived hero palette, shared with the home-page previews. */
+.palette {
+  --hero: var(--hero-base);
+  --hero-soft: color-mix(in srgb, var(--hero) 13%, var(--surface));
+  --hero-wash: color-mix(in srgb, var(--hero) 6%, var(--surface));
+  --ink-2: color-mix(in srgb, var(--text) 58%, var(--surface));
+  --ink-3: color-mix(in srgb, var(--text) 20%, var(--surface));
+}
+
+:global([data-theme='dark']) .palette {
+  /* Module colours are tuned for paper; lift them on ink so strokes read. */
+  --hero: color-mix(in srgb, var(--hero-base) 62%, #ffffff);
+  --hero-soft: color-mix(in srgb, var(--hero) 16%, var(--surface));
+  --hero-wash: color-mix(in srgb, var(--hero) 8%, var(--surface));
+  --ink-3: color-mix(in srgb, var(--text) 24%, var(--surface));
+}
+
+/*
+ * Hero chrome. Wide screens: a caption column beside the stage. Narrower:
+ * title, stage, one live caption and a segmented step track underneath.
+ */
+.hero {
+  composes: palette;
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    'head controls'
+    'stage stage'
+    'caption caption'
+    'steps steps';
+  column-gap: var(--sp-4);
+  row-gap: var(--sp-4);
+  padding: var(--sp-6);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  min-width: 0;
+}
+
+.head {
+  grid-area: head;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--fs-12);
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.kickerDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--hero);
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: var(--fs-28);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+.controls {
+  grid-area: controls;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-1);
+  align-self: start;
+}
+
+.control {
+  display: inline-grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  transition: transform 160ms var(--ease), border-color 160ms var(--ease), background-color 160ms var(--ease);
+}
+
+:global([data-theme='dark']) .control {
+  border-color: color-mix(in srgb, var(--text) 22%, var(--surface));
+}
+
+.control:hover {
+  border-color: var(--muted);
+  background: var(--surface-2);
+}
+
+.control:active {
+  transform: scale(0.92);
+}
+
+.counter {
+  display: none;
+  margin-left: var(--sp-2);
+  font-family: var(--font-mono);
+  font-size: var(--fs-12);
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.stage {
+  grid-area: stage;
+  width: 100%;
+  max-width: 760px;
+  justify-self: center;
+  color: var(--text);
+  border-radius: 18px;
+  background: var(--hero-wash);
+  overflow: hidden;
+}
+
+.stage svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  grid-area: caption;
+  min-height: 2.9em;
+}
+
+.captionText {
+  font-size: var(--fs-16);
+  line-height: 1.4;
+  color: var(--text);
+  text-wrap: pretty;
+}
+
+.steps {
+  grid-area: steps;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stepItem {
+  min-width: 0;
+}
+
+.step {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  margin: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.stepNum,
+.stepText {
+  /* Narrow layout: only the track shows; the live caption carries the words. */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.stepBar {
+  display: block;
+  height: 3px;
+  border-radius: 3px;
+  background: var(--ink-3);
+  overflow: hidden;
+}
+
+.stepFill {
+  display: block;
+  height: 100%;
+  background: var(--hero);
+  transform-origin: left center;
+  will-change: transform;
+}
+
+.stepItem[data-state='done'] .stepFill {
+  background: color-mix(in srgb, var(--hero) 55%, var(--surface));
+}
+
+.step:focus-visible {
+  outline-offset: 2px;
+}
+
+/* Wide: caption column on the left, stage on the right. */
+@media (min-width: 1100px) {
+  .hero {
+    grid-template-columns: minmax(240px, 300px) minmax(0, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      'head stage'
+      'steps stage'
+      'controls stage';
+    column-gap: var(--sp-8);
+    row-gap: var(--sp-6);
+    padding: var(--sp-8);
+  }
+
+  .caption {
+    display: none;
+  }
+
+  .counter {
+    display: inline;
+  }
+
+  .stage {
+    align-self: center;
+  }
+
+  .steps {
+    grid-auto-flow: row;
+    align-content: start;
+    gap: 2px;
+  }
+
+  .step {
+    display: grid;
+    grid-template-columns: 28px minmax(0, 1fr);
+    grid-template-areas:
+      'num text'
+      '. bar';
+    row-gap: 8px;
+    padding: 10px 12px 12px 10px;
+    border-radius: 12px;
+    transition: background-color 200ms var(--ease);
+  }
+
+  .step:hover {
+    background: var(--surface-2);
+  }
+
+  .stepNum,
+  .stepText {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+
+  .stepNum {
+    grid-area: num;
+    font-family: var(--font-mono);
+    font-size: var(--fs-12);
+    color: var(--muted);
+    padding-top: 2px;
+  }
+
+  .stepText {
+    grid-area: text;
+    font-size: var(--fs-14);
+    line-height: 1.4;
+    color: var(--muted);
+    transition: color 220ms var(--ease);
+  }
+
+  .stepBar {
+    grid-area: bar;
+    height: 2px;
+    background: transparent;
+  }
+
+  .stepItem[data-state='active'] .stepBar {
+    background: var(--ink-3);
+  }
+
+  .stepItem[data-state='active'] .stepText {
+    color: var(--text);
+  }
+
+  .stepItem[data-state='active'] .stepNum {
+    color: var(--hero);
+  }
+
+  .stepItem[data-state='done'] .stepFill {
+    transform: scaleX(0) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: var(--sp-4);
+    row-gap: var(--sp-3);
+  }
+
+  .title {
+    font-size: var(--fs-20);
+  }
+
+  .stage {
+    border-radius: 14px;
+  }
+
+  .captionText {
+    font-size: var(--fs-14);
+  }
+}
+
+.placeholder .stage {
+  aspect-ratio: 16 / 9;
+  min-height: 180px;
+}
+
+.placeholderLine {
+  display: block;
+  height: 12px;
+  border-radius: 6px;
+  background: var(--surface-2);
+}
+
+@media (max-width: 600px) {
+  .placeholder .stage {
+    aspect-ratio: 3 / 4;
+  }
+}
+
+.miniPlaceholder {
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  background: var(--surface-2);
+}
+
+.stagePlaceholder {
+  aspect-ratio: 16 / 9;
+  border-radius: 20px;
+  background: var(--surface-2);
+}
+
+@media (max-width: 583px) {
+  .stagePlaceholder {
+    aspect-ratio: 3 / 4;
+  }
+}

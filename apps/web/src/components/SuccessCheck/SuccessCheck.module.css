@@ -1,0 +1,32 @@
+.check {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  --tone: var(--ok);
+}
+
+.accent {
+  --tone: var(--accent);
+}
+
+.give {
+  --tone: var(--mod-give);
+}
+
+.ring {
+  stroke: var(--tone);
+  stroke-width: 2;
+  fill: color-mix(in srgb, var(--tone) 10%, transparent);
+}
+
+.tick {
+  stroke: var(--tone);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ripple {
+  stroke: var(--tone);
+  stroke-width: 1;
+}

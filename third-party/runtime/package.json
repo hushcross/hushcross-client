@@ -1,0 +1,10 @@
+{
+  "name": "hushcross-prover-runtime-restore",
+  "version": "0.0.0",
+  "private": true,
+  "license": "GPL-3.0-or-later",
+  "description": "Optional restore manifest for the pinned upstream prover; upstream grants remain unchanged.",
+  "dependencies": {
+    "snarkjs": "0.7.5"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "rootTemplates": 3,
+  "circomlibSourceFiles": 8,
+  "allStaticIncludesResolveAfterDocumentedMaterialization": true,
+  "edges": [
+    {
+      "from": "third-party/privacy-pools-core/node_modules/circomlib/circuits/aliascheck.circom",
+      "include": "compconstant.circom",
+      "resolved": "third-party/privacy-pools-core/node_modules/circomlib/circuits/compconstant.circom"
+    },
+    {
+      "from": "third-party/privacy-pools-core/node_modules/circomlib/circuits/bitify.circom",
+      "include": "comparators.circom",
+      "resolved": "third-party/privacy-pools-core/node_modules/circomlib/circuits/comparators.circom"
+    },
+    {
+      "from": "third-party/privacy-pools-core/node_modules/circomlib/circuits/bitify.circom",
+      "include": "aliascheck.circom",
+      "resolved": "third-party/privacy-pools-core/node_modules/circomlib/circuits/aliascheck.circom"
+    },
+    {
+      "from": "third-party/privacy-pools-core/node_modules/circomlib/circuits/comparators.circom",
+      "include": "bitify.circom",
+      "resolved": "third-party/privacy-pools-core/node_modules/circomlib/circuits/bitify.circom"
+    },
+    {
+      "from": "third-party/privacy-pools-core/node_modules/circomlib/circuits/comparators.circom",
+      "include": "binsum.circom",
+      "resolved": "third-party/privacy-pools-core/node_modules/circomlib/circuits/binsum.circom"
+    },
+    {
+      "from": "third-party/privacy-pools-core/node_modules/circomlib/circuits/compconstant.circom",
+      "include": "bitify.circom",
+      "resolved": "third-party/privacy-pools-core/node_modules/circomlib/circuits/bitify.circom"
+    },
+    {
+      "from": "third-party/privacy-pools-core/node_modules/circomlib/circuits/poseidon.circom",
+      "include": "./poseidon_constants.circom",
+      "resolved": "third-party/privacy-pools-core/node_modules/circomlib/circuits/poseidon_constants.circom"
+    },
+    {
+      "from": "third-party/privacy-pools-core/packages/circuits/circuits/commitment.circom",
+      "include": "../../../node_modules/circomlib/circuits/poseidon.circom",
+      "resolved": "third-party/privacy-pools-core/node_modules/circomlib/circuits/poseidon.circom"
+    },
+    {
+      "from": "third-party/privacy-pools-core/packages/circuits/circuits/merkleTree.circom",
+      "include": "../../../node_modules/circomlib/circuits/poseidon.circom",
+      "resolved": "third-party/privacy-pools-core/node_modules/circomlib/circuits/poseidon.circom"
+    },
+    {
+      "from": "third-party/privacy-pools-core/packages/circuits/circuits/merkleTree.circom",
+      "include": "../../../node_modules/circomlib/circuits/comparators.circom",
+      "resolved": "third-party/privacy-pools-core/node_modules/circomlib/circuits/comparators.circom"
+    },
+    {
+      "from": "third-party/privacy-pools-core/packages/circuits/circuits/merkleTree.circom",
+      "include": "../../../node_modules/circomlib/circuits/mux1.circom",
+      "resolved": "third-party/privacy-pools-core/node_modules/circomlib/circuits/mux1.circom"
+    },
+    {
+      "from": "third-party/privacy-pools-core/packages/circuits/circuits/withdraw.circom",
+      "include": "./commitment.circom",
+      "resolved": "third-party/privacy-pools-core/packages/circuits/circuits/commitment.circom"
+    },
+    {
+      "from": "third-party/privacy-pools-core/packages/circuits/circuits/withdraw.circom",
+      "include": "./merkleTree.circom",
+      "resolved": "third-party/privacy-pools-core/packages/circuits/circuits/merkleTree.circom"
+    },
+    {
+      "from": "third-party/privacy-pools-core/packages/circuits/circuits/withdraw.circom",
+      "include": "../../../node_modules/circomlib/circuits/comparators.circom",
+      "resolved": "third-party/privacy-pools-core/node_modules/circomlib/circuits/comparators.circom"
+    }
+  ],
+  "sourceExecuted": false
+}

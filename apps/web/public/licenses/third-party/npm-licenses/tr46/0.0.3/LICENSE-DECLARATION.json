@@ -1,0 +1,28 @@
+{
+  "name": "tr46",
+  "version": "0.0.3",
+  "licenseDeclared": "MIT",
+  "npmGitHead": "a8009f9ce80ff5dbe71dd71e203afe4e4c878d28",
+  "repository": "https://github.com/Sebmaster/tr46.js",
+  "npmTarball": "https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz",
+  "npmIntegrity": "sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==",
+  "fixedGitArchive": "https://codeload.github.com/Sebmaster/tr46.js/tar.gz/a8009f9ce80ff5dbe71dd71e203afe4e4c878d28",
+  "gitArchiveSha256": "a8b64c5ed56450b6a6d3e0032112e7c79205feb34cc3696ed9502005750e76a7",
+  "originalStandaloneLicensePresent": false,
+  "originalMetadataFiles": [
+    {
+      "path": "ORIGINAL-PACKAGE.json",
+      "upstreamPath": "package.json",
+      "url": "https://raw.githubusercontent.com/Sebmaster/tr46.js/a8009f9ce80ff5dbe71dd71e203afe4e4c878d28/package.json",
+      "sha256": "615087f58ee138fd35c2b414c355b72e36e5919725b8aecc1c34f6a5585b9779",
+      "gitBlob": "b6826da1f7817f97ad6d307d698ad2004807c40a"
+    }
+  ],
+  "sourceHeadersFound": 0,
+  "sourceLogicNotCopiedOrExecuted": true,
+  "supplementalTerms": "../../../license-terms/MIT-SPDX-TEMPLATE.txt",
+  "copyrightNoticePolicy": "No copyright holder or year has been fabricated. Original metadata and any available original leading source notices are preserved. The standard terms supplement is not an upstream file or a new license grant.",
+  "fixedSourcePackageVersionMatches": true,
+  "sourceHeaderInspectionScope": "Leading comments in the first 4000 characters of fixed-commit root/src JavaScript and TypeScript files; test and dependency trees excluded.",
+  "supplementalTermsArchivePath": "third-party/license-terms/MIT-SPDX-TEMPLATE.txt"
+}

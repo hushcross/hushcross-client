@@ -1,0 +1,120 @@
+{
+  "name": "circomlib",
+  "version": "2.0.5",
+  "repository": {
+    "url": "git+https://github.com/iden3/circomlib.git",
+    "type": "git"
+  },
+  "gitHead": "cff5ab6288b55ef23602221694a6a38a0239dcc0",
+  "metadataLicense": "GPL-3.0",
+  "tarball": "https://registry.npmjs.org/circomlib/-/circomlib-2.0.5.tgz",
+  "integrity": "sha512-O7NQ8OS+J4eshBuoy36z/TwQU0YHw8W3zxZcs4hVwpEll3e4hDm3mgkIPqItN8FDeLEKZFK3YeT/+k8TiLF3/A==",
+  "tarballSha256": "9f80fa85d9c186589998d15e6dcb8ec59a6ed3fe1ec3cb2f753e493d94dd46b6",
+  "integrityMatchesFrozenPrivacyPoolsYarnLock": true,
+  "entryPoints": [
+    "circuits/poseidon.circom",
+    "circuits/comparators.circom",
+    "circuits/mux1.circom"
+  ],
+  "includeEdges": [
+    {
+      "from": "circuits/poseidon.circom",
+      "include": "./poseidon_constants.circom",
+      "to": "circuits/poseidon_constants.circom"
+    },
+    {
+      "from": "circuits/comparators.circom",
+      "include": "bitify.circom",
+      "to": "circuits/bitify.circom"
+    },
+    {
+      "from": "circuits/comparators.circom",
+      "include": "binsum.circom",
+      "to": "circuits/binsum.circom"
+    },
+    {
+      "from": "circuits/bitify.circom",
+      "include": "comparators.circom",
+      "to": "circuits/comparators.circom"
+    },
+    {
+      "from": "circuits/bitify.circom",
+      "include": "aliascheck.circom",
+      "to": "circuits/aliascheck.circom"
+    },
+    {
+      "from": "circuits/aliascheck.circom",
+      "include": "compconstant.circom",
+      "to": "circuits/compconstant.circom"
+    },
+    {
+      "from": "circuits/compconstant.circom",
+      "include": "bitify.circom",
+      "to": "circuits/bitify.circom"
+    }
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1068,
+      "sha256": "303a0a8cddaf133a3fdc39d8058edff775e298f5ec9b53972a6ab914b1eb7520"
+    },
+    {
+      "path": "circuits/aliascheck.circom",
+      "bytes": 995,
+      "sha256": "7df7542461a68c1564a55be8f01d75571c0e2555a08a078abeba43e1ea032eb4"
+    },
+    {
+      "path": "circuits/binsum.circom",
+      "bytes": 2264,
+      "sha256": "8aa153baf5791d96d06dce837c1e19b9ecc3a7dc65054132d5dd189b60bfcfc2"
+    },
+    {
+      "path": "circuits/bitify.circom",
+      "bytes": 2276,
+      "sha256": "688f121303a2dd0154ceeda8d2f53a9d2d26789d10a69a46acd534642725683e"
+    },
+    {
+      "path": "circuits/comparators.circom",
+      "bytes": 2802,
+      "sha256": "fd0c7723ee56e1467df1861131157cbb108e156fe2d9ec64895c8e68de14db20"
+    },
+    {
+      "path": "circuits/compconstant.circom",
+      "bytes": 1823,
+      "sha256": "94c5cc93b589a940acbfecdb98babc2efc253ad4298814399fb41109faa3b50d"
+    },
+    {
+      "path": "circuits/mux1.circom",
+      "bytes": 1254,
+      "sha256": "eaa61d34d40b03a1695212c012f5793c06f6d0db634878a0246249ba12a40922"
+    },
+    {
+      "path": "circuits/poseidon.circom",
+      "bytes": 5165,
+      "sha256": "2582464669b69827164bd08ee0337997e1957f2ab4f00cdd86d533ca5e9d9234"
+    },
+    {
+      "path": "circuits/poseidon_constants.circom",
+      "bytes": 1943473,
+      "sha256": "94c9e4b5ea891ab4d1ba626f1d719f8c661014d9b628f6096c803f75f39e3eee"
+    },
+    {
+      "path": "package.json",
+      "bytes": 640,
+      "sha256": "79ed553f89b67cce3aff5ae30027ce1683cbe8b3f8e822be4354ec25b5d7808a"
+    },
+    {
+      "path": "GPL-3.0-SUPPLEMENT.txt",
+      "bytes": 35141,
+      "sha256": "589ed823e9a84c56feb95ac58e7cf384626b9cbf4fda2a907bc36e103de1bad2"
+    }
+  ],
+  "licenseFiles": [
+    "GPL-3.0-SUPPLEMENT.txt"
+  ],
+  "sourceExecuted": false,
+  "closureComplete": true,
+  "licenseTextStatus": "UPSTREAM_NPM_AND_FIXED_COMMIT_OMIT_STANDALONE_TEXT; canonical GPLv3 supplement, not a replacement grant",
+  "copyrightEvidence": "Original README: 2018 0KIMS association; package.json GPL-3.0; original source comments retained unchanged."
+}

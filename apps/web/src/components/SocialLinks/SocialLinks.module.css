@@ -1,0 +1,114 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-2);
+  border: 0;
+  color: var(--muted-2);
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 160ms var(--ease), color 160ms var(--ease), box-shadow 160ms var(--ease);
+}
+
+.item:hover {
+  color: var(--text);
+}
+
+.item:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.icon:hover {
+  background: var(--surface-2);
+}
+
+.pill {
+  min-height: 36px;
+  padding: 0 var(--sp-4);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  font-size: var(--fs-13);
+  font-weight: 500;
+  color: var(--text);
+}
+
+.pill:hover {
+  box-shadow: inset 0 0 0 1px var(--hairline-strong);
+}
+
+/* X before the account exists: present, but plainly not a link. */
+.soon,
+.soon:hover {
+  cursor: default;
+  color: var(--muted);
+}
+
+.icon.soon {
+  opacity: 0.55;
+}
+
+.icon.soon:hover {
+  background: transparent;
+}
+
+.pill.soon,
+.pill.soon:hover {
+  background: transparent;
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  border: 0;
+}
+
+.soonText {
+  font-size: var(--fs-11);
+  font-weight: 600;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Compact control: the "coming soon" note as a small tooltip on hover or keyboard focus. */
+.icon.soon::after {
+  content: attr(data-tip);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 6px);
+  transform: translate(-50%, 2px);
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: var(--text);
+  color: var(--bg);
+  font-size: var(--fs-11);
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 140ms var(--ease), transform 140ms var(--ease);
+  z-index: 2;
+}
+
+.icon.soon:hover::after,
+.icon.soon:focus-visible::after {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}

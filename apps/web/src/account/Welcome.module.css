@@ -1,0 +1,320 @@
+/* Simple onboarding: a full-screen welcome that sits above the app chrome. */
+.screen {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  overflow-y: auto;
+  background: var(--bg);
+  isolation: isolate;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: var(--sp-16);
+  max-width: 1120px;
+  min-height: 100dvh;
+  margin: 0 auto;
+  padding: var(--sp-12) var(--sp-8);
+}
+
+.brand {
+  position: absolute;
+  top: var(--sp-6);
+  left: var(--sp-8);
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-6);
+  max-width: 460px;
+}
+
+.eyebrow {
+  font-size: var(--fs-11);
+  font-weight: 600;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: var(--fs-72);
+  line-height: 0.96;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+}
+
+.body {
+  color: var(--muted);
+  font-size: var(--fs-16);
+  line-height: 1.6;
+  max-width: 42ch;
+}
+
+.facts {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  margin: 0;
+  padding: var(--sp-4) 0;
+  list-style: none;
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+}
+
+.facts li {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  font-size: var(--fs-14);
+}
+
+.factMark {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--ok-soft);
+  color: var(--ok-text);
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.actionsWrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.secondary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 var(--sp-2);
+}
+
+.fine {
+  font-size: var(--fs-12);
+  color: var(--muted);
+  max-width: 48ch;
+}
+
+/* ---------------------------------------------------------------- art */
+.art {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  width: min(100%, 440px);
+}
+
+.plate {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  aspect-ratio: 1.58;
+  padding: var(--sp-6);
+  border-radius: var(--radius-plate);
+  color: var(--plate-text);
+  background:
+    radial-gradient(120% 140% at 0% 0%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 46%),
+    linear-gradient(135deg, var(--plate-bg-2) 0%, var(--plate-bg) 60%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16), var(--plate-shadow);
+}
+
+/* Engraved-metal texture under the guilloché; drifts slowly so light seems to move across the plate. */
+.sheen {
+  position: absolute;
+  z-index: -2;
+  inset: -12%;
+  background-size: cover;
+  background-position: 70% 50%;
+  opacity: 0.5;
+  mix-blend-mode: screen;
+  mask-image: linear-gradient(105deg, transparent 8%, #000 55%);
+  animation: sheen-drift 22s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@keyframes sheen-drift {
+  from { transform: translate3d(-3%, 1%, 0) scale(1.02); }
+  to { transform: translate3d(3%, -2%, 0) scale(1.08); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sheen { animation: none; }
+}
+
+.rosetteWrap {
+  position: absolute;
+  z-index: -1;
+  right: -26%;
+  top: -30%;
+  width: 92%;
+  aspect-ratio: 1;
+  will-change: transform;
+}
+
+.rosette {
+  width: 100%;
+  height: 100%;
+  color: var(--plate-accent);
+  opacity: 0.32;
+}
+
+.plateTop {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+.mark {
+  color: var(--plate-accent);
+}
+
+.plateLabel {
+  font-size: var(--fs-11);
+  font-weight: 600;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--plate-muted);
+}
+
+.slots {
+  display: flex;
+  gap: var(--sp-3);
+}
+
+.slot {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px dashed rgba(255, 255, 255, 0.18);
+}
+
+.slotCoin {
+  display: block;
+}
+
+.plateFoot {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: var(--fs-13);
+  color: var(--plate-muted);
+}
+
+.plateDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--ok) 70%, #ffffff);
+  box-shadow: 0 0 0 3px rgba(60, 203, 159, 0.18);
+}
+
+/* A paper receipt tucked under the plate (the same pairing as Home). */
+.receipt {
+  width: 88%;
+  height: 34px;
+  margin-top: -14px;
+  border-radius: 0 0 20px 20px;
+  background: var(--surface);
+  border: 1px solid var(--card-border);
+  border-top: 0;
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+    align-content: start;
+    gap: var(--sp-8);
+    padding: calc(var(--sp-16) + var(--sp-2)) var(--sp-4) var(--sp-8);
+  }
+
+  .brand {
+    left: var(--sp-4);
+    top: var(--sp-4);
+  }
+
+  .art {
+    width: min(100%, 360px);
+  }
+
+  .plate {
+    padding: var(--sp-4) var(--sp-6);
+  }
+
+  .copy {
+    max-width: none;
+    gap: var(--sp-4);
+  }
+
+  .title {
+    font-size: 2.875rem;
+  }
+
+  .body {
+    font-size: var(--fs-14);
+  }
+
+  .plate {
+    aspect-ratio: 1.9;
+  }
+
+  .slot {
+    width: 46px;
+    height: 46px;
+  }
+
+  .facts {
+    padding: var(--sp-3) 0;
+    gap: 6px;
+  }
+
+  .facts li {
+    font-size: var(--fs-13);
+  }
+
+  /* Thumb reach: the one-tap action rides at the bottom of the screen. */
+  .actionsSticky {
+    position: sticky;
+    bottom: 0;
+    z-index: 2;
+    margin: 0 calc(-1 * var(--sp-4));
+    padding: var(--sp-6) var(--sp-4) calc(var(--sp-2) + env(safe-area-inset-bottom));
+    background: linear-gradient(180deg, transparent, var(--bg) 28%);
+  }
+
+  .secondary {
+    justify-content: center;
+  }
+}
+
+.fineLink {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.fineLink:hover {
+  color: var(--text);
+}

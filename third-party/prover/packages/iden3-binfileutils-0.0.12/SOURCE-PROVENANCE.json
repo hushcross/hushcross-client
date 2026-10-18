@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "name": "@iden3/binfileutils",
+  "version": "0.0.12",
+  "repository": "https://github.com/iden3/binfileutils",
+  "commit": "7bba9c3af63c9d107364f125902c75644e68cc15",
+  "npmIntegrity": "sha512-naAmzuDufRIcoNfQ1d99d7hGHufLA3wZSibtr4dMe6ZeiOPV1KwOZWTJ1YVz4HbaWlpDuzVU72dS4ATQS4PXBQ==",
+  "licenseMetadata": "GPL-3.0",
+  "licenseFiles": [],
+  "sourceHeadersWithVersion3OrLater": 0,
+  "files": [
+    {
+      "path": ".eslintrc.cjs",
+      "bytes": 544,
+      "gitBlob": "f91f18012898bb34650806f11d8bd3b6949a9674",
+      "url": "https://raw.githubusercontent.com/iden3/binfileutils/7bba9c3af63c9d107364f125902c75644e68cc15/.eslintrc.cjs",
+      "method": "verified_local_npm_copy",
+      "sha256": "0cca271089306217474d44600a4e7e82c480b2c5b90ec9f5987156b9b4f566fa"
+    },
+    {
+      "path": "README.md",
+      "bytes": 238,
+      "gitBlob": "6441dba737c51b2f50e84d71d52242e6dfd8e689",
+      "url": "https://raw.githubusercontent.com/iden3/binfileutils/7bba9c3af63c9d107364f125902c75644e68cc15/README.md",
+      "method": "verified_local_npm_copy",
+      "sha256": "cdc72e2834e54783e038ba092b26ee00016a8aa0bd1b7a3d201fb8ad9ca9d3ba"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 75265,
+      "gitBlob": "7b37c071343a2093bd582ce7bb02039c444937e4",
+      "url": "https://raw.githubusercontent.com/iden3/binfileutils/7bba9c3af63c9d107364f125902c75644e68cc15/package-lock.json",
+      "method": "fixed_upstream_download",
+      "sha256": "638694deb239c8fbbf16732663cd6c780098ffdba58db5245d26eb764c049afc"
+    },
+    {
+      "path": "package.json",
+      "bytes": 755,
+      "gitBlob": "9b1312d141214801666b6b611be792d941df15f6",
+      "url": "https://raw.githubusercontent.com/iden3/binfileutils/7bba9c3af63c9d107364f125902c75644e68cc15/package.json",
+      "method": "verified_local_npm_copy",
+      "sha256": "cd344564fb0bee03eac3529cb9b0f393f1d140cbb5b83fcb6d5bd893bc7cb488"
+    },
+    {
+      "path": "rollup.cjs.config.js",
+      "bytes": 350,
+      "gitBlob": "8d6bf3300317218254571d93417613273c33954f",
+      "url": "https://raw.githubusercontent.com/iden3/binfileutils/7bba9c3af63c9d107364f125902c75644e68cc15/rollup.cjs.config.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "f3d4e4d11b799d1cebf62f41def474fa2bce7015ea6a7775babf545d2657954d"
+    },
+    {
+      "path": "src/binfileutils.js",
+      "bytes": 5115,
+      "gitBlob": "d4a524582a9167c6d9b344cac08be88c5fbb0d60",
+      "url": "https://raw.githubusercontent.com/iden3/binfileutils/7bba9c3af63c9d107364f125902c75644e68cc15/src/binfileutils.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "d9cfc0e3fc03d768b15590bd2b90f16d7fbdebad73fb8142e9fb5f271b0b1e46"
+    }
+  ],
+  "scriptsExecuted": false
+}

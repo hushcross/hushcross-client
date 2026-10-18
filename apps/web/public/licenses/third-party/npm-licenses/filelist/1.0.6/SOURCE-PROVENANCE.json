@@ -1,0 +1,19 @@
+{
+  "name": "filelist",
+  "version": "1.0.6",
+  "repository": "https://github.com/mde/filelist",
+  "commit": "7032f94d04ad905b4f32b92d2278785859e1d55f",
+  "tag": "v1.0.6",
+  "tagManifestVersionMatches": true,
+  "licenseMetadata": "Apache-2.0",
+  "files": [
+    {
+      "path": "third-party/npm-licenses/filelist/1.0.6/LICENSE",
+      "url": "https://raw.githubusercontent.com/mde/filelist/7032f94d04ad905b4f32b92d2278785859e1d55f/LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "gitBlob": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+    }
+  ],
+  "status": "PINNED_ORIGINAL_TEXT"
+}
