@@ -1,0 +1,122 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-6);
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  width: max-content;
+  margin-left: -4px;
+  padding: 0 10px 0 4px;
+  min-height: 32px;
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-13);
+  font-weight: 500;
+  color: var(--muted);
+  text-decoration: none;
+  transition: background-color 160ms var(--ease), color 160ms var(--ease);
+}
+
+.back:hover {
+  color: var(--text);
+  background: var(--surface-2);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--sp-4);
+}
+
+.text {
+  min-width: 0;
+  max-width: 68ch;
+}
+
+/* One eyebrow line for every page: kicker text in tracked small caps, then status chips. */
+.kicker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-2) var(--sp-3);
+  margin-bottom: var(--sp-3);
+  min-height: 24px;
+}
+
+.kickerText {
+  font-size: var(--fs-11);
+  font-weight: 600;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--muted-2);
+}
+
+.badges {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(2.5rem, 1.6rem + 2.4vw, var(--fs-72));
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+
+.subtitle {
+  margin-top: var(--sp-3);
+  max-width: 56ch;
+  color: var(--muted);
+  font-size: var(--fs-16);
+  line-height: 1.55;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}
+
+@media (max-width: 600px) {
+  .header {
+    gap: var(--sp-2);
+    margin-bottom: var(--sp-4);
+  }
+  .title {
+    font-size: 2.375rem;
+  }
+  .subtitle {
+    margin-top: var(--sp-2);
+    font-size: var(--fs-14);
+  }
+  .kicker {
+    margin-bottom: var(--sp-2);
+  }
+}
+
+/* Titles settle in on page entry; transform + opacity only. */
+.text {
+  animation: header-in 520ms var(--ease) both;
+}
+
+.actions {
+  animation: header-in 520ms var(--ease) 70ms both;
+}
+
+@keyframes header-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}

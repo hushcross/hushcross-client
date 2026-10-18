@@ -1,0 +1,227 @@
+.pairBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--sp-4);
+}
+
+.refPrice {
+  font-family: var(--font-serif);
+  font-size: var(--fs-28);
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+.epochHead {
+  display: flex;
+  gap: var(--sp-8);
+}
+
+.side {
+  display: inline-grid;
+  place-items: center;
+  min-width: 48px;
+  height: 28px;
+  padding: 0 var(--sp-2);
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-12);
+  font-weight: 600;
+  flex: none;
+}
+
+.buy {
+  background: var(--ok-soft);
+  color: var(--ok-text);
+}
+
+.sell {
+  background: var(--danger-soft);
+  color: var(--danger-text);
+}
+
+.tableWrap {
+  overflow-x: auto;
+  margin: 0 calc(-1 * var(--sp-2));
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--fs-14);
+}
+
+.table th {
+  text-align: left;
+  font-weight: 500;
+  font-size: var(--fs-12);
+  color: var(--muted);
+  padding: var(--sp-2);
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+}
+
+.table td {
+  padding: var(--sp-3) var(--sp-2);
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.table tr:last-child td {
+  border-bottom: 0;
+}
+
+.time {
+  display: block;
+  font-size: var(--fs-12);
+  color: var(--muted);
+}
+
+/* Batch history chart. */
+.chart {
+  margin: 0 0 var(--sp-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.chartStage {
+  width: 100%;
+  min-width: 0;
+}
+
+.chartStage svg {
+  display: block;
+  overflow: visible;
+}
+
+.chartBand {
+  fill: color-mix(in srgb, var(--mod-book) 9%, transparent);
+}
+
+.chartRef {
+  stroke: var(--muted);
+  stroke-width: 1;
+  stroke-dasharray: 3 4;
+}
+
+.chartRefLabel {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  fill: var(--text);
+}
+
+.chartAxis {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  fill: var(--muted);
+}
+
+.chartBase {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+
+.chartVol {
+  fill: color-mix(in srgb, var(--mod-book) 34%, var(--surface));
+}
+
+.chartMiss path {
+  stroke: var(--muted);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+}
+
+.chartLine {
+  fill: none;
+  stroke: var(--mod-book);
+  stroke-width: 1.75;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+:global([data-theme='dark']) .chartLine {
+  stroke: color-mix(in srgb, var(--mod-book) 62%, #ffffff);
+}
+
+.chartDot {
+  fill: var(--surface);
+  stroke: var(--mod-book);
+  stroke-width: 1.5;
+}
+
+.chartDotLast {
+  fill: var(--mod-book);
+  stroke: var(--surface);
+  stroke-width: 2;
+}
+
+.chartLegend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2) var(--sp-4);
+  font-size: var(--fs-12);
+  color: var(--muted);
+}
+
+.chartLegend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legendLine,
+.legendBand,
+.legendVol {
+  display: inline-block;
+  width: 14px;
+  height: 8px;
+  border-radius: 2px;
+}
+
+.legendLine {
+  height: 2px;
+  background: var(--mod-book);
+}
+
+.legendBand {
+  background: color-mix(in srgb, var(--mod-book) 14%, transparent);
+}
+
+.legendVol {
+  width: 6px;
+  height: 10px;
+  background: color-mix(in srgb, var(--mod-book) 34%, var(--surface));
+}
+
+.num {
+  text-align: right !important;
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.orderEnd {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--sp-2);
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .optional {
+    display: none;
+  }
+
+  .orderRow {
+    flex-wrap: wrap;
+  }
+
+  .orderEnd {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 0;
+  }
+}

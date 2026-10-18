@@ -1,0 +1,50 @@
+{
+  "name": "@napi-rs/lzma-linux-x64-gnu",
+  "version": "1.5.1",
+  "license": "MIT",
+  "repository": {
+    "url": "git+https://github.com/Brooooooklyn/lzma.git",
+    "type": "git"
+  },
+  "gitHead": "f164df92d83e095f195d628b1a68a141ae2eb638",
+  "integrity": "sha512-oTXEIha4SsuXdTA4Iyskj0kpdx2yVXdhd75c2v3xGrHFfVMsbhTPZU/nMPL4sWKo4pBHm3aucLaqGlF696dTyQ==",
+  "resolved": "https://registry.npmjs.org/@napi-rs/lzma-linux-x64-gnu/-/lzma-linux-x64-gnu-1.5.1.tgz",
+  "tarballSha256": "e69ca2a96510be330953f5b04b1d74617e7ce5d4487db4876c4b02b8364ef7e7",
+  "licenseFiles": [],
+  "scopes": [
+    "build"
+  ],
+  "locations": [
+    "node_modules/@napi-rs/lzma-linux-x64-gnu"
+  ],
+  "installedOnCurrentHost": false,
+  "noticeStatus": "DECLARED_MIT_ORIGINAL_METADATA_PRESERVED_STANDARD_TERMS_SUPPLEMENT",
+  "binaryCopiedOrExecuted": false,
+  "originalStandaloneTextAbsent": true,
+  "declarationPath": "third-party/npm-licenses/@napi-rs/lzma-linux-x64-gnu/1.5.1/LICENSE-DECLARATION.json",
+  "supplementalTerms": "third-party/license-terms/MIT-SPDX-TEMPLATE.txt",
+  "gitArchiveSha256": "47259ecff2db4931dd43ff75409ee94b732aedcf7756e1a69191646e51794fd7",
+  "originalMetadataFiles": [
+    {
+      "path": "ORIGINAL-Cargo.toml",
+      "upstreamPath": "Cargo.toml",
+      "source": "https://raw.githubusercontent.com/Brooooooklyn/lzma/f164df92d83e095f195d628b1a68a141ae2eb638/Cargo.toml",
+      "sha256": "110bcfef619a18f4b534f9c5842d0d2d3ef94ee5917baa650af8b3dc7b052e36"
+    },
+    {
+      "path": "ORIGINAL-README.md",
+      "upstreamPath": "README.md",
+      "source": "https://raw.githubusercontent.com/Brooooooklyn/lzma/f164df92d83e095f195d628b1a68a141ae2eb638/README.md",
+      "sha256": "8ac9f0bd54ddc0e127b15586fd2bd97840bd31bfef6f4e56a69692ec23b9030d"
+    },
+    {
+      "path": "ORIGINAL-package.json",
+      "upstreamPath": "package.json",
+      "source": "https://raw.githubusercontent.com/Brooooooklyn/lzma/f164df92d83e095f195d628b1a68a141ae2eb638/package.json",
+      "sha256": "911d4ef16447077d3edea738876b5e9ec2afc2723108bf0dc8dd5120e63438f0"
+    }
+  ],
+  "sourceHeadersFound": 0,
+  "sourceHeaderInspectionScope": "Leading comments in fixed-commit src JavaScript, TypeScript and Rust; no generated platform binary read or copied.",
+  "copyrightNoticePolicy": "No author/year invented. Fixed npm metadata declares MIT; available original root metadata and source notices retained, with clearly marked standard terms supplement."
+}

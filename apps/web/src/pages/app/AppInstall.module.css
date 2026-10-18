@@ -1,0 +1,15 @@
+.page { display: grid; gap: 24px; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 24px; }
+.body { color: var(--text); line-height: 1.7; margin: 0 0 16px; }
+.note { color: var(--muted); line-height: 1.65; font-size: 14px; margin: 0 0 16px; }
+.demo { display: flex; align-items: flex-start; gap: 10px; color: var(--muted); border-bottom: 1px solid var(--hairline); padding: 0 0 20px; margin: 0; line-height: 1.6; }
+.demo svg { flex: 0 0 auto; margin-top: 3px; }
+.iosSteps { padding-left: 20px; color: var(--muted); line-height: 1.65; margin: 0; }
+.iosSteps li + li { margin-top: 10px; }
+@media (max-width: 720px) { .grid { grid-template-columns: 1fr; gap: 16px; } }
+
+.releaseMeta { margin: 20px 0 0; display: grid; gap: 12px; font-size: 13px; line-height: 1.6; }
+.releaseMeta div { min-width: 0; }
+.releaseMeta dt { color: var(--muted); }
+.releaseMeta dd { margin: 2px 0 0; color: var(--text); overflow-wrap: anywhere; }
+.releaseMeta code { font-size: 12px; }

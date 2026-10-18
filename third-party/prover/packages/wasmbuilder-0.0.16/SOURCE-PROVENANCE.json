@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "name": "wasmbuilder",
+  "version": "0.0.16",
+  "repository": "https://github.com/iden3/wasmbuilder",
+  "commit": "4559b305877dccccec8fb3f83559a15b157895c7",
+  "npmIntegrity": "sha512-Qx3lEFqaVvp1cEYW7Bfi+ebRJrOiwz2Ieu7ZG2l7YyeSJIok/reEQCQCuicj/Y32ITIJuGIM9xZQppGx5LrQdA==",
+  "licenseMetadata": "GPL-3.0",
+  "licenseFiles": [
+    "COPYING"
+  ],
+  "sourceHeadersWithVersion3OrLater": 8,
+  "files": [
+    {
+      "path": ".eslintrc.cjs",
+      "bytes": 706,
+      "gitBlob": "a81a8d1c7cf14218dd5c4332c1f98081094da33e",
+      "url": "https://raw.githubusercontent.com/iden3/wasmbuilder/4559b305877dccccec8fb3f83559a15b157895c7/.eslintrc.cjs",
+      "method": "verified_local_npm_copy",
+      "sha256": "b00c77f0b7cc36b5ae2ad214ab5f22c98de62808b65fefb27d7d13b63966b132"
+    },
+    {
+      "path": "COPYING",
+      "bytes": 35141,
+      "gitBlob": "9cecc1d4669ee8af2ca727a5d8cde10cd8b2d7cc",
+      "url": "https://raw.githubusercontent.com/iden3/wasmbuilder/4559b305877dccccec8fb3f83559a15b157895c7/COPYING",
+      "method": "verified_local_npm_copy",
+      "sha256": "589ed823e9a84c56feb95ac58e7cf384626b9cbf4fda2a907bc36e103de1bad2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 243,
+      "gitBlob": "f05772f3ba605701e7b5cca4de729566d9288530",
+      "url": "https://raw.githubusercontent.com/iden3/wasmbuilder/4559b305877dccccec8fb3f83559a15b157895c7/README.md",
+      "method": "verified_local_npm_copy",
+      "sha256": "b05a6cfac7760a05146cd77efd795795090ea4f2d418593e605d71cf10530569"
+    },
+    {
+      "path": "main.js",
+      "bytes": 908,
+      "gitBlob": "35b2a9867202505166515a369f7dbe187836ed06",
+      "url": "https://raw.githubusercontent.com/iden3/wasmbuilder/4559b305877dccccec8fb3f83559a15b157895c7/main.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "5b1c847bff5a126919f4d71402f34a5339e2d76489b2c71c5ea081ed59f765fa"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 124113,
+      "gitBlob": "0e07024e203c16d21e87e23f9f94e6f9c7c1beee",
+      "url": "https://raw.githubusercontent.com/iden3/wasmbuilder/4559b305877dccccec8fb3f83559a15b157895c7/package-lock.json",
+      "method": "fixed_upstream_download",
+      "sha256": "b4d7b0622aef7dc6b0edc543caa33c1df2487acb50b393133359bc08ee5f1b51"
+    },
+    {
+      "path": "package.json",
+      "bytes": 775,
+      "gitBlob": "7bfbb6a63420475fac38c57fe38811e513690480",
+      "url": "https://raw.githubusercontent.com/iden3/wasmbuilder/4559b305877dccccec8fb3f83559a15b157895c7/package.json",
+      "method": "verified_local_npm_copy",
+      "sha256": "3650f7cb34c91fc4ab878e49a634d7fbf55106addaae2e8a6fb1562b33b939d2"
+    },
+    {
+      "path": "rollup.cjs.config.js",
+      "bytes": 338,
+      "gitBlob": "8e427472c5b773c2f0c52b87d043c6c75ac9c1a2",
+      "url": "https://raw.githubusercontent.com/iden3/wasmbuilder/4559b305877dccccec8fb3f83559a15b157895c7/rollup.cjs.config.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "53c6064b909a982d785f39dec35004b6a126c7cd6e73cbfdd51da0ffd624f35f"
+    },
+    {
+      "path": "src/codebuilder.js",
+      "bytes": 14086,
+      "gitBlob": "c21b9478d43e3f9581107fa65055281b513a270b",
+      "url": "https://raw.githubusercontent.com/iden3/wasmbuilder/4559b305877dccccec8fb3f83559a15b157895c7/src/codebuilder.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "bf62e37bb93db86d87fba79ba6da51e842a9c5f2caf00449cd4db4033039f038"
+    },
+    {
+      "path": "src/codebuilder_wat.js",
+      "bytes": 10348,
+      "gitBlob": "276cc234fe5d53465531b8ba3714a4983651029f",
+      "url": "https://raw.githubusercontent.com/iden3/wasmbuilder/4559b305877dccccec8fb3f83559a15b157895c7/src/codebuilder_wat.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "80b17c23f1843a6c362d11b781c5bbb04fc58f1baf5e2db6ee99ba5f4be5695f"
+    },
+    {
+      "path": "src/functionbuilder.js",
+      "bytes": 3416,
+      "gitBlob": "366eb2db8ba2c1abbcefb7dfe01aa6962a469548",
+      "url": "https://raw.githubusercontent.com/iden3/wasmbuilder/4559b305877dccccec8fb3f83559a15b157895c7/src/functionbuilder.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "cbf9fb26d956d5ff38e715230df33b739154aca4dd69785cbbb85a94c551ee10"
+    },
+    {
+      "path": "src/functionbuilder_wat.js",
+      "bytes": 4252,
+      "gitBlob": "83cd4e52869b10a46cb00e1870aacc79f300ba46",
+      "url": "https://raw.githubusercontent.com/iden3/wasmbuilder/4559b305877dccccec8fb3f83559a15b157895c7/src/functionbuilder_wat.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "d800dadfcccc6ae8ce45bdfc99a5c8dff07cc21895f6ecf3e74741d3e2b22d75"
+    },
+    {
+      "path": "src/modulebuilder.js",
+      "bytes": 9377,
+      "gitBlob": "0b9e98d28afce7bc5b6ff56f53d741b259a4205a",
+      "url": "https://raw.githubusercontent.com/iden3/wasmbuilder/4559b305877dccccec8fb3f83559a15b157895c7/src/modulebuilder.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "eec8540d92f355f344b8b8e5cea9dcfad6be57ae908ca6f96fa479223ef88d5b"
+    },
+    {
+      "path": "src/modulebuilder_wat.js",
+      "bytes": 7892,
+      "gitBlob": "238fdce47c375369c302282ed6a85f9130532dab",
+      "url": "https://raw.githubusercontent.com/iden3/wasmbuilder/4559b305877dccccec8fb3f83559a15b157895c7/src/modulebuilder_wat.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "6a57b38c446d5cdcb6c4dc5a63d5f29b9fef360c55426a016d2dbbb4b846a9b8"
+    },
+    {
+      "path": "src/protoboard.js",
+      "bytes": 5387,
+      "gitBlob": "57bdc3ab009e7619e4708aa5dfa4d64ecaa82bcc",
+      "url": "https://raw.githubusercontent.com/iden3/wasmbuilder/4559b305877dccccec8fb3f83559a15b157895c7/src/protoboard.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "5daaaaf486af21cdd0f6265deca191d22b68f9126aed125e4f78dd21d0876949"
+    },
+    {
+      "path": "src/utils.js",
+      "bytes": 5299,
+      "gitBlob": "0513c27e5c8d005be31dcdc59be2799d056736aa",
+      "url": "https://raw.githubusercontent.com/iden3/wasmbuilder/4559b305877dccccec8fb3f83559a15b157895c7/src/utils.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "a6e5c30d64c8507acf5c3684750e1624d8623be1cf7a144729310b19e02af11e"
+    }
+  ],
+  "scriptsExecuted": false
+}

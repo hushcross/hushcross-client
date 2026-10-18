@@ -1,0 +1,49 @@
+.tile {
+  display: grid;
+  place-items: center;
+  flex: none;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 28%;
+  border: 1px solid color-mix(in srgb, var(--text) 10%, transparent);
+  background: var(--surface);
+}
+
+.monogram {
+  font-weight: 650;
+  letter-spacing: 0.02em;
+  color: hsl(var(--hue) var(--chroma) 26%);
+  background: linear-gradient(145deg, hsl(var(--hue) var(--chroma) 92%), hsl(var(--hue) var(--chroma) 82%));
+  border-color: hsl(var(--hue) var(--chroma) 70% / 0.6);
+  user-select: none;
+}
+
+:global([data-theme='dark']) .monogram {
+  color: hsl(var(--hue) var(--chroma) 86%);
+  background: linear-gradient(145deg, hsl(var(--hue) var(--chroma) 24%), hsl(var(--hue) var(--chroma) 16%));
+  border-color: hsl(var(--hue) var(--chroma) 40% / 0.6);
+}
+
+.sm {
+  width: 32px;
+  height: 32px;
+  font-size: 12px;
+}
+
+.md {
+  width: 40px;
+  height: 40px;
+  font-size: var(--fs-14, 14px);
+}
+
+.lg {
+  width: 56px;
+  height: 56px;
+  font-size: 18px;
+}
+
+.xl {
+  width: 96px;
+  height: 96px;
+  font-size: 30px;
+}

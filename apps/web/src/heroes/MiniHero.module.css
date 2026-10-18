@@ -1,0 +1,14 @@
+.mini {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  background: var(--hero-wash);
+  color: var(--text);
+  overflow: hidden;
+}
+
+.mini svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

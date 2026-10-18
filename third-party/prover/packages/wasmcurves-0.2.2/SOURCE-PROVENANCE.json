@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "name": "wasmcurves",
+  "version": "0.2.2",
+  "repository": "https://github.com/iden3/wasmcurves",
+  "commit": "61d5b0d3d62a035d6af6d34e827b237b475c94c3",
+  "npmIntegrity": "sha512-JRY908NkmKjFl4ytnTu5ED6AwPD+8VJ9oc94kdq7h5bIwbj0L4TDJ69mG+2aLs2SoCmGfqIesMWTEJjtYsoQXQ==",
+  "licenseMetadata": "GPL-3.0",
+  "licenseFiles": [
+    "COPYING"
+  ],
+  "sourceHeadersWithVersion3OrLater": 20,
+  "files": [
+    {
+      "path": ".eslintignore",
+      "bytes": 14,
+      "gitBlob": "3515553ad5f5934e66eba82d2650253dc7d7b4e0",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/.eslintignore",
+      "method": "verified_local_npm_copy",
+      "sha256": "38d817b026ab94b86d8d1f184235c37dc4d66cb0fa80fbcafe8d75881ad79579"
+    },
+    {
+      "path": ".eslintrc.js",
+      "bytes": 588,
+      "gitBlob": "ec4e99d2e818d05bc8ee514a30145005c3c17f7b",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/.eslintrc.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "309149567994c6f32a2b9488cdb2936daab5cd54c7795f128b83a18dddad0883"
+    },
+    {
+      "path": "COPYING",
+      "bytes": 35130,
+      "gitBlob": "9dc9bca8666f26b6242ddfb3f4cf46db6248a2a4",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/COPYING",
+      "method": "verified_local_npm_copy",
+      "sha256": "d95c74a62d14f13ebfbc8c1783c315e2ed2389e80048b264bdeddb8114dee945"
+    },
+    {
+      "path": "README.md",
+      "bytes": 392,
+      "gitBlob": "125493baf6b170483d1e8568d50ba3d9b3344a92",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/README.md",
+      "method": "verified_local_npm_copy",
+      "sha256": "d1ddb3e723d72bcdc1425761465bf60d16ae65f5fa99d37842331b358baa5818"
+    },
+    {
+      "path": "index.js",
+      "bytes": 1235,
+      "gitBlob": "a5461b9eb0fe88717040304bbe0131c26f52998c",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/index.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "01700d3c06016a5894623c935e5eaf884f124780bac879b42f245c6298393162"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 106359,
+      "gitBlob": "7e35d9875a54e451459e6e898358516562a607ff",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/package-lock.json",
+      "method": "fixed_upstream_download",
+      "sha256": "8c1b1ca7c1ed213df3db737333c4965e60734ace11f147c267381ccd6b92699b"
+    },
+    {
+      "path": "package.json",
+      "bytes": 800,
+      "gitBlob": "9b5726e418d578d157ed4bf707f2468be5a878cf",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/package.json",
+      "method": "verified_local_npm_copy",
+      "sha256": "9b26e1a9536c3073d126c43a3649f4c780f83a6711a9c0477d70ed48778c6e79"
+    },
+    {
+      "path": "src/bigint.js",
+      "bytes": 3737,
+      "gitBlob": "b9c2ef6ea819c4a8a7250fe653df98caae18e002",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/bigint.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "1dbed2b98b1d029b099d00bd8490a7e498cebd95c23f3325a2a8a86b28e32413"
+    },
+    {
+      "path": "src/bls12381/build_bls12381.js",
+      "bytes": 59008,
+      "gitBlob": "e224d9eedabbb43b09ce8e5f6e5596c9a77ab1f5",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/bls12381/build_bls12381.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "a5b6a8ff8d98da5c21d4f5422c764ae566c2fdae62b019f04cff1dcfe4aefb73"
+    },
+    {
+      "path": "src/bn128/build_bn128.js",
+      "bytes": 54128,
+      "gitBlob": "0c5f29774ff390258ef517ef91202ebc45d08984",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/bn128/build_bn128.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "c6f15f33e2ea9a66b199d0728915d1cdb91fc1f33e7bdf52459978d26f79578d"
+    },
+    {
+      "path": "src/build_applykey.js",
+      "bytes": 2338,
+      "gitBlob": "2cc3ef340aa3ebd43c88c1badb388e7081af3de8",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/build_applykey.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "5d9648afe3a6abb18e4f3ec80ee3b51a56707b7441d683372adbbe7fc34fabdc"
+    },
+    {
+      "path": "src/build_batchconvertion.js",
+      "bytes": 2652,
+      "gitBlob": "b4e81a149d922b0ec869230a547344239d768c7b",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/build_batchconvertion.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "41179bbd5057530853fa79a4690bb3b717df5c3bfb25a6ae4062e604b5a5791c"
+    },
+    {
+      "path": "src/build_batchinverse.js",
+      "bytes": 4531,
+      "gitBlob": "71c821455e4394a70b8599e468af5b07c23b6f54",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/build_batchinverse.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "23ed28abc6ff228337c71aa1782f1420d7d98797c648d42df686f84785ea2380"
+    },
+    {
+      "path": "src/build_batchop.js",
+      "bytes": 3381,
+      "gitBlob": "f593a65555e4f829aa6eb8410e3f33508c0a0d29",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/build_batchop.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "0e7aceb8a44d3d3345d9aed6eee429bae129728b7139d1fc14be512a34971db5"
+    },
+    {
+      "path": "src/build_curve_jacobian_a0.js",
+      "bytes": 50988,
+      "gitBlob": "79720ac1e0023937e6223b3a647b3b72c015d873",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/build_curve_jacobian_a0.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "b311b202ef10ed8cba6c75bb680c39b4ecc73fd5b123913e4122fac005cc5603"
+    },
+    {
+      "path": "src/build_curve_projective.js",
+      "bytes": 21782,
+      "gitBlob": "6c4c9796f905f4f6513a16f5163f3a7867e85845",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/build_curve_projective.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "a4634ad940d4194a85e1e13da8ccca5ca358839ee756cbf3f842b8e66490e71a"
+    },
+    {
+      "path": "src/build_f1.js",
+      "bytes": 3646,
+      "gitBlob": "79db94288af352fface4079d17ae7c7dda3d621d",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/build_f1.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "4bbe71121b924e7e77a23d2e888a3113036f3b520a541c8aba99f526746c20fc"
+    },
+    {
+      "path": "src/build_f1m.js",
+      "bytes": 33303,
+      "gitBlob": "338cb3386a2d9f2c57e2d75d7978d993bdd2f31e",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/build_f1m.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "760b60074c0f4e1bb833a01287813b218331987a05a6f5ffac1ce34b21f350d8"
+    },
+    {
+      "path": "src/build_f2m.js",
+      "bytes": 19926,
+      "gitBlob": "b407d6e66625326d59706c5baa1022b47d2b7fac",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/build_f2m.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "d6e418c30f291610befdace1b43766775a56416f1daabd3d5604462de8717926"
+    },
+    {
+      "path": "src/build_f3m.js",
+      "bytes": 19697,
+      "gitBlob": "08e10f200d72ad88407c0b8d3764d2ed46c34b44",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/build_f3m.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "2cd7bd0c113b1be96af4a42b4342b33b080d809ba931fcab4de11b9f35c2b0be"
+    },
+    {
+      "path": "src/build_fft.js",
+      "bytes": 41007,
+      "gitBlob": "88a0a3e728c224e990cd69f2438fdaa779c659ef",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/build_fft.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "f4a51ccd9e4f27ca469692322346f4a0674387222cbda0312159f1062c3ca958"
+    },
+    {
+      "path": "src/build_int.js",
+      "bytes": 30574,
+      "gitBlob": "89e4b3b60edbcd56fc901528d1fd9e1989c95842",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/build_int.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "9890602f9d7645117b07dd08f54f4373ba6b8a8424550c036e27ec9fd6d9ad3a"
+    },
+    {
+      "path": "src/build_mem.js",
+      "bytes": 4295,
+      "gitBlob": "d0cf98b3a7e22ba57aec116130fa799858de92ed",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/build_mem.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "e369610e0fd004d68207c2c781cdd2b0ba3f712dac2c9e5cd542b9eec48899c5"
+    },
+    {
+      "path": "src/build_mulacc.js",
+      "bytes": 5905,
+      "gitBlob": "fd3b0c7c9192a7a183321ac25c043b8ccd98eadd",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/build_mulacc.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "b5dd6cf721ac217c082ede12ed025509047d08fb3d89dc3285d49ece9d8b3283"
+    },
+    {
+      "path": "src/build_multiexp.js",
+      "bytes": 15189,
+      "gitBlob": "2fbbca0c7c09e1293e19557d9965d9891718c005",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/build_multiexp.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "374e948083e177c0b81140e78d6b539c40f6ba1b652d4d5f93cc4a8a83bf336e"
+    },
+    {
+      "path": "src/build_pedersenhash.js",
+      "bytes": 9973,
+      "gitBlob": "05fd5ec0396365d8623c876ffa37ef765da2eaa5",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/build_pedersenhash.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "50643244ab65616cde7221f3afec922817f8913c7ead4a011c51e8d4bd5af643"
+    },
+    {
+      "path": "src/build_pol.js",
+      "bytes": 4822,
+      "gitBlob": "938ee6ca2e22b5c03cc7111e1db4d1892b4b4a94",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/build_pol.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "30ba698039988a1c4908567b575b57eaf4dc0c2ec5c7f242f43efa05063f6548"
+    },
+    {
+      "path": "src/build_qap.js",
+      "bytes": 11098,
+      "gitBlob": "a8c20cfc008307ed774fd858002df86bdefc088b",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/build_qap.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "7e09d2ee04f327772d67d28a63dcb32fe653b6d8f66496a9da3ca56e1dc5f069"
+    },
+    {
+      "path": "src/build_test.js",
+      "bytes": 1227,
+      "gitBlob": "6d078d9ea4db26304229a769dbd186bef029d6f9",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/build_test.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "f2f814e25c5578ff51c9cdf8ad80081f046d4e6bdd755bb0f6d70575dbf4e2e8"
+    },
+    {
+      "path": "src/build_testf1.js",
+      "bytes": 1512,
+      "gitBlob": "dc3edea26870cf47351d95e5899dad62f51af9dd",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/build_testf1.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "1b6f4a3a0d312b371859c3cd90dba12273bbf35c80c9d85da80f8eab521d89e5"
+    },
+    {
+      "path": "src/build_testg1.js",
+      "bytes": 1524,
+      "gitBlob": "74921c49f895193897a6a24526d7d02c20913e95",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/build_testg1.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "82f48ac62951841d1da6150584d3bdbdcc003123b813b04ce2db7761f3505fed"
+    },
+    {
+      "path": "src/build_timesscalar.js",
+      "bytes": 2707,
+      "gitBlob": "48f6fec00ba91081d301ca9225e37730cb4836e0",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/build_timesscalar.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "796d425eb5a8e6df2ea955544975db74914053616d00acbe2a21be5a5e6d2362"
+    },
+    {
+      "path": "src/build_timesscalarnaf.js",
+      "bytes": 7375,
+      "gitBlob": "868b825e6f967159fd9a47431d6b098c077c7567",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/build_timesscalarnaf.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "7c9dbcb7174a044862a7ad386153113e24085aa0413ddf40fc12368dcab1e3a7"
+    },
+    {
+      "path": "src/build_tomcook.js",
+      "bytes": 16971,
+      "gitBlob": "ab1f6b0e37b745f3558a1d55f66f7d870a3d5dac",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/build_tomcook.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "229dcd38f77c0cb63e1bf7f369b486e512a618d9e4ad464d9a0c1979bdae58ce"
+    },
+    {
+      "path": "src/f1.js",
+      "bytes": 4011,
+      "gitBlob": "b77dd297523640ddc277ebe79c16444bd96b46bd",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/f1.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "f568426fca39dce225f2283d5f52def978ceb9c8b0c79c0c6cae04234833754a"
+    },
+    {
+      "path": "src/mnt6753/build_mnt6753.js",
+      "bytes": 61362,
+      "gitBlob": "7bf069199196bb4add7fd9e771b88713a661f7ea",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/mnt6753/build_mnt6753.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "3fe23f0427616efdbe46360c3449e4114df58f56329a9e8c95d82d000bedba20"
+    },
+    {
+      "path": "src/utils.js",
+      "bytes": 1478,
+      "gitBlob": "a3ac5b9c93703f64bbc975146acedb6501f2cd65",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/src/utils.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "1da17413512b2fa2b6c05df25839466441aa583a27fd2bf71ce28a62d7615958"
+    },
+    {
+      "path": "tools/buildpedersentablebases_mnt6753.js",
+      "bytes": 7097,
+      "gitBlob": "1ae390c10f1936196a131f17df2b217f4a8c8517",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/tools/buildpedersentablebases_mnt6753.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "dd7be940e0ed233a7823281e6e5d92caf4d60fbf2f22deb4fcf32ef33b1ee32b"
+    },
+    {
+      "path": "tools/buildwasm_bls12381.js",
+      "bytes": 1627,
+      "gitBlob": "77513d675346c7a752a9f7f1ef945b29303ac0cc",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/tools/buildwasm_bls12381.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "adb7defe6f347f696362aff37da18ebcb1038da0d3c2e371c136ce4338368f74"
+    },
+    {
+      "path": "tools/buildwasm_bn128.js",
+      "bytes": 1576,
+      "gitBlob": "1a00069180317ab6aecd47c047b9301239b55192",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/tools/buildwasm_bn128.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "2ce6cb5ec780d33731f1c1f1d4b0457195e6ef72898c0f17915cdcac899bc290"
+    },
+    {
+      "path": "tools/buildwasm_mnt6753.js",
+      "bytes": 1397,
+      "gitBlob": "b38d1be0c0cefe53004bc50642a10983364211cf",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/tools/buildwasm_mnt6753.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "41e51b98ffcb7e453a2d4b2568bf0d93f82ccb06a841b4550b97f87ca54b0005"
+    },
+    {
+      "path": "build/pedersenparams_mnt6753.js",
+      "bytes": 12410,
+      "gitBlob": "525e7f9c213491d7a5fa06ecf8669e7b4f73b85b",
+      "url": "https://raw.githubusercontent.com/iden3/wasmcurves/61d5b0d3d62a035d6af6d34e827b237b475c94c3/build/pedersenparams_mnt6753.js",
+      "method": "verified_local_npm_copy",
+      "purpose": "generated build input; generator tools/buildpedersentablebases_mnt6753.js is also supplied",
+      "sha256": "25236f3365eaa706d4c132377e3ba7758b78b40841d8befd9e5252e82f69e66d"
+    }
+  ],
+  "scriptsExecuted": false
+}

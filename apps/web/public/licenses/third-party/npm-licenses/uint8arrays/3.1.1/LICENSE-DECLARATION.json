@@ -1,0 +1,35 @@
+{
+  "name": "uint8arrays",
+  "version": "3.1.1",
+  "licenseDeclared": "MIT",
+  "npmGitHead": "66c931a497c598bfaff46d09b6ddd061b6c91a08",
+  "repository": "https://github.com/achingbrain/uint8arrays",
+  "npmTarball": "https://registry.npmjs.org/uint8arrays/-/uint8arrays-3.1.1.tgz",
+  "npmIntegrity": "sha512-+QJa8QRnbdXVpHYjLoTpJIdCTiw9Ir62nocClWuXIq2JIh4Uta0cQsTSpFL678p2CN8B+XSApwcU+pQEqVpKWg==",
+  "fixedGitArchive": "https://codeload.github.com/achingbrain/uint8arrays/tar.gz/66c931a497c598bfaff46d09b6ddd061b6c91a08",
+  "gitArchiveSha256": "ad086c9b0aa1a00fee8ad54244fc606b2a742a41b203fa0dd2c6a1ae7c7cae74",
+  "originalStandaloneLicensePresent": false,
+  "originalMetadataFiles": [
+    {
+      "path": "ORIGINAL-README.md",
+      "upstreamPath": "README.md",
+      "url": "https://raw.githubusercontent.com/achingbrain/uint8arrays/66c931a497c598bfaff46d09b6ddd061b6c91a08/README.md",
+      "sha256": "baa78df64b988afc5d9b5ff21936a93d639cbcd8a8afcd8313f5d0024e9dcb76",
+      "gitBlob": "4bc4398f9f4f87fd5a3a190fa7ff61dd7b88b080"
+    },
+    {
+      "path": "ORIGINAL-PACKAGE.json",
+      "upstreamPath": "package.json",
+      "url": "https://raw.githubusercontent.com/achingbrain/uint8arrays/66c931a497c598bfaff46d09b6ddd061b6c91a08/package.json",
+      "sha256": "eb302b797853aa6911d647f0be800df9c910af2223f24dd837accce96efa590c",
+      "gitBlob": "46e6784d5147b0a54efcd344c8c587d407eb2ddb"
+    }
+  ],
+  "sourceHeadersFound": 0,
+  "sourceLogicNotCopiedOrExecuted": true,
+  "supplementalTerms": "../../../license-terms/MIT-SPDX-TEMPLATE.txt",
+  "copyrightNoticePolicy": "No copyright holder or year has been fabricated. Original metadata and any available original leading source notices are preserved. The standard terms supplement is not an upstream file or a new license grant.",
+  "fixedSourcePackageVersionMatches": true,
+  "sourceHeaderInspectionScope": "Leading comments in the first 4000 characters of fixed-commit root/src JavaScript and TypeScript files; test and dependency trees excluded.",
+  "supplementalTermsArchivePath": "third-party/license-terms/MIT-SPDX-TEMPLATE.txt"
+}

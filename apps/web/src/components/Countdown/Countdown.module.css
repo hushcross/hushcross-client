@@ -1,0 +1,25 @@
+.countdown {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.label {
+  font-size: var(--fs-12);
+  color: var(--muted);
+}
+
+.value {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: var(--fs-16);
+  font-weight: 500;
+}
+
+.lg .value {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: var(--fs-40);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}

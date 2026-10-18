@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "name": "@iden3/bigarray",
+  "version": "0.0.2",
+  "repository": "https://github.com/iden3/bigarray",
+  "commit": "9e7cd76c2a19691d196af834df279aaf8b6d0acd",
+  "npmIntegrity": "sha512-Xzdyxqm1bOFF6pdIsiHLLl3HkSLjbhqJHVyqaTxXt3RqXBEnmsUmEW47H7VOi/ak7TdkRpNkxjyK5Zbkm+y52g==",
+  "licenseMetadata": "GPL-3.0",
+  "licenseFiles": [],
+  "sourceHeadersWithVersion3OrLater": 0,
+  "files": [
+    {
+      "path": ".eslintrc.cjs",
+      "bytes": 544,
+      "gitBlob": "f91f18012898bb34650806f11d8bd3b6949a9674",
+      "url": "https://raw.githubusercontent.com/iden3/bigarray/9e7cd76c2a19691d196af834df279aaf8b6d0acd/.eslintrc.cjs",
+      "method": "verified_local_npm_copy",
+      "sha256": "0cca271089306217474d44600a4e7e82c480b2c5b90ec9f5987156b9b4f566fa"
+    },
+    {
+      "path": "README.md",
+      "bytes": 305,
+      "gitBlob": "8d811cacaff9f0d6b3fd61729a63557176309186",
+      "url": "https://raw.githubusercontent.com/iden3/bigarray/9e7cd76c2a19691d196af834df279aaf8b6d0acd/README.md",
+      "method": "verified_local_npm_copy",
+      "sha256": "22f01d5bf53a06cf2ba069f16e839479da68be1b24322ea77b7e13f23e8929ed"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 43351,
+      "gitBlob": "cf281e670db79c03696908696bf5e543acc13d52",
+      "url": "https://raw.githubusercontent.com/iden3/bigarray/9e7cd76c2a19691d196af834df279aaf8b6d0acd/package-lock.json",
+      "method": "fixed_upstream_download",
+      "sha256": "dacb7f1b3b7d7bb4eb08c04df3976fa9c961fb0865fe3e70b1c53b3015394b40"
+    },
+    {
+      "path": "package.json",
+      "bytes": 809,
+      "gitBlob": "d4545d7c46e98d144f1f148a842c4c5a163cd5b1",
+      "url": "https://raw.githubusercontent.com/iden3/bigarray/9e7cd76c2a19691d196af834df279aaf8b6d0acd/package.json",
+      "method": "verified_local_npm_copy",
+      "sha256": "f6cbeb8e5d93606f56d3634a93cdfa29167d8375868bad4ff35c60eb0738fdf5"
+    },
+    {
+      "path": "rollup.cjs.config.js",
+      "bytes": 384,
+      "gitBlob": "6be480407ad22b727dbd286af52737b77b651c81",
+      "url": "https://raw.githubusercontent.com/iden3/bigarray/9e7cd76c2a19691d196af834df279aaf8b6d0acd/rollup.cjs.config.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "af64d39c1643bb216536d06c23adf998b4a07626c0b8dd6d8be2f4ab45bc7ae4"
+    },
+    {
+      "path": "src/bigarray.js",
+      "bytes": 2194,
+      "gitBlob": "8cf2d67cd5827cea27910899ea5ad479747a0ec9",
+      "url": "https://raw.githubusercontent.com/iden3/bigarray/9e7cd76c2a19691d196af834df279aaf8b6d0acd/src/bigarray.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "1ec5f84cb3ed20627acd1d29235c29e14e5c9a4810a12fa1ab8a99fa60e065db"
+    }
+  ],
+  "scriptsExecuted": false
+}

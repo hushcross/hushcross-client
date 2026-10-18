@@ -1,0 +1,218 @@
+/*
+ * The vault plate (DESIGN_SYSTEM §9.1): a deep ink card with guilloché line-work, the
+ * private balance on it; the public wallet is a paper receipt tucked under its lower edge.
+ */
+.card {
+  position: relative;
+  isolation: isolate;
+  min-width: 0;
+}
+
+.vault {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: var(--sp-6) var(--sp-8) var(--sp-6);
+  border-radius: var(--radius-plate);
+  color: var(--plate-text);
+  background:
+    radial-gradient(120% 140% at 0% 0%, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0) 46%),
+    linear-gradient(135deg, var(--plate-bg-2) 0%, var(--plate-bg) 58%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14), var(--plate-shadow);
+}
+
+/* Grain on the plate itself, a touch stronger than the paper. */
+.vault::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.16;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .9 -.25'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+}
+
+.rosette {
+  position: absolute;
+  z-index: -1;
+  right: -9%;
+  top: 50%;
+  width: clamp(280px, 46%, 440px);
+  aspect-ratio: 1;
+  height: auto;
+  translate: 0 -50%;
+  color: var(--plate-accent);
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+:global([data-theme='dark']) .rosette {
+  opacity: 0.15;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: var(--fs-11);
+  font-weight: 600;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--plate-muted);
+}
+
+.kicker svg {
+  color: var(--plate-accent);
+}
+
+.iconButton {
+  display: inline-grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: -8px;
+  border-radius: 50%;
+  border: 0;
+  background: transparent;
+  color: var(--plate-muted);
+  cursor: pointer;
+  transition: background-color 160ms var(--ease), color 160ms var(--ease);
+}
+
+.iconButton:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--plate-text);
+}
+
+.iconButton:focus-visible {
+  outline-color: var(--plate-accent);
+}
+
+.amounts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-4) var(--sp-16);
+  margin-top: var(--sp-6);
+}
+
+.amount {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  min-width: 0;
+}
+
+.figure {
+  font-family: var(--font-serif);
+  font-size: var(--fs-72);
+  line-height: 1;
+  letter-spacing: -0.025em;
+  font-variant-numeric: tabular-nums;
+}
+
+.asset {
+  font-size: var(--fs-11);
+  font-weight: 600;
+  letter-spacing: var(--tracking-eyebrow);
+  color: var(--plate-muted);
+}
+
+.pending {
+  font-size: var(--fs-12);
+  color: color-mix(in srgb, var(--warn) 55%, #ffffff);
+}
+
+.note {
+  margin-top: var(--sp-6);
+  padding-top: var(--sp-3);
+  border-top: 1px solid var(--plate-line);
+  font-size: var(--fs-12);
+  color: var(--plate-muted);
+  max-width: 48ch;
+}
+
+/* The public wallet: a paper receipt tucked under the plate. */
+.public {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  margin: -24px var(--sp-3) 0;
+  padding: calc(24px + var(--sp-4)) var(--sp-6) var(--sp-4);
+  border-radius: 0 0 var(--radius-card) var(--radius-card);
+  background: var(--surface);
+  border: 1px solid var(--card-border);
+  border-top: 0;
+  box-shadow: var(--shadow);
+}
+
+.publicHead {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.publicTitle {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: var(--fs-14);
+  font-weight: 500;
+}
+
+.publicTitle svg {
+  color: var(--muted);
+}
+
+.visible {
+  font-size: var(--fs-12);
+  color: var(--muted-2);
+}
+
+.publicList {
+  display: flex;
+  gap: var(--sp-6);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: var(--fs-14);
+}
+
+@media (max-width: 600px) {
+  .vault {
+    padding: var(--sp-4) var(--sp-6) var(--sp-4);
+    border-radius: var(--radius-card);
+  }
+  .amounts {
+    gap: var(--sp-3) var(--sp-8);
+    margin-top: var(--sp-4);
+  }
+  .figure {
+    font-size: 2.875rem;
+  }
+  .note {
+    margin-top: var(--sp-4);
+  }
+  .rosette {
+    right: -34%;
+    width: 86%;
+    opacity: 0.14;
+  }
+  .public {
+    margin: -20px var(--sp-2) 0;
+    padding: calc(20px + var(--sp-3)) var(--sp-4) var(--sp-3);
+  }
+  .publicList {
+    gap: var(--sp-4);
+  }
+}

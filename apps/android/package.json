@@ -1,0 +1,14 @@
+{
+  "name": "@hushcross/android",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Unsigned HushCross Trusted Web Activity shell",
+  "scripts": {
+    "check": "node scripts/check-config.mjs",
+    "build:unsigned": "node scripts/build-unsigned.mjs",
+    "icons:generate": "node scripts/generate-icons.mjs",
+    "icons:check": "node scripts/generate-icons.mjs --check"
+  },
+  "license": "GPL-3.0-or-later"
+}

@@ -1,0 +1,35 @@
+plugins {
+    id 'com.android.application'
+}
+android {
+    namespace 'fun.hushcross.app'
+    compileSdk 36
+    buildToolsVersion '35.0.0'
+    defaultConfig {
+        applicationId 'fun.hushcross.app'
+        minSdk 28
+        targetSdk 36
+        versionCode 1
+        versionName '0.1.0'
+    }
+    buildTypes {
+        release {
+            debuggable false
+            jniDebuggable false
+            minifyEnabled false
+            // Preserve the approved model PNG bytes, including fully transparent RGB.
+            crunchPngs false
+            signingConfig null
+        }
+        debug {
+            signingConfig null
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+dependencies {
+    implementation 'com.google.androidbrowserhelper:androidbrowserhelper:2.7.4'
+}

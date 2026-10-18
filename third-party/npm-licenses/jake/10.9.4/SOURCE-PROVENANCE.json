@@ -1,0 +1,19 @@
+{
+  "name": "jake",
+  "version": "10.9.4",
+  "repository": "https://github.com/jakejs/jake",
+  "commit": "28a9960b506d3259dd2f708ea9bc82f615be91b5",
+  "tag": "v10.9.4",
+  "tagManifestVersionMatches": true,
+  "licenseMetadata": "Apache-2.0",
+  "files": [
+    {
+      "path": "third-party/npm-licenses/jake/10.9.4/LICENSE",
+      "url": "https://raw.githubusercontent.com/jakejs/jake/28a9960b506d3259dd2f708ea9bc82f615be91b5/LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "gitBlob": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+    }
+  ],
+  "status": "PINNED_ORIGINAL_TEXT"
+}

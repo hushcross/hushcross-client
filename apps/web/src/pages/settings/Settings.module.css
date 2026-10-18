@@ -1,0 +1,49 @@
+.rangeLabel {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  font-size: var(--fs-14);
+  font-weight: 500;
+}
+
+.range {
+  width: 100%;
+  accent-color: var(--accent);
+  min-height: 32px;
+}
+
+.licenses {
+  margin-top: var(--sp-3);
+  columns: 2;
+  column-gap: var(--sp-8);
+}
+
+.licenses > li {
+  break-inside: avoid;
+}
+
+.licenseName {
+  font-size: var(--fs-14);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.licenseName:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .licenses {
+    columns: 1;
+  }
+}
+
+.aboutLinks {
+  margin-top: var(--sp-1);
+}
+
+.social {
+  margin-top: var(--sp-4);
+  padding-top: var(--sp-4);
+  border-top: 1px solid var(--hairline);
+}

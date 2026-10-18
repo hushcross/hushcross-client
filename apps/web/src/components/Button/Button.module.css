@@ -1,0 +1,115 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-2);
+  min-height: 44px;
+  padding: 0 var(--sp-6);
+  border-radius: var(--radius-pill);
+  border: 1px solid transparent;
+  font-size: var(--fs-14);
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 160ms var(--ease), border-color 160ms var(--ease), color 160ms var(--ease), transform 120ms var(--ease);
+}
+
+.button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-pill);
+}
+
+.primary {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 90%, #ffffff) 0%, var(--accent) 100%);
+  color: var(--accent-ink);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.22),
+    0 1px 2px color-mix(in srgb, var(--accent) 30%, transparent),
+    0 8px 18px -8px color-mix(in srgb, var(--accent) 60%, transparent);
+}
+
+.primary:hover:not(:disabled) {
+  background: linear-gradient(180deg, var(--accent) 0%, color-mix(in srgb, var(--accent) 86%, var(--text)) 100%);
+}
+
+.primary:disabled {
+  box-shadow: none;
+}
+
+.secondary {
+  background: var(--surface);
+  border-color: var(--hairline-strong);
+  color: var(--text);
+  box-shadow: inset 0 1px 0 var(--highlight), var(--shadow-1);
+}
+
+.secondary:hover:not(:disabled) {
+  border-color: color-mix(in srgb, var(--text) 30%, transparent);
+}
+
+.ghost {
+  background: transparent;
+  color: var(--text);
+}
+
+.ghost:hover:not(:disabled) {
+  background: var(--surface-2);
+}
+
+.danger {
+  background: transparent;
+  border-color: var(--danger);
+  color: var(--danger-text);
+}
+
+.danger:hover:not(:disabled) {
+  background: var(--danger-soft);
+}
+
+.sm {
+  min-height: 36px;
+  padding: 0 var(--sp-4);
+  font-size: var(--fs-14);
+}
+
+.lg {
+  min-height: 52px;
+  padding: 0 var(--sp-8);
+  font-size: var(--fs-16);
+}
+
+.block {
+  width: 100%;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1.5px solid currentColor;
+  border-right-color: transparent;
+  animation: spin 800ms linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Ink mode: no coloured halo under the primary action, only depth. */
+:global([data-theme='dark']) .primary:not(:disabled) {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.28), 0 1px 2px rgba(0, 0, 0, 0.5), 0 8px 20px -10px rgba(0, 0, 0, 0.7);
+}

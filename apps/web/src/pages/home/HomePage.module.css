@@ -1,0 +1,263 @@
+.hushId {
+  display: inline-flex;
+  align-items: center;
+  height: 28px;
+  padding: 0 var(--sp-3);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: var(--fs-12);
+}
+
+/* Dashboard row: balances beside the privacy summary. */
+.dash {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
+  gap: var(--sp-6);
+  align-items: stretch;
+}
+
+.dash > section:first-child {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.privacy {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+  padding: var(--sp-6);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow);
+  min-width: 0;
+}
+
+.privacyHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+}
+
+.privacyTitle {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: var(--fs-14);
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.privacyTitle svg {
+  color: var(--ok);
+}
+
+.privacyLead {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.privacyFigure {
+  font-family: var(--font-serif);
+  font-size: var(--fs-40);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+
+.privacyCaption {
+  font-size: var(--fs-14);
+  color: var(--muted);
+  line-height: 1.45;
+  max-width: 34ch;
+}
+
+.privacyEmpty {
+  font-size: var(--fs-14);
+  color: var(--muted);
+}
+
+.pools {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  margin: 0;
+  padding: var(--sp-4) 0 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.pools li {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+.poolName {
+  font-size: var(--fs-12);
+  font-weight: 500;
+}
+
+.privacyFoot {
+  margin-top: auto;
+  font-size: var(--fs-12);
+  color: var(--muted);
+}
+
+/* Module cards with live mechanism previews. */
+.modules {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--sp-4);
+}
+
+.moduleCard {
+  gap: var(--sp-3);
+  padding: var(--sp-3) var(--sp-3) var(--sp-4);
+}
+
+.cardHead {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-2) var(--sp-2) 0;
+}
+
+.moduleIcon {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  background: var(--surface-2);
+  flex: none;
+}
+
+.cardTitle {
+  flex: 1;
+  font-size: var(--fs-16);
+  font-weight: 600;
+}
+
+.chevron {
+  color: var(--muted);
+  transition: transform 220ms var(--ease);
+}
+
+.moduleCard:hover .chevron,
+.giftEntry:hover .chevron {
+  transform: translateX(3px);
+  color: var(--text);
+}
+
+.cardBody {
+  padding: 0 var(--sp-2);
+  font-size: var(--fs-14);
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.cardStat {
+  margin: auto var(--sp-2) 0;
+  padding-top: var(--sp-3);
+  border-top: 1px solid var(--line);
+  font-size: var(--fs-12);
+  color: var(--muted);
+  min-height: 2.6em;
+}
+
+.inline {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.inline time {
+  font-size: var(--fs-12);
+}
+
+.hint {
+  font-size: var(--fs-12);
+  color: var(--muted);
+}
+
+.more {
+  font-size: var(--fs-14);
+  text-decoration: none;
+}
+
+.lower {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
+  gap: var(--sp-6);
+  align-items: start;
+}
+
+.giftEntry {
+  gap: var(--sp-3);
+  padding: var(--sp-3) var(--sp-3) var(--sp-6);
+}
+
+@media (max-width: 1100px) {
+  .modules {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .dash,
+  .lower {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  /* A swipeable row keeps the previews large without a long scroll. */
+  .modules {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: 80%;
+    gap: var(--sp-3);
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    margin: 0 calc(-1 * var(--sp-4));
+    padding: 2px var(--sp-4) var(--sp-2);
+    scroll-padding-inline: var(--sp-4);
+  }
+
+  .modules::-webkit-scrollbar {
+    display: none;
+  }
+
+  .moduleCard {
+    scroll-snap-align: start;
+  }
+
+  .hint {
+    display: none;
+  }
+
+  .privacy {
+    padding: var(--sp-4);
+  }
+
+  .privacyFigure {
+    font-size: var(--fs-28);
+  }
+}
+
+.dash > section:first-child > div:first-child {
+  flex: 1;
+}
+
+.sectionGap {
+  margin-bottom: var(--sp-4);
+}

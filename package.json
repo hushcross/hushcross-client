@@ -1,0 +1,26 @@
+{
+  "name": "hushcross-client",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "GPL-3.0-or-later",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "workspaces": [
+    "packages/core",
+    "apps/web",
+    "apps/extension"
+  ],
+  "scripts": {
+    "build": "npm run build -w @hushcross/core && npm run build -w @hushcross/web",
+    "build:extension": "npm run vendor:zk -w @hushcross/web && npm run build -w @hushcross/extension",
+    "typecheck": "npm run typecheck -w @hushcross/core && npm run typecheck -w @hushcross/web"
+  },
+  "overrides": {
+    "ws": "8.22.0",
+    "@walletconnect/utils@2.21.8": {
+      "query-string": "9.5.1"
+    }
+  }
+}

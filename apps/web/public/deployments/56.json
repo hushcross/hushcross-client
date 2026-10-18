@@ -1,0 +1,71 @@
+{
+  "chainId": 56,
+  "entrypoint": "0x202BDabF86E6B197Db716EE7f0c5a3E325D7058A",
+  "pools": {
+    "BNB": {
+      "pool": "0x23c49d9044585b69e37F3EcA04DA1237B8A2dA1d",
+      "scope": "16603100323152865680443746024549361946864172062256659516373122899183649380911",
+      "asset": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE"
+    },
+    "USDT": {
+      "pool": "0xC8df3f06Ab3114e56b5fa323efc5372fC0e719BD",
+      "scope": "18034132156494132619072289810166794484568953270997282740254552272219434885180",
+      "asset": "0x55d398326f99059fF775485246999027B3197955"
+    }
+  },
+  "hushSend": "0x141E36a85C71b4945965ea5a73a15270A8147296",
+  "gift": "0xdC7339E0E562dbfCFc59506742241907F36f90ba",
+  "launchFactory": "0x698Fd53F18C6e73398877BDB919bF9287ea0adEB",
+  "launchAdapter": "0x16312F4A722a937aD756378f16A07c8506428676",
+  "book": "0x2EfA789972cadcE7a6A8D88B5Afc768217F67Fc7",
+  "bookAdapter": "0x5Cc7abDcC9617e290ae9F9Ad85729A33AFC29aF3",
+  "bookPairs": [
+    {
+      "symbol": "WBNB",
+      "marketId": "1",
+      "base": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+      "quote": "0x55d398326f99059fF775485246999027B3197955",
+      "oracle": "chainlink",
+      "baseFeed": "0x0567F2323251f0Aab15c8dFb1967E4e8A7D42aeE",
+      "quoteFeed": "0xB97Ad0E74fa7d920791E90258A6E2085088b4320",
+      "pool": "0x0000000000000000000000000000000000000000",
+      "tick": "10000000000000000",
+      "lot": "1000000000000000"
+    },
+    {
+      "symbol": "BTCB",
+      "marketId": "2",
+      "base": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+      "quote": "0x55d398326f99059fF775485246999027B3197955",
+      "oracle": "chainlink",
+      "baseFeed": "0x264990fbd0A4796A3E3d8E37C4d5F87a3aCa5Ebf",
+      "quoteFeed": "0xB97Ad0E74fa7d920791E90258A6E2085088b4320",
+      "pool": "0x0000000000000000000000000000000000000000",
+      "tick": "10000000000000000",
+      "lot": "1000000000000000"
+    },
+    {
+      "symbol": "ETH",
+      "marketId": "3",
+      "base": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
+      "quote": "0x55d398326f99059fF775485246999027B3197955",
+      "oracle": "chainlink",
+      "baseFeed": "0x9ef1B8c0E4F7dc8bF5719Ea496883DC6401d5b2e",
+      "quoteFeed": "0xB97Ad0E74fa7d920791E90258A6E2085088b4320",
+      "pool": "0x0000000000000000000000000000000000000000",
+      "tick": "10000000000000000",
+      "lot": "1000000000000000"
+    }
+  ],
+  "giveRegistry": "0xdC276Fd8Ad4800D7Ee3D26940674aB4e5856d33e",
+  "giveEscrow": "0x9db39F793Ac11d9deEa6f832736735A86daDdF5b",
+  "giveAdapter": "0x88d6cb590253dF9eA6565160C65988d2cbCA1358",
+  "announcer": "0x55649E01B5Df198D18D95b5cc5051630cfD45564",
+  "registry": "0x6538E6bf4B0eBd30A8Ea093027Ac2422ce5d6538",
+  "sanctionsOracle": "0x40C57923924B5c5c5455c48D93317139ADDaC8fb",
+  "feeds": {
+    "BNB_USD": "0x0567F2323251f0Aab15c8dFb1967E4e8A7D42aeE",
+    "USDT_USD": "0xB97Ad0E74fa7d920791E90258A6E2085088b4320"
+  },
+  "startBlock": 128347637
+}

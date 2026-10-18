@@ -1,0 +1,49 @@
+.wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.value {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+  padding: 0 var(--sp-2);
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  font-size: var(--fs-14);
+  cursor: pointer;
+  min-width: 0;
+}
+
+.value:hover {
+  background: var(--surface-2);
+}
+
+.icon {
+  color: var(--muted);
+  flex: none;
+}
+
+.ok {
+  color: var(--ok-text);
+  flex: none;
+}
+
+.link {
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  color: var(--muted);
+}
+
+.link:hover {
+  background: var(--surface-2);
+  color: var(--accent);
+}

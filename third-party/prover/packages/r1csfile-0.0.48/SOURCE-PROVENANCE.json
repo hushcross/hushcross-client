@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "name": "r1csfile",
+  "version": "0.0.48",
+  "repository": "https://github.com/iden3/r1csfile",
+  "commit": "d82959da1f88fbd06db0407051fde94afbf8824a",
+  "npmIntegrity": "sha512-kHRkKUJNaor31l05f2+RFzvcH5XSa7OfEfd/l4hzjte6NL6fjRkSMfZ4BjySW9wmfdwPOtq3mXurzPvPGEf5Tw==",
+  "licenseMetadata": "GPL-3.0",
+  "licenseFiles": [
+    "COPYING"
+  ],
+  "sourceHeadersWithVersion3OrLater": 0,
+  "files": [
+    {
+      "path": ".eslintrc.cjs",
+      "bytes": 544,
+      "gitBlob": "f91f18012898bb34650806f11d8bd3b6949a9674",
+      "url": "https://raw.githubusercontent.com/iden3/r1csfile/d82959da1f88fbd06db0407051fde94afbf8824a/.eslintrc.cjs",
+      "method": "verified_local_npm_copy",
+      "sha256": "0cca271089306217474d44600a4e7e82c480b2c5b90ec9f5987156b9b4f566fa"
+    },
+    {
+      "path": "COPYING",
+      "bytes": 35141,
+      "gitBlob": "9cecc1d4669ee8af2ca727a5d8cde10cd8b2d7cc",
+      "url": "https://raw.githubusercontent.com/iden3/r1csfile/d82959da1f88fbd06db0407051fde94afbf8824a/COPYING",
+      "method": "verified_local_npm_copy",
+      "sha256": "589ed823e9a84c56feb95ac58e7cf384626b9cbf4fda2a907bc36e103de1bad2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 244,
+      "gitBlob": "ae1d9d74c0a9fb1949be20db426692c11289790d",
+      "url": "https://raw.githubusercontent.com/iden3/r1csfile/d82959da1f88fbd06db0407051fde94afbf8824a/README.md",
+      "method": "verified_local_npm_copy",
+      "sha256": "2bfe417e32c9d7cb047f978f6d3092322f64a356c4b6fb3811fd72c9428a10b1"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 110075,
+      "gitBlob": "867ea7a621215fdcfa411e1b1e5ee248aba9d5a4",
+      "url": "https://raw.githubusercontent.com/iden3/r1csfile/d82959da1f88fbd06db0407051fde94afbf8824a/package-lock.json",
+      "method": "fixed_upstream_download",
+      "sha256": "dad562f31b08bf20a66c3cd593badb37fa49134eabd27e48a0b0f9efa2e38df8"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1037,
+      "gitBlob": "a423c84f6a5b250483de228c2eb532dcca6852b0",
+      "url": "https://raw.githubusercontent.com/iden3/r1csfile/d82959da1f88fbd06db0407051fde94afbf8824a/package.json",
+      "method": "verified_local_npm_copy",
+      "sha256": "8ae21b8e71d35b4a3fd8d1a9b47fb7cbc7c86e5148d43dc53f189d5b13b1a7e8"
+    },
+    {
+      "path": "rollup.cjs.config.js",
+      "bytes": 346,
+      "gitBlob": "4dc0a29d3a4f6de0b7c5a81cc5652a7e11f246ca",
+      "url": "https://raw.githubusercontent.com/iden3/r1csfile/d82959da1f88fbd06db0407051fde94afbf8824a/rollup.cjs.config.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "e0b878259a77154539242fe4b8b9c2471c9ae280f0552e7b79528b4520c21ca3"
+    },
+    {
+      "path": "src/r1csfile.js",
+      "bytes": 11656,
+      "gitBlob": "2b3c743aafa79d4d64220c1fcca026769574ade6",
+      "url": "https://raw.githubusercontent.com/iden3/r1csfile/d82959da1f88fbd06db0407051fde94afbf8824a/src/r1csfile.js",
+      "method": "verified_local_npm_copy",
+      "sha256": "534789bb4fb0836f3626f3690c47978ce3424df38c4cb2c4fcf8e9b8a1816d38"
+    }
+  ],
+  "scriptsExecuted": false
+}

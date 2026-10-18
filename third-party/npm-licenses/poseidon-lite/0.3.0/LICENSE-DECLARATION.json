@@ -1,0 +1,35 @@
+{
+  "name": "poseidon-lite",
+  "version": "0.3.0",
+  "licenseDeclared": "MIT",
+  "npmGitHead": "d66f7178bd68a89135ec2733522a1852cead20a3",
+  "repository": "https://github.com/vimwitch/poseidon-lite",
+  "npmTarball": "https://registry.npmjs.org/poseidon-lite/-/poseidon-lite-0.3.0.tgz",
+  "npmIntegrity": "sha512-ilJj4MIve4uBEG7SrtPqUUNkvpJ/pLVbndxa0WvebcQqeIhe+h72JR4g0EvwchUzm9sOQDlOjiDNmRAgxNZl4A==",
+  "fixedGitArchive": "https://codeload.github.com/vimwitch/poseidon-lite/tar.gz/d66f7178bd68a89135ec2733522a1852cead20a3",
+  "gitArchiveSha256": "a535906a347c07ba58cecfe375941849f068ada71b80cd523f23c3859f281f92",
+  "originalStandaloneLicensePresent": false,
+  "originalMetadataFiles": [
+    {
+      "path": "ORIGINAL-README.md",
+      "upstreamPath": "README.md",
+      "url": "https://raw.githubusercontent.com/vimwitch/poseidon-lite/d66f7178bd68a89135ec2733522a1852cead20a3/README.md",
+      "sha256": "8ec9f1b7d4c71b12ee3f8bc1e21ee0bef11809ec3582efad8954d7948a05d5d0",
+      "gitBlob": "04c9d15b20b25ae59120f71e63d6d28bc4d5f97e"
+    },
+    {
+      "path": "ORIGINAL-PACKAGE.json",
+      "upstreamPath": "package.json",
+      "url": "https://raw.githubusercontent.com/vimwitch/poseidon-lite/d66f7178bd68a89135ec2733522a1852cead20a3/package.json",
+      "sha256": "028ade5f8e6bbbc034740dcb84ebafcec8409e5a2d6f129781f98aa5f9f33ca4",
+      "gitBlob": "cfa824f90cd2f4532873fca53617194b90ca0a11"
+    }
+  ],
+  "sourceHeadersFound": 0,
+  "sourceLogicNotCopiedOrExecuted": true,
+  "supplementalTerms": "../../../license-terms/MIT-SPDX-TEMPLATE.txt",
+  "copyrightNoticePolicy": "No copyright holder or year has been fabricated. Original metadata and any available original leading source notices are preserved. The standard terms supplement is not an upstream file or a new license grant.",
+  "fixedSourcePackageVersionMatches": true,
+  "sourceHeaderInspectionScope": "Leading comments in the first 4000 characters of fixed-commit root/src JavaScript and TypeScript files; test and dependency trees excluded.",
+  "supplementalTermsArchivePath": "third-party/license-terms/MIT-SPDX-TEMPLATE.txt"
+}

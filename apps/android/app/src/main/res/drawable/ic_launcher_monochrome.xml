@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generated wrapper for the unchanged v3 crossed-arcs PNG. Do not trace/redraw. -->
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="14.814815%" android:insetTop="14.814815%"
+    android:insetRight="14.814815%" android:insetBottom="14.814815%">
+    <bitmap android:src="@drawable/hushcross_mark"
+        android:gravity="fill" android:filter="true"
+        android:tint="#FF000000" android:tintMode="src_in" />
+</inset>
