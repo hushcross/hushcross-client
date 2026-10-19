@@ -3,5 +3,6 @@
   "sizeBytes": 9790434,
   "sha256": "61ee987d67b22062ffffeab1e912dec14410be53b14397ebd84659129b203213",
   "certificateSha256": "3C:A4:34:A0:FB:4E:35:CE:36:14:09:61:E1:9C:41:8F:B7:A0:1D:58:FF:AB:DB:58:25:63:6D:96:93:1D:0B:31",
-  "downloadUrl": "https://github.com/hushcross/hushcross-client/releases/download/v0.1.0/hushcross-0.1.0.apk"
+  "downloadUrl": "https://github.com/hushcross/hushcross-client/releases/download/v0.1.0/hushcross-0.1.0.apk",
+  "published": false
 }

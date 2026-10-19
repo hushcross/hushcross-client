@@ -85,7 +85,7 @@ node scripts/build-unsigned.mjs
 
 See the [Android build/signing guide](apps/android/README.md) for existing-toolchain locations, fixed Maven dependency restoration, signing your own build, and Digital Asset Links. Unsigned APKs are not installable release packages; a self-signed package does not normally replace an official installation signed with a different identity. AAB files are not directly installable. Never include a keystore or password in a source archive or support message.
 
-The public download and certificate data are in `apps/web/src/releases/android.json` and `apps/web/public/.well-known/assetlinks.json`. Verify the remote artifact, its digest and its actual signing certificate before installation. The TWA association must be served by the configured HTTPS site; including this JSON in a checkout does not establish that the remote website currently serves it. Do not bypass association validation to hide the browser origin UI.
+The public download and certificate data are in `apps/web/src/releases/android.json` and `apps/web/public/.well-known/assetlinks.json`. The `published: false` flag means the APK download is still being prepared; leave it false while the release is draft or private. Set it to true only after the official download URL is publicly accessible and its APK hash and signing certificate have been verified. Verify the remote artifact, its digest and its actual signing certificate before installation. The TWA association must be served by the configured HTTPS site; including this JSON in a checkout does not establish that the remote website currently serves it. Do not bypass association validation to hide the browser origin UI.
 
 ## Trust, privacy and recovery boundaries
 

@@ -36,9 +36,10 @@ const JobPage = simplePage('JobPage');
 
 // Pro-mode and secondary screens load on demand, one chunk per route (keeps the first load small).
 const BookPage = lazy(() => import('./pages/book/BookPage').then((m) => ({ default: m.BookPage })));
-const DevHeroesPage = lazy(() => import('./pages/dev/DevHeroesPage').then((m) => ({ default: m.DevHeroesPage })));
-const DevOnboardingPage = lazy(() => import('./pages/dev/DevOnboardingPage').then((m) => ({ default: m.DevOnboardingPage })));
-const DevUiPage = lazy(() => import('./pages/dev/DevUiPage').then((m) => ({ default: m.DevUiPage })));
+// Static DEV guards keep preview imports out of production chunk graphs.
+const DevHeroesPage = import.meta.env.DEV ? lazy(() => import('./pages/dev/DevHeroesPage').then((m) => ({ default: m.DevHeroesPage }))) : null;
+const DevOnboardingPage = import.meta.env.DEV ? lazy(() => import('./pages/dev/DevOnboardingPage').then((m) => ({ default: m.DevOnboardingPage }))) : null;
+const DevUiPage = import.meta.env.DEV ? lazy(() => import('./pages/dev/DevUiPage').then((m) => ({ default: m.DevUiPage }))) : null;
 const ClaimGiftPage = lazy(() => import('./pages/gift/ClaimGiftPage').then((m) => ({ default: m.ClaimGiftPage })));
 const CampaignDetailPage = lazy(() => import('./pages/give/CampaignDetailPage').then((m) => ({ default: m.CampaignDetailPage })));
 const CreateCampaignPage = lazy(() => import('./pages/give/CreateCampaignPage').then((m) => ({ default: m.CreateCampaignPage })));
@@ -98,9 +99,9 @@ export function AppRoutes() {
         <Route path="about" element={<Lazy><AboutPage /></Lazy>} />
         <Route path="privacy" element={<Lazy><PrivacyPage /></Lazy>} />
         <Route path="docs" element={<Lazy><DocsPage /></Lazy>} />
-        <Route path="dev/ui" element={<Lazy><DevUiPage /></Lazy>} />
-        <Route path="dev/heroes" element={<Lazy><DevHeroesPage /></Lazy>} />
-        <Route path="dev/onboarding" element={<Lazy><DevOnboardingPage /></Lazy>} />
+        {import.meta.env.DEV && DevUiPage ? <Route path="dev/ui" element={<Lazy><DevUiPage /></Lazy>} /> : null}
+        {import.meta.env.DEV && DevHeroesPage ? <Route path="dev/heroes" element={<Lazy><DevHeroesPage /></Lazy>} /> : null}
+        {import.meta.env.DEV && DevOnboardingPage ? <Route path="dev/onboarding" element={<Lazy><DevOnboardingPage /></Lazy>} /> : null}
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
