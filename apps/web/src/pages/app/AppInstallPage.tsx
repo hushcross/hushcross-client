@@ -71,11 +71,13 @@ export function AppInstallPage({ release: rawRelease = bundledRelease }: { reado
       <div className={styles.sectionHeading}><h2 id={platformsTitle}>{t('pwa.morePlatforms')}</h2><p>{t('pwa.platformsHint')}</p></div>
       <div className={styles.platformGrid}>
         <article className={styles.platformCard}>
-          <div className={styles.cardTop}><span className={styles.platformIcon}><Icon name="wallet" size={24} /></span><Badge tone="neutral" dot={false}>{t('pwa.extensionPending')}</Badge></div>
+          <div className={styles.cardTop}><span className={styles.platformIcon}><Icon name="wallet" size={24} /></span><Badge tone="accent" dot={false}>{t('pwa.extensionAvailable')}</Badge></div>
           <h3>{t('pwa.extensionTitle')}</h3>
           <p className={styles.body}>{t('pwa.extensionBody')}</p>
           <p className={styles.compatibility}>{t('pwa.extensionCompatibility')}</p>
-          <Button variant="secondary" disabled icon="external">{t('pwa.extensionPendingAction')}</Button>
+          <a className={buttonClass({ variant: 'secondary' })} href="https://chromewebstore.google.com/detail/hushcross/jbbbihekbjmjkciailegmcjkdkaaapmm" target="_blank" rel="noopener noreferrer" referrerPolicy="no-referrer">
+            {t('pwa.extensionInstall')}<Icon name="external" size={16} />
+          </a>
         </article>
         <article className={styles.platformCard}>
           <div className={styles.cardTop}><span className={styles.platformIcon}><Icon name="globe" size={24} /></span><Badge tone="neutral" dot={false}>{t('pwa.webAvailable')}</Badge></div>

@@ -52,6 +52,8 @@ PWA installation requires a supporting browser and a suitable secure origin. The
 
 ### Browser extension
 
+The published HushCross extension is available in the [Chrome Web Store](https://chromewebstore.google.com/detail/hushcross/jbbbihekbjmjkciailegmcjkdkaaapmm).
+
 ```sh
 HUSHCROSS_WALLETCONNECT_PROJECT_ID="<YOUR_APPROVED_PUBLIC_PROJECT_ID>" \
 npm run build:extension
