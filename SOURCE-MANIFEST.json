@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "firstPartyLicense": "GPL-3.0-or-later",
   "fileCount": 1409,
-  "totalBytes": 61206562,
+  "totalBytes": 61206910,
   "inventoryExcludes": [
     "SOURCE-MANIFEST.json"
   ],
@@ -31,8 +31,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9909,
-      "sha256": "8ed0e1f7604e358fbcbeeff5f5b8b808f692dda8624a259f8cfb25813dffee3f"
+      "bytes": 10069,
+      "sha256": "154e2f9023739a8f053c9e45cd71462ce8569b3710112e09ad6bbaf7b1672fcd"
     },
     {
       "path": "THIRD-PARTY-NOTICES.md",
@@ -2806,8 +2806,8 @@
     },
     {
       "path": "apps/web/src/i18n/locales/en/appInstall.ts",
-      "bytes": 6026,
-      "sha256": "162a4787a5efcc44547b930e92e77e09ff520c592f830b7b53410e4029e17011"
+      "bytes": 6016,
+      "sha256": "afe61840ea9b0bad3823fdb5dd58f8e36c778dd235cc86c37db882d2f0f25d59"
     },
     {
       "path": "apps/web/src/i18n/locales/en/bookgive.ts",
@@ -2906,8 +2906,8 @@
     },
     {
       "path": "apps/web/src/i18n/locales/zh/appInstall.ts",
-      "bytes": 5819,
-      "sha256": "e6ffbaf57e92a177513974b66095fd0d73996eba90669e30cf1f683b031759a5"
+      "bytes": 5807,
+      "sha256": "f4adc57c49f3edbc1fbfad8b61eceaa4cb2da51b30fe2f9421b9d2708d94e587"
     },
     {
       "path": "apps/web/src/i18n/locales/zh/bookgive.ts",
@@ -3106,8 +3106,8 @@
     },
     {
       "path": "apps/web/src/pages/app/AppInstallPage.tsx",
-      "bytes": 7715,
-      "sha256": "8b513dbf5bd0e25eb9c66c51c5255fc15c7cb2c5fe41bf27bbcfdef4adf1b1f8"
+      "bytes": 7925,
+      "sha256": "7df6179f3e81a9c0c607390992bcfa586061cea83ff749c10f7f634cee40925c"
     },
     {
       "path": "apps/web/src/pages/app/androidRelease.ts",
