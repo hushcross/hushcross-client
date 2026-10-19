@@ -49,6 +49,9 @@ export function AppInstallPage({ release: rawRelease = bundledRelease }: { reado
             <Icon name="download" size={18} />{t('pwa.androidDownload')}
           </a> : <Button size="lg" icon="download" disabled className={styles.download} aria-describedby={releaseStatus}>{t('pwa.androidDownloadPending')}</Button>}
           <p id={releaseStatus} className={styles.actionNote}>{t(published ? 'pwa.androidOfficialRelease' : release ? 'pwa.androidUnpublished' : 'pwa.androidReleaseHint')}</p>
+          {published && release?.fallbackUrl ? <a className={buttonClass({ variant: 'ghost', size: 'sm' })} href={release.fallbackUrl} target="_blank" rel="noopener noreferrer" referrerPolicy="no-referrer">
+            {t('pwa.androidFallbackDownload')}<Icon name="external" size={14} />
+          </a> : null}
         </div>
       </div>
       {release ? <details className={styles.verification} data-release-verification>

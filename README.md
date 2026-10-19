@@ -87,6 +87,10 @@ See the [Android build/signing guide](apps/android/README.md) for existing-toolc
 
 The public download and certificate data are in `apps/web/src/releases/android.json` and `apps/web/public/.well-known/assetlinks.json`. The `published: false` flag means the APK download is still being prepared; leave it false while the release is draft or private. Set it to true only after the official download URL is publicly accessible and its APK hash and signing certificate have been verified. Verify the remote artifact, its digest and its actual signing certificate before installation. The TWA association must be served by the configured HTTPS site; including this JSON in a checkout does not establish that the remote website currently serves it. Do not bypass association validation to hide the browser origin UI.
 
+### Hosting the official APK on the website
+
+The source tree intentionally excludes APK binaries. Before building a deployment that serves `/downloads/hushcross-0.1.0.apk`, obtain the already-signed official APK from the verified official release (the `fallbackUrl` in `apps/web/src/releases/android.json`), verify its size, SHA-256 and signing certificate against that metadata and `apps/web/public/downloads/hushcross-0.1.0.apk.sha256`, then place it at `apps/web/public/downloads/hushcross-0.1.0.apk`. Keep the signed binary out of Git/source archives; do not rebuild or re-sign it merely to host the download. The portable Vercel configuration includes exact APK/checksum response headers, but source/build configuration alone does not prove that a deployed URL is live.
+
 ## Trust, privacy and recovery boundaries
 
 Recovery material and account private keys are generated/imported and encrypted locally. An unlocked compromised device can still expose them. RPC, screening, relay, indexer and metadata providers can observe IP/connection information and the public request data needed for an operation. Relays see submitted transaction/recipient details; delegated-reveal encryption does not prevent the receiving relay from decrypting before public reveal. WalletConnect providers and external wallets have separate records and privacy practices.
