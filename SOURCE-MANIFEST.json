@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "firstPartyLicense": "GPL-3.0-or-later",
   "fileCount": 1408,
-  "totalBytes": 61203702,
+  "totalBytes": 61203701,
   "inventoryExcludes": [
     "SOURCE-MANIFEST.json"
   ],
@@ -3496,8 +3496,8 @@
     },
     {
       "path": "apps/web/src/releases/android.json",
-      "bytes": 388,
-      "sha256": "d389ecf991ede37030b20ae177992ed3c2bb1314b14d723f0402329a7582069d"
+      "bytes": 387,
+      "sha256": "9f82876e5bb9696627b097deb6336b9397758a97f69b44aa9c6b5fdcb4aa2299"
     },
     {
       "path": "apps/web/src/shell/AppShell.module.css",
