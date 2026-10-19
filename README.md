@@ -2,6 +2,12 @@
 
 HushCross provides an encrypted local account and privacy-pool tools for BNB Chain. This repository contains the Web/PWA interface, the independent Manifest V3 extension, the browser-reachable core library, and the Android Trusted Web Activity shell. Server implementations, first-party protocol contracts, credentials, wallet data and signing identities are not included.
 
+## Browsing without a vault
+
+In chain-connected mode, the public home page can be explored without creating or unlocking a vault. Public launches, order markets, campaigns, module guides and privacy information remain available to visitors. Personal balances and history are not shown as zero or loaded into the visitor home; set up, import or unlock a vault when you need account-owned features.
+
+Actions that require a local account ask for setup or unlocking first. Browsing does not generate recovery words or create a vault. Unlocking is not itself confirmation of a transfer or signature; review the operation and any wallet confirmation separately. Public browsing still uses network services when you open their live-data pages, with the privacy boundaries described below.
+
 ## License and source
 
 The first-party client, included browser library and client build files are **GPL-3.0-or-later**. See [LICENSE](LICENSE), [license scope](LICENSE-SCOPE.md) and [third-party notices](THIRD-PARTY-NOTICES.md). Third-party components retain their original copyright notices and license choices; this does not relicense the protocol contracts or server code.

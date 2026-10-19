@@ -3,8 +3,8 @@
   "project": "HushCross client",
   "version": "0.1.0",
   "firstPartyLicense": "GPL-3.0-or-later",
-  "fileCount": 1409,
-  "totalBytes": 61206910,
+  "fileCount": 1414,
+  "totalBytes": 61227948,
   "inventoryExcludes": [
     "SOURCE-MANIFEST.json"
   ],
@@ -31,8 +31,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10069,
-      "sha256": "154e2f9023739a8f053c9e45cd71462ce8569b3710112e09ad6bbaf7b1672fcd"
+      "bytes": 10852,
+      "sha256": "cef018aaa5518cc7e449e9fee0677ddb4f5b600d168acac830c2f80b9ae20293"
     },
     {
       "path": "THIRD-PARTY-NOTICES.md",
@@ -1991,13 +1991,18 @@
     },
     {
       "path": "apps/web/src/App.tsx",
-      "bytes": 9624,
-      "sha256": "3767fecaa69d43d5acfb440aa8303a52439ab7919f771d59278372a97b16ab99"
+      "bytes": 10077,
+      "sha256": "79f30eba5de861b082ff5f5a331a881d724462dcf5148523b3db56ee38bc0b24"
+    },
+    {
+      "path": "apps/web/src/account/AccountAction.tsx",
+      "bytes": 2171,
+      "sha256": "66a0c3e20418a44554c5aea01fd09e03b18fac115326d2ff8629b8be96695b6a"
     },
     {
       "path": "apps/web/src/account/AccountGate.tsx",
-      "bytes": 1147,
-      "sha256": "399f6323d1ed19884b750f516ebbf7bf0a67ffa3f32eed60c8f932c815620560"
+      "bytes": 1463,
+      "sha256": "43ad72e15f64a0a325a6fecf85ba98cd3bcb16d7d23902bfa452ee1e3283cb40"
     },
     {
       "path": "apps/web/src/account/AccountManager.ts",
@@ -2021,13 +2026,13 @@
     },
     {
       "path": "apps/web/src/account/Onboarding.tsx",
-      "bytes": 13851,
-      "sha256": "dda1747b28d961c8138b7122ed8fbbe8289f5cab9a15950d0eb9fabb827bf196"
+      "bytes": 14047,
+      "sha256": "d472adcaf24b99fcf7557ae7fbc81036a12a3f678e072be2d9a1f1d29c903d98"
     },
     {
       "path": "apps/web/src/account/SimpleOnboarding.tsx",
-      "bytes": 7258,
-      "sha256": "6bed56c0317f59ff6d08dae857d6cc6c07118c45d8617a10d803072e1379551d"
+      "bytes": 7344,
+      "sha256": "56f36db8b07f51bd3e6fa9cee38d0f6f5069a518462f2356c34b552d78497e63"
     },
     {
       "path": "apps/web/src/account/Welcome.module.css",
@@ -2043,6 +2048,11 @@
       "path": "apps/web/src/account/passkey.ts",
       "bytes": 3570,
       "sha256": "68b927d9b6731c509890b3ae229ca2598ec897929a36a231a965236339422a16"
+    },
+    {
+      "path": "apps/web/src/account/routeAccess.ts",
+      "bytes": 932,
+      "sha256": "c30df8eea0cc8795144babc671a3a772ce63b32af30034dad693d2b2936e2006"
     },
     {
       "path": "apps/web/src/assets/art/plate-macro.jpg",
@@ -2140,6 +2150,11 @@
       "sha256": "8802b000f4010c8f8fbcd8ea62cf4ed2c96de8b24c5d129a4acb3e869a80b990"
     },
     {
+      "path": "apps/web/src/chain/accountAccess.ts",
+      "bytes": 3105,
+      "sha256": "4afaed218d776c417d891cc7579b2eebb21d56f0b37cd0949ca4058ad4e02538"
+    },
+    {
       "path": "apps/web/src/chain/bookIndex.ts",
       "bytes": 4665,
       "sha256": "d1b548bf1605e69839ad6deb659b6725b518c9b31cb359d00813f1d5c196fb19"
@@ -2156,8 +2171,8 @@
     },
     {
       "path": "apps/web/src/chain/createChainSource.ts",
-      "bytes": 5483,
-      "sha256": "f9fbfd94019511521d39200343182e6e17cfcfdf4e4f196c3ed54e297903dc0e"
+      "bytes": 5579,
+      "sha256": "5fbee96ca6b31166a9ad4d2636fe92b761af5f42ee9679259d1cd7e933bc0996"
     },
     {
       "path": "apps/web/src/chain/gas.ts",
@@ -2801,8 +2816,8 @@
     },
     {
       "path": "apps/web/src/i18n/locales/en/account.ts",
-      "bytes": 3812,
-      "sha256": "40c381ae43e17fdbc418a1072cb55c889b98f33712f0cbad48fff9e2744e188b"
+      "bytes": 5740,
+      "sha256": "bfe2801fa0e9663b790bf09486dc51899a8239ea27019b108744fbd71900498f"
     },
     {
       "path": "apps/web/src/i18n/locales/en/appInstall.ts",
@@ -2901,8 +2916,8 @@
     },
     {
       "path": "apps/web/src/i18n/locales/zh/account.ts",
-      "bytes": 3607,
-      "sha256": "c3a05ee12cef03319bd188d592b6e820ea1ceed55a9f77ef8b32e92b9cd27abf"
+      "bytes": 5442,
+      "sha256": "abaae98bf7d6747e7a2ccd619d7321311a500b62f62cbc48ee46173ad40f586f"
     },
     {
       "path": "apps/web/src/i18n/locales/zh/appInstall.ts",
@@ -3121,8 +3136,8 @@
     },
     {
       "path": "apps/web/src/pages/book/BookPage.tsx",
-      "bytes": 14156,
-      "sha256": "f59b789163a2ad87bfd08a7763de7d0997092d614de0089b97bac168c8e6092d"
+      "bytes": 14853,
+      "sha256": "016e649ddaeb3b22a82f756e43305eef0aeb49a0cccdac5f8e0a0a67a29026d8"
     },
     {
       "path": "apps/web/src/pages/book/ClearingChart.tsx",
@@ -3166,8 +3181,8 @@
     },
     {
       "path": "apps/web/src/pages/docs/DocsPage.tsx",
-      "bytes": 11752,
-      "sha256": "7a423e5a4430ea896141c7347c08d4e3e6eeee9c7b90a1327b9c996ea82b6bb2"
+      "bytes": 12222,
+      "sha256": "17d84dede3185cb108c565654151b1fa9dc9d71355b338adf4b73d1f7177e867"
     },
     {
       "path": "apps/web/src/pages/docs/docsContent.ts",
@@ -3216,8 +3231,8 @@
     },
     {
       "path": "apps/web/src/pages/give/CampaignDetailPage.tsx",
-      "bytes": 13580,
-      "sha256": "9ca7e904aa6280b52c2d3db00ed7aeac122f5cdd22eda23a292cefcba45a2d30"
+      "bytes": 14117,
+      "sha256": "ac2eb79e522a996013b1b150f2cff1599c2be86969bab78039a81aed4eeef289"
     },
     {
       "path": "apps/web/src/pages/give/CreateCampaignPage.tsx",
@@ -3233,6 +3248,16 @@
       "path": "apps/web/src/pages/give/GivePage.tsx",
       "bytes": 2385,
       "sha256": "2b0f9938cc96bf7e13db02514980c67f1d93b8da71eaa0f3d7275836c2c6f515"
+    },
+    {
+      "path": "apps/web/src/pages/home/GuestHome.module.css",
+      "bytes": 2481,
+      "sha256": "e35eeb4c3b72d15cd95dcb74301da4182bded3600380acbb0326617aa029e5f6"
+    },
+    {
+      "path": "apps/web/src/pages/home/GuestHome.tsx",
+      "bytes": 3668,
+      "sha256": "f8de9f64408c0a3d3339c0202db860398c2c300316cff2b663217246cbc8be6c"
     },
     {
       "path": "apps/web/src/pages/home/HomePage.module.css",
@@ -3281,8 +3306,8 @@
     },
     {
       "path": "apps/web/src/pages/launch/SaleDetailPage.tsx",
-      "bytes": 11409,
-      "sha256": "789d7fc327e547e1cde360a7dde3b413d9ba3b600de900e6af3a4fc6095627b9"
+      "bytes": 12434,
+      "sha256": "b844ac0c01bc364ddefb8b963747b27e7a5ea6950ed96369f64543df8d45f5a6"
     },
     {
       "path": "apps/web/src/pages/launch/SaleProfile.module.css",
@@ -3511,8 +3536,8 @@
     },
     {
       "path": "apps/web/src/shell/AppShell.tsx",
-      "bytes": 7187,
-      "sha256": "9bb0d5c5da427f51f9bb525ffb280aef3f89bc62d54ded4112af40e3bc9fa1d2"
+      "bytes": 7446,
+      "sha256": "f7add4b8289e9375f8edb7a7f78d9b75a9f5526c400f94664858b655ee185813"
     },
     {
       "path": "apps/web/src/shell/DemoBanner.module.css",

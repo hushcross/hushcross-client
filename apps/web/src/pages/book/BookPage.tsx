@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { AccountAction, useIsVisitor } from '../../account/AccountAction';
 import { Badge } from '../../components/Badge/Badge';
 import { Button } from '../../components/Button/Button';
 import { Card } from '../../components/Card/Card';
@@ -38,7 +39,25 @@ function LiveHero({ pair }: { readonly pair: Pair }) {
   return <BookHero buys={rows(data.buys)} sells={rows(data.sells)} reference={toNumber(data.referencePrice > 0n ? data.referencePrice : pair.referencePrice)} />;
 }
 
+/** The pending epoch is public; its wallet action is only mounted for an unlocked account. */
 function Settling({ pair, settling }: { readonly pair: Pair; readonly settling: NonNullable<EpochInfo['settling']> }) {
+  const { t } = useI18n();
+  const visitor = useIsVisitor();
+  const voiding = settling.action === 'void';
+  return (
+    <div className={styles.stackSm} role="status">
+      <p className={styles.callout}>
+        <Icon name="clock" />
+        <span>
+          <strong>{t(voiding ? 'bookLive.settling.voidTitle' : 'bookLive.settling.title', { n: settling.epoch })}</strong> {t(voiding ? 'bookLive.settling.voidBody' : 'bookLive.settling.body')}
+        </span>
+      </p>
+      {!visitor ? <AccountAction><SettleAction pair={pair} settling={settling} /></AccountAction> : null}
+    </div>
+  );
+}
+
+function SettleAction({ pair, settling }: { readonly pair: Pair; readonly settling: NonNullable<EpochInfo['settling']> }) {
   const { t } = useI18n();
   const ds = useDataSource();
   const { show } = useToast();
@@ -51,13 +70,7 @@ function Settling({ pair, settling }: { readonly pair: Pair; readonly settling: 
     if (result) show({ tone: 'ok', title: t('bookLive.settling.done') });
   };
   return (
-    <div className={styles.stackSm} role="status">
-      <p className={styles.callout}>
-        <Icon name="clock" />
-        <span>
-          <strong>{t(voiding ? 'bookLive.settling.voidTitle' : 'bookLive.settling.title', { n: settling.epoch })}</strong> {t(voiding ? 'bookLive.settling.voidBody' : 'bookLive.settling.body')}
-        </span>
-      </p>
+    <>
       <div>
         <Button variant="secondary" size="sm" icon={voiding ? 'refresh' : 'check'} onClick={() => setConfirm(true)} loading={settler.busy && !confirm}>
           {t(voiding ? 'bookLive.settling.voidCta' : 'bookLive.settling.cta')}
@@ -73,7 +86,7 @@ function Settling({ pair, settling }: { readonly pair: Pair; readonly settling: 
         onClose={() => setConfirm(false)}
         onConfirm={() => void submit()}
       />
-    </div>
+    </>
   );
 }
 
@@ -271,6 +284,7 @@ function Clearings({ pair }: { readonly pair: Pair }) {
 
 export function BookPage() {
   const { t } = useI18n();
+  const visitor = useIsVisitor();
   const pairs = useResource((ds) => ds.listPairs(), ['orders']);
   const [pairId, setPairId] = useState<string | null>(null);
   return (
@@ -302,12 +316,14 @@ export function BookPage() {
               <div className={styles.split}>
                 <div className={styles.stack}>
                   <EpochCard pair={pair} />
-                  <MyOrders pair={pair} />
+                  {!visitor ? <AccountAction><MyOrders pair={pair} /></AccountAction> : null}
                   <Clearings pair={pair} />
                 </div>
-                <Card title={t('book.form.title')}>
-                  <OrderForm pair={pair} />
-                </Card>
+                <AccountAction>
+                  <Card title={t('book.form.title')}>
+                    <OrderForm pair={pair} />
+                  </Card>
+                </AccountAction>
               </div>
             </div>
           );
