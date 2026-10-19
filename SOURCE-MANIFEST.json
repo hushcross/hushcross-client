@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "firstPartyLicense": "GPL-3.0-or-later",
   "fileCount": 1408,
-  "totalBytes": 61189799,
+  "totalBytes": 61203702,
   "inventoryExcludes": [
     "SOURCE-MANIFEST.json"
   ],
@@ -31,8 +31,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8867,
-      "sha256": "b5389ae89e53239e7b1607d8011d6a70f794e52e36d2df286d15fbe508c81163"
+      "bytes": 9133,
+      "sha256": "03b5e55059624615dcc28ee62a21a0cdd121bed91813602e051a9e5528ffb19e"
     },
     {
       "path": "THIRD-PARTY-NOTICES.md",
@@ -70,6 +70,11 @@
       "sha256": "a9fde679e64e9304f5f4e28705b1c1edaf9c81883b8367ab35aa03a84adc727a"
     },
     {
+      "path": "apps/android/app/src/main/res/drawable-nodpi/hushcross_mark.png",
+      "bytes": 254712,
+      "sha256": "e6bc955a95a511101ffa9161854018e25769b92dd50bdd5128ce0a3269f631a3"
+    },
+    {
       "path": "apps/android/app/src/main/res/drawable/ic_launcher_foreground.xml",
       "bytes": 502,
       "sha256": "c5c80f7c2a01092624f7ca1d9d9d2e749327196de64c0424a88ce2ac198434ee"
@@ -80,11 +85,6 @@
       "sha256": "9a7a9cf384ccf2a0988f927502fc0123e60f0a8258674fc7fc80a937dd45be5c"
     },
     {
-      "path": "apps/android/app/src/main/res/drawable-nodpi/hushcross_mark.png",
-      "bytes": 254712,
-      "sha256": "e6bc955a95a511101ffa9161854018e25769b92dd50bdd5128ce0a3269f631a3"
-    },
-    {
       "path": "apps/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
       "bytes": 303,
       "sha256": "f0bcda0211e00211feecc6148571a4ead8e35266fed5ef4ad6afa6b72d0f82fe"
@@ -93,6 +93,11 @@
       "path": "apps/android/app/src/main/res/mipmap-anydpi-v33/ic_launcher.xml",
       "bytes": 374,
       "sha256": "ac1e79d38c064492fa1e5f362eaf0b57402129afeec195e289a38d498258fea6"
+    },
+    {
+      "path": "apps/android/app/src/main/res/values-night/colors.xml",
+      "bytes": 110,
+      "sha256": "a36cbc08491e89871cc2cafed4482a5da10da98593185f539bb56cc96245f893"
     },
     {
       "path": "apps/android/app/src/main/res/values/colors.xml",
@@ -108,11 +113,6 @@
       "path": "apps/android/app/src/main/res/values/styles.xml",
       "bytes": 291,
       "sha256": "136eb00365620e5b0bf2a47243a9231780e48da2f9e23fe504918c7f2b2ea738"
-    },
-    {
-      "path": "apps/android/app/src/main/res/values-night/colors.xml",
-      "bytes": 110,
-      "sha256": "a36cbc08491e89871cc2cafed4482a5da10da98593185f539bb56cc96245f893"
     },
     {
       "path": "apps/android/build.gradle",
@@ -715,12 +715,12 @@
       "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
     },
     {
-      "path": "apps/web/public/licenses/third-party/npm-licenses/@types/react/18.3.31/LICENSE",
+      "path": "apps/web/public/licenses/third-party/npm-licenses/@types/react-dom/18.3.7/LICENSE",
       "bytes": 1141,
       "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
     },
     {
-      "path": "apps/web/public/licenses/third-party/npm-licenses/@types/react-dom/18.3.7/LICENSE",
+      "path": "apps/web/public/licenses/third-party/npm-licenses/@types/react/18.3.31/LICENSE",
       "bytes": 1141,
       "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
     },
@@ -955,14 +955,14 @@
       "sha256": "1fa6ee8bb95a81ae3d73a5bd074a3ac380ffec13697051063ca1a601921b91db"
     },
     {
-      "path": "apps/web/public/licenses/third-party/npm-licenses/cookie/1.1.1/LICENSE",
-      "bytes": 1175,
-      "sha256": "c02110eedc16c7114f1a9bdc026c65626ce1d9c7e27fd51a8e0feee8a48a6858"
-    },
-    {
       "path": "apps/web/public/licenses/third-party/npm-licenses/cookie-es/1.2.3/LICENSE",
       "bytes": 1431,
       "sha256": "f57270b85c3922414c061e36b93f7c74420b8facf5ccf729202d5ff5b7cd7608"
+    },
+    {
+      "path": "apps/web/public/licenses/third-party/npm-licenses/cookie/1.1.1/LICENSE",
+      "bytes": 1175,
+      "sha256": "c02110eedc16c7114f1a9bdc026c65626ce1d9c7e27fd51a8e0feee8a48a6858"
     },
     {
       "path": "apps/web/public/licenses/third-party/npm-licenses/cross-fetch/3.2.0/LICENSE",
@@ -1230,14 +1230,14 @@
       "sha256": "da4db1480d9beea3483a2eda5c53b22238d0827d57da162b48f122e04d2d9987"
     },
     {
-      "path": "apps/web/public/licenses/third-party/npm-licenses/node-fetch/2.7.0/LICENSE.md",
-      "bytes": 1079,
-      "sha256": "84eaa985e1ef71b8c630e8aba73404c219ff425c6fdb45c62e998b58d4fbdc8e"
-    },
-    {
       "path": "apps/web/public/licenses/third-party/npm-licenses/node-fetch-native/1.6.7/LICENSE",
       "bytes": 5623,
       "sha256": "22a1b925621a4fb60cb9df9914612f12482e275c9f545035599fc528b4979da9"
+    },
+    {
+      "path": "apps/web/public/licenses/third-party/npm-licenses/node-fetch/2.7.0/LICENSE.md",
+      "bytes": 1079,
+      "sha256": "84eaa985e1ef71b8c630e8aba73404c219ff425c6fdb45c62e998b58d4fbdc8e"
     },
     {
       "path": "apps/web/public/licenses/third-party/npm-licenses/node-mock-http/1.0.5/LICENSE",
@@ -1315,11 +1315,6 @@
       "sha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9"
     },
     {
-      "path": "apps/web/public/licenses/third-party/npm-licenses/pino/7.11.0/LICENSE",
-      "bytes": 1226,
-      "sha256": "9a9a99b5e68738425ecf96bc6d1b101876c93692977306e8d333806f577d58f5"
-    },
-    {
       "path": "apps/web/public/licenses/third-party/npm-licenses/pino-abstract-transport/0.5.0/LICENSE",
       "bytes": 1061,
       "sha256": "31f005ecff86a12a1351f4c2cb1133267c0b152546b08cd6fa4bdeb1943e00cd"
@@ -1328,6 +1323,11 @@
       "path": "apps/web/public/licenses/third-party/npm-licenses/pino-std-serializers/4.0.0/LICENSE",
       "bytes": 1084,
       "sha256": "6206673d24786f09656f7a480b7c50af289e9690963aaa135af5b626de5250df"
+    },
+    {
+      "path": "apps/web/public/licenses/third-party/npm-licenses/pino/7.11.0/LICENSE",
+      "bytes": 1226,
+      "sha256": "9a9a99b5e68738425ecf96bc6d1b101876c93692977306e8d333806f577d58f5"
     },
     {
       "path": "apps/web/public/licenses/third-party/npm-licenses/pngjs/5.0.0/LICENSE",
@@ -1385,11 +1385,6 @@
       "sha256": "46231df5a7733c3f52f11b71f3df61813007745b62b09031acfb45fb42d75082"
     },
     {
-      "path": "apps/web/public/licenses/third-party/npm-licenses/react/18.3.1/LICENSE",
-      "bytes": 1086,
-      "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
-    },
-    {
       "path": "apps/web/public/licenses/third-party/npm-licenses/react-dom/18.3.1/LICENSE",
       "bytes": 1086,
       "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
@@ -1403,6 +1398,11 @@
       "path": "apps/web/public/licenses/third-party/npm-licenses/react-router/7.18.4/LICENSE.md",
       "bytes": 1161,
       "sha256": "77c9ee6a9c5d5782fb0c50b50d101189116314c14f7df0a1b0d385fc96a7ba49"
+    },
+    {
+      "path": "apps/web/public/licenses/third-party/npm-licenses/react/18.3.1/LICENSE",
+      "bytes": 1086,
+      "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
     },
     {
       "path": "apps/web/public/licenses/third-party/npm-licenses/readable-stream/3.6.2/LICENSE",
@@ -1660,14 +1660,14 @@
       "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b"
     },
     {
-      "path": "apps/web/public/licenses/third-party/npm-licenses/yargs/15.4.1/LICENSE",
-      "bytes": 1146,
-      "sha256": "2f1a503bfab84b3ba7393627308b3274501e459e3b5185bbb56bbf16cb1602d4"
-    },
-    {
       "path": "apps/web/public/licenses/third-party/npm-licenses/yargs-parser/18.1.3/LICENSE.txt",
       "bytes": 731,
       "sha256": "365496ca1f56da40b23c9815fc40fa9005847b2f8f8fd1c1a4929ef25ec8cd1d"
+    },
+    {
+      "path": "apps/web/public/licenses/third-party/npm-licenses/yargs/15.4.1/LICENSE",
+      "bytes": 1146,
+      "sha256": "2f1a503bfab84b3ba7393627308b3274501e459e3b5185bbb56bbf16cb1602d4"
     },
     {
       "path": "apps/web/public/licenses/third-party/privacy-pools-core/LICENSE",
@@ -1986,13 +1986,13 @@
     },
     {
       "path": "apps/web/src/App.tsx",
-      "bytes": 9319,
-      "sha256": "5522fd2351418fc3ab6b2cd85e46af8891df0aa483e17945138075422fba011f"
+      "bytes": 9624,
+      "sha256": "3767fecaa69d43d5acfb440aa8303a52439ab7919f771d59278372a97b16ab99"
     },
     {
       "path": "apps/web/src/account/AccountGate.tsx",
-      "bytes": 1052,
-      "sha256": "de781efbd44765944d9e5ae7b6af087a532b8d771552c6c8b933f7863dd2b7cf"
+      "bytes": 1147,
+      "sha256": "399f6323d1ed19884b750f516ebbf7bf0a67ffa3f32eed60c8f932c815620560"
     },
     {
       "path": "apps/web/src/account/AccountManager.ts",
@@ -2801,8 +2801,8 @@
     },
     {
       "path": "apps/web/src/i18n/locales/en/appInstall.ts",
-      "bytes": 4710,
-      "sha256": "8a93a056a63bd656fa125f603351765de28ad808539321a2569364447ba450d5"
+      "bytes": 5976,
+      "sha256": "791108b77ea87a9ee29a5ba1bcbeb8c9ec98d0549de70a844b094bc7dabd0de6"
     },
     {
       "path": "apps/web/src/i18n/locales/en/bookgive.ts",
@@ -2901,8 +2901,8 @@
     },
     {
       "path": "apps/web/src/i18n/locales/zh/appInstall.ts",
-      "bytes": 4557,
-      "sha256": "c91df8b40682241aa58aa860b634baa53a4a4b6b2d8d5895a1ec2b7a63d8bc55"
+      "bytes": 5772,
+      "sha256": "919f7d92c6d85afac12f08ee809292a2d5c1ae4ec95e07d43113ae8da1bcc86f"
     },
     {
       "path": "apps/web/src/i18n/locales/zh/bookgive.ts",
@@ -3096,18 +3096,18 @@
     },
     {
       "path": "apps/web/src/pages/app/AppInstall.module.css",
-      "bytes": 1010,
-      "sha256": "ff169037453dcf4096051aa2f78f06707ae8ac571d1b5b211b08bd9e12b3254c"
+      "bytes": 7377,
+      "sha256": "1ed8962f45d348f76369c57eb1c759f9e04273a8006eb4cdae7533b0c45bcfdb"
     },
     {
       "path": "apps/web/src/pages/app/AppInstallPage.tsx",
-      "bytes": 3183,
-      "sha256": "d4651c0b4680c78fc3ee04211e792e28b956d4f936f281847e86c75172969e20"
+      "bytes": 7404,
+      "sha256": "f00a4df74e8ecc37d2318c34c111fa92d8ee5ce52b58b54eb69be78c5b39b40e"
     },
     {
       "path": "apps/web/src/pages/app/androidRelease.ts",
-      "bytes": 1676,
-      "sha256": "560da47ee852192eff3dd912d9b17f9c236d3a7fb4009fe137e790c43c8f2520"
+      "bytes": 1822,
+      "sha256": "616a74d0bb3a2ed416bf09b6dce0f57eb0b1697435b92b78c9d3731b6668712d"
     },
     {
       "path": "apps/web/src/pages/book/Book.module.css",
@@ -3496,8 +3496,8 @@
     },
     {
       "path": "apps/web/src/releases/android.json",
-      "bytes": 366,
-      "sha256": "28de1f292131cb2c3d0e3f2f88550c1e4e9a44f387589e0d27d70247f1e2b67a"
+      "bytes": 388,
+      "sha256": "d389ecf991ede37030b20ae177992ed3c2bb1314b14d723f0402329a7582069d"
     },
     {
       "path": "apps/web/src/shell/AppShell.module.css",
@@ -4500,12 +4500,12 @@
       "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
     },
     {
-      "path": "third-party/npm-licenses/@types/react/18.3.31/LICENSE",
+      "path": "third-party/npm-licenses/@types/react-dom/18.3.7/LICENSE",
       "bytes": 1141,
       "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
     },
     {
-      "path": "third-party/npm-licenses/@types/react-dom/18.3.7/LICENSE",
+      "path": "third-party/npm-licenses/@types/react/18.3.31/LICENSE",
       "bytes": 1141,
       "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
     },
@@ -4740,14 +4740,14 @@
       "sha256": "1fa6ee8bb95a81ae3d73a5bd074a3ac380ffec13697051063ca1a601921b91db"
     },
     {
-      "path": "third-party/npm-licenses/cookie/1.1.1/LICENSE",
-      "bytes": 1175,
-      "sha256": "c02110eedc16c7114f1a9bdc026c65626ce1d9c7e27fd51a8e0feee8a48a6858"
-    },
-    {
       "path": "third-party/npm-licenses/cookie-es/1.2.3/LICENSE",
       "bytes": 1431,
       "sha256": "f57270b85c3922414c061e36b93f7c74420b8facf5ccf729202d5ff5b7cd7608"
+    },
+    {
+      "path": "third-party/npm-licenses/cookie/1.1.1/LICENSE",
+      "bytes": 1175,
+      "sha256": "c02110eedc16c7114f1a9bdc026c65626ce1d9c7e27fd51a8e0feee8a48a6858"
     },
     {
       "path": "third-party/npm-licenses/cross-fetch/3.2.0/LICENSE",
@@ -5015,14 +5015,14 @@
       "sha256": "da4db1480d9beea3483a2eda5c53b22238d0827d57da162b48f122e04d2d9987"
     },
     {
-      "path": "third-party/npm-licenses/node-fetch/2.7.0/LICENSE.md",
-      "bytes": 1079,
-      "sha256": "84eaa985e1ef71b8c630e8aba73404c219ff425c6fdb45c62e998b58d4fbdc8e"
-    },
-    {
       "path": "third-party/npm-licenses/node-fetch-native/1.6.7/LICENSE",
       "bytes": 5623,
       "sha256": "22a1b925621a4fb60cb9df9914612f12482e275c9f545035599fc528b4979da9"
+    },
+    {
+      "path": "third-party/npm-licenses/node-fetch/2.7.0/LICENSE.md",
+      "bytes": 1079,
+      "sha256": "84eaa985e1ef71b8c630e8aba73404c219ff425c6fdb45c62e998b58d4fbdc8e"
     },
     {
       "path": "third-party/npm-licenses/node-mock-http/1.0.5/LICENSE",
@@ -5100,11 +5100,6 @@
       "sha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9"
     },
     {
-      "path": "third-party/npm-licenses/pino/7.11.0/LICENSE",
-      "bytes": 1226,
-      "sha256": "9a9a99b5e68738425ecf96bc6d1b101876c93692977306e8d333806f577d58f5"
-    },
-    {
       "path": "third-party/npm-licenses/pino-abstract-transport/0.5.0/LICENSE",
       "bytes": 1061,
       "sha256": "31f005ecff86a12a1351f4c2cb1133267c0b152546b08cd6fa4bdeb1943e00cd"
@@ -5113,6 +5108,11 @@
       "path": "third-party/npm-licenses/pino-std-serializers/4.0.0/LICENSE",
       "bytes": 1084,
       "sha256": "6206673d24786f09656f7a480b7c50af289e9690963aaa135af5b626de5250df"
+    },
+    {
+      "path": "third-party/npm-licenses/pino/7.11.0/LICENSE",
+      "bytes": 1226,
+      "sha256": "9a9a99b5e68738425ecf96bc6d1b101876c93692977306e8d333806f577d58f5"
     },
     {
       "path": "third-party/npm-licenses/pngjs/5.0.0/LICENSE",
@@ -5170,11 +5170,6 @@
       "sha256": "46231df5a7733c3f52f11b71f3df61813007745b62b09031acfb45fb42d75082"
     },
     {
-      "path": "third-party/npm-licenses/react/18.3.1/LICENSE",
-      "bytes": 1086,
-      "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
-    },
-    {
       "path": "third-party/npm-licenses/react-dom/18.3.1/LICENSE",
       "bytes": 1086,
       "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
@@ -5188,6 +5183,11 @@
       "path": "third-party/npm-licenses/react-router/7.18.4/LICENSE.md",
       "bytes": 1161,
       "sha256": "77c9ee6a9c5d5782fb0c50b50d101189116314c14f7df0a1b0d385fc96a7ba49"
+    },
+    {
+      "path": "third-party/npm-licenses/react/18.3.1/LICENSE",
+      "bytes": 1086,
+      "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
     },
     {
       "path": "third-party/npm-licenses/readable-stream/3.6.2/LICENSE",
@@ -5445,14 +5445,14 @@
       "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b"
     },
     {
-      "path": "third-party/npm-licenses/yargs/15.4.1/LICENSE",
-      "bytes": 1146,
-      "sha256": "2f1a503bfab84b3ba7393627308b3274501e459e3b5185bbb56bbf16cb1602d4"
-    },
-    {
       "path": "third-party/npm-licenses/yargs-parser/18.1.3/LICENSE.txt",
       "bytes": 731,
       "sha256": "365496ca1f56da40b23c9815fc40fa9005847b2f8f8fd1c1a4929ef25ec8cd1d"
+    },
+    {
+      "path": "third-party/npm-licenses/yargs/15.4.1/LICENSE",
+      "bytes": 1146,
+      "sha256": "2f1a503bfab84b3ba7393627308b3274501e459e3b5185bbb56bbf16cb1602d4"
     },
     {
       "path": "third-party/privacy-pools-core/LICENSE",
@@ -5475,6 +5475,11 @@
       "sha256": "2e599aaf9950b778f1b1989eac7bec0e399f8a0da01d878ef5124dc990b0ec64"
     },
     {
+      "path": "third-party/privacy-pools-core/packages/circuits/circuits.json",
+      "bytes": 204,
+      "sha256": "2d9c69618aaa5d12ece277cafe61c9d14ca40f3e6954ad29c913a49750c806f2"
+    },
+    {
       "path": "third-party/privacy-pools-core/packages/circuits/circuits/commitment.circom",
       "bytes": 1367,
       "sha256": "9c5ccc11cd162a9e584e882e62c852da60fa2ef90e52476d9ac0d4a7cdff1eb8"
@@ -5488,11 +5493,6 @@
       "path": "third-party/privacy-pools-core/packages/circuits/circuits/withdraw.circom",
       "bytes": 4656,
       "sha256": "03e00168149bd00cd71d43d86f475e4ff919fef524dca0dd5689d7bc99dc4731"
-    },
-    {
-      "path": "third-party/privacy-pools-core/packages/circuits/circuits.json",
-      "bytes": 204,
-      "sha256": "2d9c69618aaa5d12ece277cafe61c9d14ca40f3e6954ad29c913a49750c806f2"
     },
     {
       "path": "third-party/privacy-pools-core/packages/circuits/package.json",
