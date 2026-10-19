@@ -1,7 +1,10 @@
 import { MotionConfig } from 'framer-motion';
 import { lazy, Suspense, useMemo, type ReactNode } from 'react';
 import { appConfig } from './config';
-import { Route, Routes } from 'react-router';
+import { Navigate, Route, Routes } from 'react-router';
+import { AccountGate } from './account/AccountGate';
+import { useAccount } from './account/AccountProvider';
+import { GuestHome } from './pages/home/GuestHome';
 import { AppRouter } from './platform/AppRouter';
 import { IS_EXTENSION } from './platform/runtime';
 import { ToastProvider } from './components/Toast/Toast';
@@ -66,6 +69,8 @@ function Lazy({ children }: { readonly children: ReactNode }) {
 /** Simple mode (default) opens on the action tiles; Pro mode on the module dashboard. */
 function Home() {
   const { mode } = useUiMode();
+  const account = useAccount();
+  if (account && account.status !== 'unlocked') return <GuestHome locked={account.status === 'locked'} />;
   return mode === 'simple' ? <SimpleHome /> : <Lazy><HomePage /></Lazy>;
 }
 
@@ -84,8 +89,8 @@ export function AppRoutes() {
         <Route path="jobs/:id" element={<Lazy><JobPage /></Lazy>} />
         <Route path="vault" element={<Lazy><VaultPage /></Lazy>} />
         <Route path="send" element={<Lazy><SendPage /></Lazy>} />
-        <Route path="pay/:hushId" element={<Lazy><PayPage /></Lazy>} />
-        <Route path="gift" element={<Lazy><ClaimGiftPage /></Lazy>} />
+        <Route path="pay/:hushId" element={<AccountGate required><Lazy><PayPage /></Lazy></AccountGate>} />
+        <Route path="gift" element={<AccountGate required><Lazy><ClaimGiftPage /></Lazy></AccountGate>} />
         <Route path="launch" element={<Lazy><LaunchPage /></Lazy>} />
         <Route path="launch/new" element={<Lazy><CreateSalePage /></Lazy>} />
         <Route path="launch/:saleId" element={<Lazy><SaleDetailPage /></Lazy>} />
@@ -93,6 +98,7 @@ export function AppRoutes() {
         <Route path="give" element={<Lazy><GivePage /></Lazy>} />
         <Route path="give/new" element={<Lazy><CreateCampaignPage /></Lazy>} />
         <Route path="give/:campaignId" element={<Lazy><CampaignDetailPage /></Lazy>} />
+        <Route path="account" element={<Navigate to="/" replace />} />
         <Route path="app" element={<Lazy><AppInstallPage /></Lazy>} />
         <Route path="settings" element={<Lazy><SettingsPage /></Lazy>} />
         <Route path="more" element={<Lazy><MorePage /></Lazy>} />

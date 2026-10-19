@@ -172,6 +172,7 @@ export function Onboarding({ manager }: { readonly manager: AccountManager }) {
         </Card>
       ) : null}
       {step === 'welcome' ? <InstallEntry variant="compact" /> : null}
+      {step === 'welcome' ? <Link className={local.publicLink} to="/">{t('account.guestContinue')}</Link> : null}
       {step === 'welcome' ? <Link className={local.publicLink} to="/privacy">{t('privacyNotice.link')}</Link> : null}
       {step === 'phrase' ? (
         <Card title={t('account.phraseTitle')}>
@@ -299,6 +300,7 @@ export function UnlockScreen({ manager }: { readonly manager: AccountManager }) 
           </form>
         )}
       </Card>
+      <Link className={local.publicLink} to="/">{t('account.guestResume')}</Link>
       <Link className={local.publicLink} to="/privacy">{t('privacyNotice.link')}</Link>
     </div>
   );

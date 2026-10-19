@@ -13,6 +13,7 @@ import { useJobs } from '../simple/jobs/JobsProvider';
 import { MORE_PATHS, RAIL_ITEMS, SIMPLE_RAIL_ITEMS, SIMPLE_TAB_ITEMS, TAB_ITEMS } from './navItems';
 import styles from './AppShell.module.css';
 import { QuickSwitches } from './QuickSwitches';
+import { VisitorNotice, useIsVisitor } from '../account/AccountAction';
 
 function ThemeToggle({ withLabel = false }: { readonly withLabel?: boolean }) {
   const { resolved, toggle } = useTheme();
@@ -55,8 +56,10 @@ export function AppShell() {
   const rail = simple ? SIMPLE_RAIL_ITEMS : RAIL_ITEMS;
   const tabs = simple ? SIMPLE_TAB_ITEMS : TAB_ITEMS;
   const { jobs } = useJobs();
-  const running = jobs.filter((j) => j.status === 'running' || j.status === 'waiting').length;
-  const attention = jobs.some((j) => j.status === 'attention');
+  const visitor = useIsVisitor();
+  // The runner can still deliver a previous load: locked navigation must not expose its snapshot.
+  const running = visitor ? 0 : jobs.filter((j) => j.status === 'running' || j.status === 'waiting').length;
+  const attention = !visitor && jobs.some((j) => j.status === 'attention');
   const moreActive = !simple && MORE_PATHS.some((p) => pathname.startsWith(p));
   const firstPage = useRef(true);
   useEffect(() => {
@@ -130,6 +133,7 @@ export function AppShell() {
           <QuickSwitches />
         </div>
         <div className={styles.content}>
+          <VisitorNotice />
           {/*
             No AnimatePresence initial={false}: it would also switch off the
             entrance animations of every motion element on the first page

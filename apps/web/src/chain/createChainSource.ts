@@ -8,6 +8,7 @@ import { createZkLoader } from '../zk/loadProver';
 import { createExtensionZkLoader, cancelExtensionProofs } from '../zk/extensionProver';
 import { ChainDataSource } from './ChainDataSource';
 import { composeDataSource } from './ComposedDataSource';
+import { withAccountAccess } from './accountAccess';
 import { createViemMarketsPort } from './viemMarkets';
 import { chainFor, createViemChainPort } from './viemPort';
 import { WalletController } from './wallet';
@@ -93,5 +94,5 @@ export async function createChainRuntime(config: AppConfig): Promise<ChainRuntim
     wallet.dispose();
     if (extension) cancelExtensionProofs();
   };
-  return { dispose, source: composeDataSource(chainSource), chainSource, manager, wallet, deployments, jobStore: vaultJobStore(manager), subscribeJobStore };
+  return { dispose, source: withAccountAccess(composeDataSource(chainSource), () => manager.status()), chainSource, manager, wallet, deployments, jobStore: vaultJobStore(manager), subscribeJobStore };
 }

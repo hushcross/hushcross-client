@@ -139,6 +139,7 @@ export function SimpleOnboarding({ manager }: { readonly manager: AccountManager
               <Button variant="ghost" size="sm" onClick={() => setView('existing')}>
                 {t('simple.onboarding.existing')}
               </Button>
+              <Link to="/" className={w.fineLink}>{t('account.guestContinue')}</Link>
             </div>
           </motion.div>
           {view === 'start' && !busy && !showPassword ? <InstallEntry variant="compact" /> : null}

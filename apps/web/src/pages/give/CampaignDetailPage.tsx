@@ -1,5 +1,6 @@
 import { publicAppUrl } from '../../platform/runtime';
 import { useState } from 'react';
+import { AccountAction, useIsVisitor } from '../../account/AccountAction';
 import { useParams } from 'react-router';
 import { AddressDisplay } from '../../components/AddressDisplay/AddressDisplay';
 import { Badge } from '../../components/Badge/Badge';
@@ -143,18 +144,25 @@ function VerifyCard({ campaign }: { readonly campaign: Campaign }) {
   );
 }
 
+/** Form-only configuration must not block the public campaign if a fee service is unavailable. */
+function AccountDonateCard({ campaign }: { readonly campaign: Campaign }) {
+  const config = useResource((ds) => ds.getVaultConfig(), ['campaigns']);
+  return <Loaded resource={config}>{(value) => <DonateCard campaign={campaign} config={value} />}</Loaded>;
+}
+
 export function CampaignDetailPage() {
   const { t } = useI18n();
+  const visitor = useIsVisitor();
   const f = useFormat();
   const { campaignId = '' } = useParams();
   const data = useResource(async (ds) => {
-    const [campaign, donations, config] = await Promise.all([ds.getCampaign(campaignId), ds.listDonations(campaignId, 10), ds.getVaultConfig()]);
-    return { campaign, donations, config };
+    const [campaign, donations] = await Promise.all([ds.getCampaign(campaignId), ds.listDonations(campaignId, 10)]);
+    return { campaign, donations };
   }, ['campaigns'], [campaignId]);
 
   return (
     <Loaded resource={data} skeleton={<Skeleton lines={6} height={24} label={t('common.loading')} />}>
-      {({ campaign, donations, config }) => {
+      {({ campaign, donations }) => {
         const share = publicAppUrl(`/give/${campaign.id}`);
         return (
           <div className={styles.stack}>
@@ -257,16 +265,18 @@ export function CampaignDetailPage() {
                 </Card>
               </div>
               <div className={styles.stack}>
-                <CampaignEndCard campaign={campaign} />
-                <DonateCard campaign={campaign} config={config} />
-                <MyDonationsCard campaign={campaign} />
+                <AccountAction>
+                  <CampaignEndCard campaign={campaign} />
+                  <AccountDonateCard campaign={campaign} />
+                  <MyDonationsCard campaign={campaign} />
+                </AccountAction>
                 <Card title={t('give.detail.share')}>
                   <div className={styles.stackSm}>
                     <QrCode value={share} label={t('give.detail.qrLabel')} size={144} />
                     <CopyButton value={share} label={t('give.detail.copyLink')} />
                   </div>
                 </Card>
-                <VerifyCard campaign={campaign} />
+                {!visitor ? <AccountAction><VerifyCard campaign={campaign} /></AccountAction> : null}
               </div>
             </div>
           </div>

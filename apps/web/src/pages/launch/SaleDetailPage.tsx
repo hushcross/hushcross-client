@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { AccountAction, useIsVisitor } from '../../account/AccountAction';
 import { useParams } from 'react-router';
 import { AddressDisplay } from '../../components/AddressDisplay/AddressDisplay';
 import { Badge } from '../../components/Badge/Badge';
@@ -31,12 +32,34 @@ import { useSaleProfile } from './useSaleProfile';
 import { barPhase, salePhases } from './saleHelpers';
 import { formatFull, formatPrice } from '../../lib/numberFormat';
 
-function ActionCard({ sale }: { readonly sale: Sale }) {
+function FinalizeSaleAction({ sale }: { readonly sale: Sale }) {
   const { t } = useI18n();
   const ds = useDataSource();
   const { show } = useToast();
   const finalize = useAction(ds.finalizeSale.bind(ds));
+  return <div className={styles.stackSm}>
+    <p className={styles.note}>{t('launch.finalize.hint')}</p>
+    <Button icon="check" loading={finalize.busy} onClick={async () => (await finalize.run(sale.id)) && show({ tone: 'ok', title: t('launch.finalize.done') })}>
+      {t('launch.finalize.action')}
+    </Button>
+  </div>;
+}
+
+function CollectSaleFeesAction({ sale }: { readonly sale: Sale }) {
+  const { t } = useI18n();
+  const ds = useDataSource();
+  const { show } = useToast();
   const fees = useAction(ds.collectSaleFees.bind(ds));
+  return <div className={styles.stackSm}>
+    <p className={styles.note}>{t('launch.fees.hint')}</p>
+    <Button variant="secondary" loading={fees.busy} onClick={async () => (await fees.run(sale.id)) && show({ tone: 'ok', title: t('launch.fees.done') })}>
+      {t('launch.fees.action')}
+    </Button>
+  </div>;
+}
+
+function ActionCard({ sale }: { readonly sale: Sale }) {
+  const { t } = useI18n();
   if (sale.phase === 'upcoming') {
     return (
       <Card title={t('launch.detail.upcomingTitle')}>
@@ -46,9 +69,11 @@ function ActionCard({ sale }: { readonly sale: Sale }) {
   }
   if (sale.phase === 'commit') {
     return (
-      <Card title={t('launch.bid.title')}>
-        <BidForm sale={sale} />
-      </Card>
+      <AccountAction>
+        <Card title={t('launch.bid.title')}>
+          <BidForm sale={sale} />
+        </Card>
+      </AccountAction>
     );
   }
   if (sale.phase === 'reveal' || sale.phase === 'settle') {
@@ -59,12 +84,7 @@ function ActionCard({ sale }: { readonly sale: Sale }) {
           {t(sale.phase === 'reveal' ? 'launch.detail.revealBody' : 'launch.detail.settleBody')}
         </p>
         {sale.phase === 'settle' ? (
-          <div className={styles.stackSm}>
-            <p className={styles.note}>{t('launch.finalize.hint')}</p>
-            <Button icon="check" loading={finalize.busy} onClick={async () => (await finalize.run(sale.id)) && show({ tone: 'ok', title: t('launch.finalize.done') })}>
-              {t('launch.finalize.action')}
-            </Button>
-          </div>
+          <AccountAction><FinalizeSaleAction sale={sale} /></AccountAction>
         ) : null}
       </Card>
     );
@@ -99,12 +119,7 @@ function ActionCard({ sale }: { readonly sale: Sale }) {
           </div>
           <p className={styles.note}>{t('launch.detail.uniform')}</p>
           {sale.phase === 'claim' && c.poolAddress ? (
-            <div className={styles.stackSm}>
-              <p className={styles.note}>{t('launch.fees.hint')}</p>
-              <Button variant="secondary" loading={fees.busy} onClick={async () => (await fees.run(sale.id)) && show({ tone: 'ok', title: t('launch.fees.done') })}>
-                {t('launch.fees.action')}
-              </Button>
-            </div>
+            <AccountAction><CollectSaleFeesAction sale={sale} /></AccountAction>
           ) : null}
         </div>
       ) : (
@@ -117,15 +132,22 @@ function ActionCard({ sale }: { readonly sale: Sale }) {
   );
 }
 
-/** "About this sale": the verified profile, and the editor for the sale's creator wallet. */
+/** Verified profile reads stay public; creator identity and editing only mount after unlock. */
 function ProfileCard({ sale }: { readonly sale: Sale }) {
   const { t } = useI18n();
-  const { show } = useToast();
+  const visitor = useIsVisitor();
   const profile = useSaleProfile(sale.address);
+  const current = profile.data ?? null;
+  if (visitor) return current ? <Card title={t('saleProfile.about')}><SaleProfileView profile={current} /></Card> : null;
+  return <AccountAction><AccountProfileCard sale={sale} current={current} /></AccountAction>;
+}
+
+function AccountProfileCard({ sale, current }: { readonly sale: Sale; readonly current: SaleProfile | null }) {
+  const { t } = useI18n();
+  const { show } = useToast();
   const account = useResource((source) => source.getAccount(), ['account']);
   const [editing, setEditing] = useState(false);
   const isCreator = account.data?.publicAddress != null && account.data.publicAddress.toLowerCase() === sale.creator.toLowerCase();
-  const current: SaleProfile | null = profile.data ?? null;
   if (!current && !isCreator) return null;
   return (
     <Card
@@ -157,17 +179,23 @@ function ProfileCard({ sale }: { readonly sale: Sale }) {
   );
 }
 
+function AccountBids({ sale }: { readonly sale: Sale }) {
+  const { t } = useI18n();
+  const bids = useResource((ds) => ds.listMyBids(sale.id), ['sales', 'bids'], [sale.id]);
+  return <Card title={t('launch.myBids.title')}>
+    <Loaded resource={bids}>{(items) => <MyBids sale={sale} bids={items} />}</Loaded>
+  </Card>;
+}
+
 export function SaleDetailPage() {
   const { t } = useI18n();
+  const visitor = useIsVisitor();
   const { saleId = '' } = useParams();
-  const data = useResource(async (ds) => {
-    const [sale, bids] = await Promise.all([ds.getSale(saleId), ds.listMyBids(saleId)]);
-    return { sale, bids };
-  }, ['sales', 'bids'], [saleId]);
+  const data = useResource((ds) => ds.getSale(saleId), ['sales', 'bids'], [saleId]);
 
   return (
     <Loaded resource={data} skeleton={<Skeleton lines={6} height={24} label={t('common.loading')} />}>
-      {({ sale, bids }) => (
+      {(sale) => (
         <div className={styles.stack}>
           <PageHeader
             back={{ to: '/launch', label: t('nav.launch') }}
@@ -227,9 +255,7 @@ export function SaleDetailPage() {
             </div>
             <div className={styles.stack}>
               <ActionCard sale={sale} />
-              <Card title={t('launch.myBids.title')}>
-                <MyBids sale={sale} bids={bids} />
-              </Card>
+              {!visitor ? <AccountAction><AccountBids sale={sale} /></AccountAction> : null}
             </div>
           </div>
         </div>

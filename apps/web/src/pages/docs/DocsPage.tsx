@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type MouseEvent, type ReactNode } from 'react';
-import { Link } from 'react-router';
+import { Link, useLocation } from 'react-router';
 import { BrandIcon } from '../../components/Brand/BrandIcon';
 import { Coin } from '../../components/Coin/Coin';
 import { Icon } from '../../components/Icon/Icon';
@@ -221,10 +221,19 @@ function FaqBody() {
 
 /** Reference for every module, the fees and the deployed contracts. Readable without an account. */
 export function DocsPage({ loadContracts = loadConfiguredDeployments, githubUrl = appConfig.githubUrl, xUrl = appConfig.xUrl }: DocsPageProps) {
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
+  const { hash } = useLocation();
   const reduced = useReducedMotion();
   const active = useActiveSection();
   const mobileToc = useRef<HTMLDetailsElement>(null);
+
+  // Effects run after the section DOM (including translated content) has committed.
+  useEffect(() => {
+    const section = DOCS_SECTIONS.find(({ id }) => hash === `#${anchor(id)}`);
+    if (!section) return;
+    const element = document.getElementById(anchor(section.id));
+    if (typeof element?.scrollIntoView === 'function') element.scrollIntoView({ behavior: 'auto', block: 'start' });
+  }, [hash, locale]);
 
   const pick = (e: MouseEvent<HTMLAnchorElement>, id: DocsSectionId): void => {
     const el = document.getElementById(anchor(id));
