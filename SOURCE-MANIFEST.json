@@ -3,16 +3,16 @@
   "project": "HushCross client",
   "version": "0.1.0",
   "firstPartyLicense": "GPL-3.0-or-later",
-  "fileCount": 1408,
-  "totalBytes": 61203701,
+  "fileCount": 1409,
+  "totalBytes": 61206562,
   "inventoryExcludes": [
     "SOURCE-MANIFEST.json"
   ],
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 80,
-      "sha256": "260d4add741d327f05d08035694ea96fa7dea881c758390aa10755d09266b90f"
+      "bytes": 113,
+      "sha256": "b3e526aad1d328df1f9b3fcba52a4aa2ec8bf3878f3e7783b112e388d3d015ce"
     },
     {
       "path": "BUILD-CONFIG.example.json",
@@ -31,8 +31,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9133,
-      "sha256": "03b5e55059624615dcc28ee62a21a0cdd121bed91813602e051a9e5528ffb19e"
+      "bytes": 9909,
+      "sha256": "8ed0e1f7604e358fbcbeeff5f5b8b808f692dda8624a259f8cfb25813dffee3f"
     },
     {
       "path": "THIRD-PARTY-NOTICES.md",
@@ -288,6 +288,11 @@
       "path": "apps/web/public/deployments/56.json",
       "bytes": 2899,
       "sha256": "826383976820e6f95168efe7c41a9375a80d1bb192c95db1f8c63f8dc2a6fd95"
+    },
+    {
+      "path": "apps/web/public/downloads/hushcross-0.1.0.apk.sha256",
+      "bytes": 86,
+      "sha256": "3ef544867fc89c50530483c02ab99f0eec6d6819b672f00b96760b88a9b63012"
     },
     {
       "path": "apps/web/public/favicon.svg",
@@ -2801,8 +2806,8 @@
     },
     {
       "path": "apps/web/src/i18n/locales/en/appInstall.ts",
-      "bytes": 5976,
-      "sha256": "791108b77ea87a9ee29a5ba1bcbeb8c9ec98d0549de70a844b094bc7dabd0de6"
+      "bytes": 6026,
+      "sha256": "162a4787a5efcc44547b930e92e77e09ff520c592f830b7b53410e4029e17011"
     },
     {
       "path": "apps/web/src/i18n/locales/en/bookgive.ts",
@@ -2901,8 +2906,8 @@
     },
     {
       "path": "apps/web/src/i18n/locales/zh/appInstall.ts",
-      "bytes": 5772,
-      "sha256": "919f7d92c6d85afac12f08ee809292a2d5c1ae4ec95e07d43113ae8da1bcc86f"
+      "bytes": 5819,
+      "sha256": "e6ffbaf57e92a177513974b66095fd0d73996eba90669e30cf1f683b031759a5"
     },
     {
       "path": "apps/web/src/i18n/locales/zh/bookgive.ts",
@@ -3101,13 +3106,13 @@
     },
     {
       "path": "apps/web/src/pages/app/AppInstallPage.tsx",
-      "bytes": 7404,
-      "sha256": "f00a4df74e8ecc37d2318c34c111fa92d8ee5ce52b58b54eb69be78c5b39b40e"
+      "bytes": 7715,
+      "sha256": "8b513dbf5bd0e25eb9c66c51c5255fc15c7cb2c5fe41bf27bbcfdef4adf1b1f8"
     },
     {
       "path": "apps/web/src/pages/app/androidRelease.ts",
-      "bytes": 1822,
-      "sha256": "616a74d0bb3a2ed416bf09b6dce0f57eb0b1697435b92b78c9d3731b6668712d"
+      "bytes": 2556,
+      "sha256": "0b6a4805efd403419cedb16fc0802a4f7bdfe06563be83e48002bfce811755d6"
     },
     {
       "path": "apps/web/src/pages/book/Book.module.css",
@@ -3496,8 +3501,8 @@
     },
     {
       "path": "apps/web/src/releases/android.json",
-      "bytes": 387,
-      "sha256": "9f82876e5bb9696627b097deb6336b9397758a97f69b44aa9c6b5fdcb4aa2299"
+      "bytes": 459,
+      "sha256": "095fb33fea3573a246c210e1ef1e523f7468d68fb0bc63e4fcc7a09e34bd283b"
     },
     {
       "path": "apps/web/src/shell/AppShell.module.css",
@@ -3741,8 +3746,8 @@
     },
     {
       "path": "apps/web/vercel.json",
-      "bytes": 3532,
-      "sha256": "6fa371e82e129848cef1b370c4aa70078f0cef1c75d9ce41cc7b9a9e024c0b53"
+      "bytes": 4284,
+      "sha256": "4fa56f7af033b5fb34fcd96fa0ae92d983d117246ebf9783ef0a519b7b1a6a7d"
     },
     {
       "path": "apps/web/vite.config.ts",
