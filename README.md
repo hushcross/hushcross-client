@@ -2,6 +2,20 @@
 
 HushCross provides an encrypted local account and privacy-pool tools for BNB Chain. This repository contains the Web/PWA interface, the independent Manifest V3 extension, the browser-reachable core library, and the Android Trusted Web Activity shell. Server implementations, first-party protocol contracts, credentials, wallet data and signing identities are not included.
 
+
+## Current Web/Chrome source snapshot — 0.1.1
+
+The exact corresponding source for the 0.1.1 Chrome extension and this website-client update is the explicitly attached [hushcross-client-source-0.1.1.zip](https://github.com/hushcross/hushcross-client/releases/download/extension-v0.1.1/hushcross-client-source-0.1.1.zip) in the [extension-v0.1.1 release](https://github.com/hushcross/hushcross-client/releases/tag/extension-v0.1.1). Verify it against that release's `SHA256SUMS.txt`. The application source currently in this Git tree is an earlier public snapshot; neither this tree nor GitHub's automatically generated source archives should be described as the latest 0.1.1 corresponding source.
+
+The existing Android APK/native shell stays at 0.1.0, with its original [v0.1.0 APK and source assets](https://github.com/hushcross/hushcross-client/releases/tag/v0.1.0) retained unchanged. Source publication is not Chrome Web Store approval; check the store's actual published version. Client licensing remains GPL-3.0-or-later, with upstream notices retained and protocol-contract/server licensing unchanged.
+
+### 当前 Web/Chrome 对应源码 — 0.1.1
+
+0.1.1 Chrome 插件及本轮网站客户端更新的精确对应源码，是 [extension-v0.1.1 Release](https://github.com/hushcross/hushcross-client/releases/tag/extension-v0.1.1) 明确附上的 [hushcross-client-source-0.1.1.zip](https://github.com/hushcross/hushcross-client/releases/download/extension-v0.1.1/hushcross-client-source-0.1.1.zip)，请对照该 Release 的 `SHA256SUMS.txt` 核验。当前 Git 树中的应用源码仍是较早的公开快照；不能把它或 GitHub 自动生成的源码压缩包称为最新 0.1.1 对应源码。
+
+现有 Android APK/原生壳仍为 0.1.0，原 [v0.1.0 APK 与源码附件](https://github.com/hushcross/hushcross-client/releases/tag/v0.1.0) 保持不变。公开源码不代表 Chrome 已审核通过，请以商店实际发布版本为准。客户端继续采用 GPL-3.0-or-later，上游原声明保留，协议合约和服务端许可不变。
+
+
 ## Browsing without a vault
 
 In chain-connected mode, the public home page can be explored without creating or unlocking a vault. Public launches, order markets, campaigns, module guides and privacy information remain available to visitors. Personal balances and history are not shown as zero or loaded into the visitor home; set up, import or unlock a vault when you need account-owned features.
